@@ -1,1 +1,104 @@
-<h1>SPX Dashboard - Coming Soon</h1>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#0b1020" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="SPX 0DTE" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <title>SPX 0DTE Signals</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="icons/icon-512.png" />
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo" aria-hidden="true"></span>
+      <span class="title">SPX 0DTE</span>
+    </div>
+    <button id="settingsBtn" class="icon-btn" aria-label="Settings">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06A2 2 0 1 1 7.04 4.29l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9c.14.34.22.7.22 1.07 0 .37-.08.73-.22 1.07z"/></svg>
+    </button>
+  </header>
+
+  <main class="container">
+    <section id="signalCard" class="card signal-card signal-none">
+      <div class="signal-row">
+        <div class="signal-label">CURRENT SIGNAL</div>
+        <div id="liveDot" class="live-dot" title="Live">
+          <span class="dot"></span><span class="live-text">LIVE</span>
+        </div>
+      </div>
+      <div id="signalValue" class="signal-value">—</div>
+      <div class="signal-meta">
+        <div class="meta-item">
+          <div class="meta-label">Confidence</div>
+          <div id="confidenceBar" class="confidence">
+            <div id="confidenceFill" class="confidence-fill"></div>
+            <span id="confidenceText" class="confidence-text">0%</span>
+          </div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Updated</div>
+          <div id="signalTime" class="meta-value">—</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-header">
+        <h2>History</h2>
+        <button id="clearHistoryBtn" class="text-btn">Clear</button>
+      </div>
+      <ul id="historyList" class="history-list">
+        <li class="history-empty">No signals recorded yet.</li>
+      </ul>
+    </section>
+
+    <section class="card status-card">
+      <div class="status-row"><span>Auto‑refresh</span><span id="refreshStatus">15s</span></div>
+      <div class="status-row"><span>Notifications</span><span id="notifStatus">Off</span></div>
+      <div class="status-row"><span>Last fetch</span><span id="lastFetch">—</span></div>
+    </section>
+  </main>
+
+  <dialog id="settingsDialog" class="settings-dialog">
+    <form method="dialog" class="settings-form">
+      <h2>Settings</h2>
+
+      <label class="setting">
+        <span>Refresh interval</span>
+        <select id="intervalSelect">
+          <option value="5000">5 seconds</option>
+          <option value="15000" selected>15 seconds</option>
+          <option value="30000">30 seconds</option>
+          <option value="60000">1 minute</option>
+        </select>
+      </label>
+
+      <label class="setting toggle">
+        <span>Signal notifications</span>
+        <input id="notifToggle" type="checkbox" />
+      </label>
+
+      <p class="hint">
+        For notifications on iPhone: tap the share icon in Safari and choose
+        "Add to Home Screen", then open the app from your home screen and
+        allow notifications when prompted (iOS 16.4+).
+      </p>
+
+      <div class="actions">
+        <button id="testNotifBtn" type="button" class="text-btn">Test notification</button>
+        <button value="close" class="primary-btn">Done</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>
