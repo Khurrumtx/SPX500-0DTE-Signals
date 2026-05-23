@@ -1,9 +1,11 @@
 const SIGNAL_URL = "signals/signal.json";
+const EVENTS_URL = "events.json";
 const STORAGE = {
   history: "spx0dte:history",
   interval: "spx0dte:interval",
   notif: "spx0dte:notif",
   lastSignalKey: "spx0dte:lastSignalKey",
+  seenEvents: "spx0dte:seenEvents",
 };
 
 const els = {
@@ -22,6 +24,11 @@ const els = {
   intervalSelect: document.getElementById("intervalSelect"),
   notifToggle: document.getElementById("notifToggle"),
   testNotifBtn: document.getElementById("testNotifBtn"),
+  flowsList: document.getElementById("flowsList"),
+  flowsMeta: document.getElementById("flowsMeta"),
+  flowFilter: document.getElementById("flowFilter"),
+  macroCard: document.getElementById("macroCard"),
+  macroGrid: document.getElementById("macroGrid"),
 };
 
 const state = {
@@ -29,6 +36,8 @@ const state = {
   notif: localStorage.getItem(STORAGE.notif) === "1",
   history: loadHistory(),
   timer: null,
+  events: [],
+  flowFilter: "all",
 };
 
 function loadHistory() {
@@ -121,6 +130,124 @@ async function notifyNewSignal(d) {
       new Notification(title, opts);
     }
   } catch (e) { /* notifications best-effort */ }
+}
+
+// ---------- Institutional flows ----------
+
+const BUY_ACTIONS = new Set(["NEW", "ADD"]);
+const SELL_ACTIONS = new Set(["EXIT", "TRIM"]);
+
+function actionClass(a) {
+  if (BUY_ACTIONS.has(a)) return "buy";
+  if (SELL_ACTIONS.has(a)) return "sell";
+  return "";
+}
+
+function formatValue(v) {
+  v = Number(v) || 0;
+  if (v >= 1e9) return "$" + (v / 1e9).toFixed(1) + "B";
+  if (v >= 1e6) return "$" + (v / 1e6).toFixed(0) + "M";
+  if (v >= 1e3) return "$" + (v / 1e3).toFixed(0) + "K";
+  return "$" + v;
+}
+
+function formatPct(p) {
+  p = Number(p) || 0;
+  if (p >= 1) return "NEW";
+  if (p <= -1) return "EXIT";
+  const sign = p > 0 ? "+" : "";
+  return sign + Math.round(p * 100) + "%";
+}
+
+function eventId(e) {
+  return `${e.cik}|${e.cusip}|${e.quarter}|${e.action}`;
+}
+
+function passesFilter(e) {
+  switch (state.flowFilter) {
+    case "watch": return !!e.in_watchlist;
+    case "buy":   return BUY_ACTIONS.has(e.action);
+    case "sell":  return SELL_ACTIONS.has(e.action);
+    default:      return true;
+  }
+}
+
+function renderFlows() {
+  const list = state.events.filter(passesFilter);
+  if (list.length === 0) {
+    els.flowsList.innerHTML = `<li class="history-empty">No matching filings.</li>`;
+    return;
+  }
+  els.flowsList.innerHTML = list.map((e) => {
+    const cls = actionClass(e.action);
+    const sym = e.ticker || e.issuer || "—";
+    const star = e.in_watchlist ? `<span class="watch-star" title="S&amp;P 100">★</span>` : "";
+    return `<li class="flow-item">
+      <div class="flow-main">
+        <span class="flow-action ${cls}">${e.action}</span>
+        <span class="flow-symbol">${sym}${star}</span>
+        <span class="flow-pct ${cls}">${formatPct(e.pct_change)}</span>
+      </div>
+      <div class="flow-sub">
+        <span class="flow-inst">${e.institution}</span>
+        <span class="flow-val">${formatValue(e.value)} · ${e.quarter || ""}</span>
+      </div>
+    </li>`;
+  }).join("");
+}
+
+function renderMacro(fred) {
+  if (!fred || fred.length === 0) { els.macroCard.hidden = true; return; }
+  els.macroCard.hidden = false;
+  els.macroGrid.innerHTML = fred.map((f) => {
+    const cur = parseFloat(f.value), prev = parseFloat(f.prev);
+    let dirClass = "", arrow = "";
+    if (!isNaN(cur) && !isNaN(prev)) {
+      if (cur > prev) { dirClass = "buy"; arrow = "▲"; }
+      else if (cur < prev) { dirClass = "sell"; arrow = "▼"; }
+    }
+    return `<div class="macro-item">
+      <div class="macro-label">${f.label}</div>
+      <div class="macro-value ${dirClass}">${f.value ?? "—"} <span class="macro-arrow">${arrow}</span></div>
+    </div>`;
+  }).join("");
+}
+
+function notifyNewFlows(events) {
+  if (!state.notif || !("Notification" in window) || Notification.permission !== "granted") return;
+  let seen = [];
+  try { seen = JSON.parse(localStorage.getItem(STORAGE.seenEvents)) || []; } catch {}
+  const seenSet = new Set(seen);
+  const fresh = events.filter((e) => e.in_watchlist && !seenSet.has(eventId(e)));
+  const ids = events.map(eventId);
+  localStorage.setItem(STORAGE.seenEvents, JSON.stringify(ids.slice(0, 300)));
+
+  // Only notify if we had a prior baseline (avoid alerting on first ever load).
+  if (seen.length === 0 || fresh.length === 0) return;
+  const top = fresh[0];
+  const verb = BUY_ACTIONS.has(top.action) ? "loading up on" : "offloading";
+  const extra = fresh.length > 1 ? ` (+${fresh.length - 1} more)` : "";
+  notifyNewSignal({
+    signal: `${top.institution} ${verb} ${top.ticker || top.issuer}`,
+    confidence: Math.abs(Math.round((Number(top.pct_change) || 0) * 100)),
+    timestamp: top.filed || new Date().toISOString(),
+  });
+}
+
+async function fetchFlows() {
+  try {
+    const res = await fetch(EVENTS_URL + "?t=" + Date.now(), { cache: "no-store" });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const data = await res.json();
+    state.events = Array.isArray(data.events) ? data.events : [];
+    renderFlows();
+    renderMacro(data.fred);
+    const gen = data.generated ? relativeTime(data.generated) : "";
+    els.flowsMeta.textContent = `${state.events.length} filings · updated ${gen}`;
+    notifyNewFlows(state.events);
+  } catch (err) {
+    els.flowsList.innerHTML = `<li class="history-empty">Flows unavailable.</li>`;
+  }
 }
 
 async function fetchSignal() {
@@ -222,8 +349,16 @@ function wireUI() {
     renderHistory();
   });
 
+  els.flowFilter.addEventListener("click", (e) => {
+    const btn = e.target.closest(".seg-btn");
+    if (!btn) return;
+    state.flowFilter = btn.dataset.filter;
+    els.flowFilter.querySelectorAll(".seg-btn").forEach((b) => b.classList.toggle("active", b === btn));
+    renderFlows();
+  });
+
   document.addEventListener("visibilitychange", () => {
-    if (document.visibilityState === "visible") fetchSignal();
+    if (document.visibilityState === "visible") { fetchSignal(); fetchFlows(); }
   });
 }
 
@@ -237,6 +372,7 @@ function init() {
   updateNotifStatus();
   renderHistory();
   fetchSignal();
+  fetchFlows();
   startPolling();
   registerSW();
 }

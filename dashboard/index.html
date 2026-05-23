@@ -52,7 +52,28 @@
 
     <section class="card">
       <div class="card-header">
-        <h2>History</h2>
+        <h2>Institutional Flows</h2>
+        <div class="seg" id="flowFilter" role="tablist">
+          <button class="seg-btn active" data-filter="all">All</button>
+          <button class="seg-btn" data-filter="watch">S&amp;P 100</button>
+          <button class="seg-btn" data-filter="buy">Loading</button>
+          <button class="seg-btn" data-filter="sell">Offloading</button>
+        </div>
+      </div>
+      <ul id="flowsList" class="flows-list">
+        <li class="history-empty">Loading filings…</li>
+      </ul>
+      <div id="flowsMeta" class="flows-meta"></div>
+    </section>
+
+    <section class="card" id="macroCard" hidden>
+      <div class="card-header"><h2>Macro (FRED)</h2></div>
+      <div id="macroGrid" class="macro-grid"></div>
+    </section>
+
+    <section class="card">
+      <div class="card-header">
+        <h2>Signal History</h2>
         <button id="clearHistoryBtn" class="text-btn">Clear</button>
       </div>
       <ul id="historyList" class="history-list">

@@ -1,0 +1,42 @@
+name: Collect institutional flows
+
+on:
+  schedule:
+    # Weekdays 13:00 UTC. 13F-HR filings post throughout the day; this keeps the feed fresh.
+    - cron: "0 13 * * 1-5"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collect-flows
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run collector
+        env:
+          SEC_USER_AGENT: "SPX0DTE-Signals research khurrumtx@gmail.com"
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+        run: python3 scripts/collect.py
+
+      - name: Commit updated feed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet -- dashboard/events.json; then
+            git add dashboard/events.json
+            git commit -m "Update institutional flows feed"
+            git push
+          else
+            echo "No changes to events.json"
+          fi
