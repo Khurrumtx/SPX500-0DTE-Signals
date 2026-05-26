@@ -118,6 +118,27 @@ Runs a few times per US session via `.github/workflows/signal.yml` (needs
 `ALPHAVANTAGE_API_KEY`). GitHub's scheduler isn't real-time, so this suits a few
 signals a day, not second-by-second trading.
 
+## Live IBKR option chain → Excel (local only)
+
+`scripts/ibkr_chain.py` pulls a **live 0DTE option chain from Interactive
+Brokers** (bid/ask/last/mark, volume, OI, IV and greeks) and saves it to an
+`.xlsx` file.
+
+**This runs on your own computer, not the cloud app** — IBKR's API needs a
+logged-in TWS or IB Gateway session, which can't run in GitHub Actions.
+
+Setup:
+1. Install TWS or IB Gateway, log in, and enable the API
+   (Settings → API → "Enable ActiveX and Socket Clients").
+2. `pip install -r scripts/requirements-ibkr.txt`
+3. Run it:
+   ```bash
+   python3 scripts/ibkr_chain.py --symbol SPX --port 7497 --out spx_chain.xlsx
+   # no real-time data subscription? add --delayed
+   ```
+Ports: TWS live 7496 / paper 7497; Gateway live 4001 / paper 4002. SPX 0DTE uses
+the `SPXW` class automatically.
+
 ## Data sources & keys
 
 Two ways to get the daily insider feed:
