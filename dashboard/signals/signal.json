@@ -4,6 +4,8 @@
   "confidence": 62,
   "direction": "BULLISH",
   "spx": 5300.0,
+  "pricing": "estimate",
+  "instrument": "SPX",
   "rsi": 58.0,
   "realized_vol": 0.15,
   "vol_regime": "normal",
@@ -31,7 +33,9 @@
     "max_risk": 673,
     "max_reward": 1826,
     "breakeven": 5306.73,
-    "rationale": "Bullish bias (RSI 58.0, conviction 62); normal vol favors a defined-risk debit spread over a naked long."
+    "rationale": "Bullish bias (RSI 58.0, conviction 62); normal vol favors a defined-risk debit spread over a naked long.",
+    "pricing": "estimate",
+    "instrument": "SPX"
   },
   "disclaimer": "Educational rule-based signal. 0DTE options are extremely high risk and can expire worthless. Not financial advice. Prices are Black-Scholes estimates; actual fills vary."
 }

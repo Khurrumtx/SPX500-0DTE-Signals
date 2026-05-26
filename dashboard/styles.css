@@ -126,9 +126,12 @@ body {
   background: rgba(255,255,255,0.04);
   border: 1px solid var(--border);
 }
-.trade-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.trade-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
 .trade-name { font-weight: 700; font-size: 15px; }
-.trade-expiry { font-size: 11px; color: var(--muted); white-space: nowrap; }
+.trade-badge { font-size: 9px; font-weight: 800; letter-spacing: 0.5px; padding: 3px 6px; border-radius: 5px; white-space: nowrap; }
+.trade-badge.live { color: var(--green); background: rgba(46,204,113,0.16); }
+.trade-badge.est { color: var(--muted); background: rgba(255,255,255,0.08); }
+.trade-expiry-row { font-size: 11px; color: var(--muted); margin-top: 2px; }
 .legs { display: flex; flex-direction: column; gap: 6px; margin: 10px 0; }
 .leg { display: flex; align-items: center; gap: 8px; font-size: 14px; }
 .leg-act { font-size: 10px; font-weight: 800; padding: 2px 6px; border-radius: 5px; }
