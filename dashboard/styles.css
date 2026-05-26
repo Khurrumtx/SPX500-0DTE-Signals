@@ -138,7 +138,10 @@ body {
 .leg-act.buy { color: var(--green); background: rgba(46,204,113,0.16); }
 .leg-act.sell { color: var(--red); background: rgba(255,93,108,0.16); }
 .leg-desc { font-weight: 600; }
-.leg-px { margin-left: auto; color: var(--muted); font-size: 12px; }
+.leg-px { margin-left: auto; color: var(--muted); font-size: 12px; text-align: right; }
+.px-ba { display: block; font-weight: 600; color: var(--text); }
+.px-lbl { display: block; font-size: 9px; color: var(--muted); }
+.fill-note { font-size: 11px; color: var(--muted); margin: 2px 0 8px; }
 .trade-stats { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin: 12px 0 8px; }
 .trade-stats .ts-label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
 .trade-stats .ts-val { font-size: 15px; font-weight: 700; margin-top: 2px; }

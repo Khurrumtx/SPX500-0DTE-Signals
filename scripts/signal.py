@@ -237,25 +237,29 @@ def build_trade(spx: float, sig: dict, T: float) -> dict:
     }
 
 
-def _to_price(r: dict):
-    for k in ("mark", "last"):
-        try:
-            v = float(r.get(k, ""))
-            if v > 0:
-                return v
-        except (ValueError, TypeError):
-            pass
+def _f(x):
     try:
-        b, a = float(r.get("bid", "")), float(r.get("ask", ""))
-        if b > 0 and a > 0:
-            return (a + b) / 2
+        v = float(x)
+        return v if v > 0 else None
     except (ValueError, TypeError):
-        pass
-    return None
+        return None
+
+
+def _contract_prices(r: dict) -> dict | None:
+    """Return {mark, bid, ask} for a contract row, or None if unusable."""
+    bid, ask = _f(r.get("bid")), _f(r.get("ask"))
+    mark = _f(r.get("mark"))
+    if mark is None and bid and ask:
+        mark = (bid + ask) / 2
+    if mark is None:
+        mark = _f(r.get("last"))
+    if mark is None:
+        return None
+    return {"mark": mark, "bid": bid, "ask": ask}
 
 
 def fetch_option_chain(symbol: str, want_exp: str):
-    """Return {'chain': {(type, strike): mark}, 'expiration': exp} or None.
+    """Return {'chain': {(type, strike): {mark,bid,ask}}, 'expiration': exp} or None.
     None when the premium endpoint is unavailable (free key) — caller falls back."""
     data = av_get("REALTIME_OPTIONS", symbol=symbol, expiration=want_exp, datatype="json")
     rows = data.get("data")
@@ -273,9 +277,9 @@ def fetch_option_chain(symbol: str, want_exp: str):
             strike = round(float(r["strike"]), 2)
         except (ValueError, TypeError, KeyError):
             continue
-        mark = _to_price(r)
-        if mark is not None:
-            chain[(r.get("type", "").lower(), strike)] = mark
+        prices = _contract_prices(r)
+        if prices is not None:
+            chain[(r.get("type", "").lower(), strike)] = prices
     return {"chain": chain, "expiration": exp} if chain else None
 
 
@@ -293,53 +297,66 @@ def build_trade_live(underlying: float, sig: dict, chainobj: dict) -> dict | Non
     if not strikes:
         return None
     atm = min(strikes, key=lambda s: abs(s - underlying))
-    atm_mark = chain.get((typ, atm))
-    if not atm_mark or atm_mark <= 0:
+    long_c = chain.get((typ, atm))
+    if not long_c:
         return None
     why = f"{sig['direction'].title()} bias (RSI {sig['rsi']}, conviction {sig['conviction']})"
 
-    if kind == "long" and atm_mark * CONTRACT_MULT <= MAX_RISK:
-        contracts = max(1, int(MAX_RISK // (atm_mark * CONTRACT_MULT)))
-        debit = atm_mark * CONTRACT_MULT * contracts
-        be = atm + atm_mark if right == "CALL" else atm - atm_mark
+    def leg(action, strike, c):
+        return {"action": action, "right": right, "strike": strike,
+                "mark": round(c["mark"], 2),
+                "bid": round(c["bid"], 2) if c.get("bid") else None,
+                "ask": round(c["ask"], 2) if c.get("ask") else None,
+                "est_price": round(c["mark"], 2)}
+
+    long_buy = long_c.get("ask") or long_c["mark"]   # you pay the ask
+
+    if kind == "long" and long_buy * CONTRACT_MULT <= MAX_RISK:
+        contracts = max(1, int(MAX_RISK // (long_buy * CONTRACT_MULT)))
+        mark_debit = long_c["mark"] * CONTRACT_MULT * contracts
+        worst_debit = long_buy * CONTRACT_MULT * contracts
+        be = atm + long_buy if right == "CALL" else atm - long_buy
         return {
             "type": "long_option", "strategy": f"Long {right.title()} (0DTE)",
-            "expiry": f"0DTE ({exp})",
-            "legs": [{"action": "BUY", "right": right, "strike": atm, "est_price": round(atm_mark, 2)}],
-            "contracts": contracts, "est_debit": int(debit), "max_risk": int(debit),
-            "max_reward": "open-ended", "breakeven": round(be, 2),
-            "rationale": f"{why}; low vol favors buying premium. Live chain prices.",
+            "expiry": f"0DTE ({exp})", "legs": [leg("BUY", atm, long_c)],
+            "contracts": contracts,
+            "est_debit": int(mark_debit), "worst_debit": int(worst_debit),
+            "max_risk": int(worst_debit), "max_reward": "open-ended",
+            "breakeven": round(be, 2),
+            "rationale": f"{why}; low vol favors buying premium. Live chain prices; "
+                         f"max risk uses worst-case fill (buy at ask).",
         }
 
     best = None
     for width in (5, 4, 3, 2, 1):
         short_k = round(atm + width, 2) if right == "CALL" else round(atm - width, 2)
-        short_mark = chain.get((typ, short_k))
-        if short_mark is None:
+        short_c = chain.get((typ, short_k))
+        if short_c is None:
             continue
-        debit = atm_mark - short_mark
-        if debit > 0 and debit * CONTRACT_MULT <= MAX_RISK:
-            best = (width, short_k, short_mark, debit)
+        short_sell = short_c.get("bid") or short_c["mark"]   # you receive the bid
+        worst_debit = long_buy - short_sell                  # buy ask, sell bid
+        if worst_debit > 0 and worst_debit * CONTRACT_MULT <= MAX_RISK:
+            best = (width, short_k, short_c, short_sell, worst_debit)
             break
     if best is None:
         return None
-    width, short_k, short_mark, debit = best
-    contracts = max(1, int(MAX_RISK // (debit * CONTRACT_MULT)))
-    be = atm + debit if right == "CALL" else atm - debit
-    max_reward = (width * CONTRACT_MULT - debit * CONTRACT_MULT) * contracts
+    width, short_k, short_c, short_sell, worst_debit = best
+    mark_debit = long_c["mark"] - short_c["mark"]
+    contracts = max(1, int(MAX_RISK // (worst_debit * CONTRACT_MULT)))
+    be = atm + worst_debit if right == "CALL" else atm - worst_debit
+    max_reward = (width - worst_debit) * CONTRACT_MULT * contracts
     name = "Bull Call" if right == "CALL" else "Bear Put"
     return {
         "type": "debit_spread", "strategy": f"{name} Debit Spread (0DTE)",
         "expiry": f"0DTE ({exp})",
-        "legs": [
-            {"action": "BUY", "right": right, "strike": atm, "est_price": round(atm_mark, 2)},
-            {"action": "SELL", "right": right, "strike": short_k, "est_price": round(short_mark, 2)},
-        ],
+        "legs": [leg("BUY", atm, long_c), leg("SELL", short_k, short_c)],
         "contracts": contracts, "width": width,
-        "est_debit": int(debit * CONTRACT_MULT * contracts),
-        "max_risk": int(debit * CONTRACT_MULT * contracts), "max_reward": int(max_reward),
-        "breakeven": round(be, 2),
-        "rationale": f"{why}; defined-risk debit spread. Live chain prices.",
+        "est_debit": int(max(0, mark_debit) * CONTRACT_MULT * contracts),
+        "worst_debit": int(worst_debit * CONTRACT_MULT * contracts),
+        "max_risk": int(worst_debit * CONTRACT_MULT * contracts),
+        "max_reward": int(max_reward), "breakeven": round(be, 2),
+        "rationale": f"{why}; defined-risk debit spread. Live chain prices; max risk "
+                     f"uses worst-case fill (buy ask / sell bid).",
     }
 
 
