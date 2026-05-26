@@ -1,1 +1,37 @@
-{"signal": "NONE", "timestamp": "not yet running", "confidence": 0}
+{
+  "signal": "CALL",
+  "timestamp": "2026-05-26T14:00:00+00:00",
+  "confidence": 62,
+  "direction": "BULLISH",
+  "spx": 5300.0,
+  "rsi": 58.0,
+  "realized_vol": 0.15,
+  "vol_regime": "normal",
+  "trade": {
+    "type": "debit_spread",
+    "strategy": "Bull Call Debit Spread (0DTE)",
+    "expiry": "0DTE (2026-05-26)",
+    "legs": [
+      {
+        "action": "BUY",
+        "right": "CALL",
+        "strike": 5300,
+        "est_price": 7.58
+      },
+      {
+        "action": "SELL",
+        "right": "CALL",
+        "strike": 5325,
+        "est_price": 0.84
+      }
+    ],
+    "contracts": 1,
+    "width": 25,
+    "est_debit": 673,
+    "max_risk": 673,
+    "max_reward": 1826,
+    "breakeven": 5306.73,
+    "rationale": "Bullish bias (RSI 58.0, conviction 62); normal vol favors a defined-risk debit spread over a naked long."
+  },
+  "disclaimer": "Educational rule-based signal. 0DTE options are extremely high risk and can expire worthless. Not financial advice. Prices are Black-Scholes estimates; actual fills vary."
+}

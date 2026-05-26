@@ -91,6 +91,27 @@ Note: there is no public feed of *every* institution's trades intraday — 13F
 (quarterly) is the only comprehensive institutional source. Form 4 + 13D/13G are
 the timely, daily-updating signals of who is actually buying and selling.
 
+## 0DTE options signal
+
+> **EDUCATIONAL ONLY — NOT FINANCIAL ADVICE.** 0DTE options are extremely high
+> risk and can expire worthless within hours. The signal is a transparent,
+> rule-based suggestion, not a recommendation.
+
+`scripts/signal.py` produces a **defined-risk, directional** 0DTE idea:
+- Pulls recent daily candles for a liquid proxy (default `SPY`, ×10 ≈ SPX) via
+  one Alpha Vantage call, then computes SMA(5/20), RSI(14) and realized vol.
+- Scores a bias + conviction and picks a structure (capped risk only):
+  **single long call/put** (aggressive, when conviction is high and vol low) or
+  a **bull-call / bear-put debit spread** (balanced, otherwise). Neutral/low
+  conviction → **no trade**.
+- Prices legs with a built-in Black-Scholes estimate to show est. debit, capped
+  **max risk** (sized to `MAX_RISK`, default $1,000), max reward and breakeven.
+- Writes `signals/signal.json`, rendered in the app's top card.
+
+Runs a few times per US session via `.github/workflows/signal.yml` (needs
+`ALPHAVANTAGE_API_KEY`). GitHub's scheduler isn't real-time, so this suits a few
+signals a day, not second-by-second trading.
+
 ## Data sources & keys
 
 Two ways to get the daily insider feed:

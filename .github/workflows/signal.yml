@@ -1,0 +1,47 @@
+name: Generate 0DTE options signal
+
+# Rule-based, defined-risk directional signal. EDUCATIONAL, NOT FINANCIAL ADVICE.
+# Needs ALPHAVANTAGE_API_KEY (1 API call/run). GitHub's scheduler is not
+# real-time, so this runs a few times during the US session, not intraday.
+
+on:
+  schedule:
+    # ~market open, midday, power hour (UTC; US session ~13:30-20:00 UTC)
+    - cron: "45 13 * * 1-5"
+    - cron: "30 16 * * 1-5"
+    - cron: "30 19 * * 1-5"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: signal
+  cancel-in-progress: false
+
+jobs:
+  signal:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate signal
+        env:
+          ALPHAVANTAGE_API_KEY: ${{ secrets.ALPHAVANTAGE_API_KEY }}
+          MAX_RISK: "1000"
+        run: python3 scripts/signal.py
+
+      - name: Commit signal
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet -- signals/signal.json dashboard/signals/signal.json; then
+            git add signals/signal.json dashboard/signals/signal.json
+            git commit -m "Update 0DTE options signal"
+            git push
+          else
+            echo "No change to signal"
+          fi
