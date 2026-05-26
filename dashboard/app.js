@@ -124,13 +124,19 @@ function renderTrade(trade, sig) {
     els.tradeBox.hidden = false;
     const legs = trade.legs.map((l) => {
       const cls = l.action === "BUY" ? "buy" : "sell";
+      const px = (l.bid != null && l.ask != null)
+        ? `<span class="leg-px"><span class="px-ba">${l.bid} / ${l.ask}</span><span class="px-lbl">bid/ask</span></span>`
+        : `<span class="leg-px">~$${l.est_price}</span>`;
       return `<div class="leg">
         <span class="leg-act ${cls}">${l.action}</span>
         <span class="leg-desc">${l.strike} ${l.right}${trade.contracts > 1 ? ` ×${trade.contracts}` : ""}</span>
-        <span class="leg-px">~$${l.est_price}</span>
+        ${px}
       </div>`;
     }).join("");
     const reward = typeof trade.max_reward === "number" ? money(trade.max_reward) : (trade.max_reward || "open");
+    const fillNote = (trade.worst_debit != null)
+      ? `<div class="fill-note">Debit ≈ ${money(trade.est_debit)} at mid · worst-case ${money(trade.worst_debit)} (buy ask / sell bid)</div>`
+      : "";
     els.tradeBox.innerHTML = `
       <div class="trade-head">
         <span class="trade-name">${trade.strategy}</span>
@@ -139,10 +145,11 @@ function renderTrade(trade, sig) {
       <div class="trade-expiry-row">${trade.expiry || ""}${trade.instrument ? " · " + trade.instrument : ""}</div>
       <div class="legs">${legs}</div>
       <div class="trade-stats">
-        <div><div class="ts-label">Max risk</div><div class="ts-val sell">${money(trade.max_risk)}</div></div>
+        <div><div class="ts-label">Max risk${trade.worst_debit != null ? " (worst)" : ""}</div><div class="ts-val sell">${money(trade.max_risk)}</div></div>
         <div><div class="ts-label">Max reward</div><div class="ts-val buy">${reward}</div></div>
         <div><div class="ts-label">Breakeven</div><div class="ts-val">${trade.breakeven ?? "—"}</div></div>
       </div>
+      ${fillNote}
       <div class="trade-rationale">${trade.rationale || ""}</div>`;
   }
 
