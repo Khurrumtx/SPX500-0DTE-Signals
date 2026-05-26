@@ -139,6 +139,12 @@ Setup:
 Ports: TWS live 7496 / paper 7497; Gateway live 4001 / paper 4002. SPX 0DTE uses
 the `SPXW` class automatically.
 
+Each run **appends a timestamped sheet** to one workbook per symbol
+(`<symbol>_chains.xlsx`) and keeps a `runs` log sheet, so the file builds a
+history. Add `--signal` to also run the 0DTE signal on the **live IBKR chain**
+and write `signals/signal.json` (commit + push it for the app to show broker
+prices). `--max-risk` sets the signal's risk cap (default $1,000).
+
 ## Data sources & keys
 
 Two ways to get the daily insider feed:
