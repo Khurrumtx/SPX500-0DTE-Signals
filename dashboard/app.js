@@ -16,6 +16,8 @@ const els = {
   time: document.getElementById("signalTime"),
   confFill: document.getElementById("confidenceFill"),
   confText: document.getElementById("confidenceText"),
+  tradeBox: document.getElementById("tradeBox"),
+  signalDisclaimer: document.getElementById("signalDisclaimer"),
   history: document.getElementById("historyList"),
   clearHistory: document.getElementById("clearHistoryBtn"),
   refreshStatus: document.getElementById("refreshStatus"),
@@ -95,12 +97,60 @@ function render(signalData) {
   els.card.classList.remove("signal-call", "signal-put", "signal-none", "signal-wait");
   els.card.classList.add(`signal-${kind}`);
 
-  els.value.textContent = (signalData.signal || "NONE").toUpperCase();
+  els.value.textContent = (signalData.direction || signalData.signal || "NONE").toUpperCase();
   els.time.textContent = formatTimestamp(signalData.timestamp);
 
   const conf = Math.max(0, Math.min(100, Number(signalData.confidence) || 0));
   els.confFill.style.width = conf + "%";
   els.confText.textContent = conf + "%";
+
+  renderTrade(signalData.trade, signalData);
+}
+
+function money(v) {
+  if (typeof v !== "number") return v || "—";
+  return "$" + Math.round(v).toLocaleString();
+}
+
+function renderTrade(trade, sig) {
+  if (!trade || trade.type === "none" || !trade.legs) {
+    els.tradeBox.hidden = true;
+    if (trade && trade.type === "none") {
+      els.tradeBox.hidden = false;
+      els.tradeBox.innerHTML = `<div class="trade-head"><span class="trade-name">No trade</span></div>
+        <div class="trade-rationale">${trade.rationale || "Standing aside — no clear edge."}</div>`;
+    }
+  } else {
+    els.tradeBox.hidden = false;
+    const legs = trade.legs.map((l) => {
+      const cls = l.action === "BUY" ? "buy" : "sell";
+      return `<div class="leg">
+        <span class="leg-act ${cls}">${l.action}</span>
+        <span class="leg-desc">${l.strike} ${l.right}${trade.contracts > 1 ? ` ×${trade.contracts}` : ""}</span>
+        <span class="leg-px">~$${l.est_price}</span>
+      </div>`;
+    }).join("");
+    const reward = typeof trade.max_reward === "number" ? money(trade.max_reward) : (trade.max_reward || "open");
+    els.tradeBox.innerHTML = `
+      <div class="trade-head">
+        <span class="trade-name">${trade.strategy}</span>
+        <span class="trade-expiry">${trade.expiry || ""}</span>
+      </div>
+      <div class="legs">${legs}</div>
+      <div class="trade-stats">
+        <div><div class="ts-label">Max risk</div><div class="ts-val sell">${money(trade.max_risk)}</div></div>
+        <div><div class="ts-label">Max reward</div><div class="ts-val buy">${reward}</div></div>
+        <div><div class="ts-label">Breakeven</div><div class="ts-val">${trade.breakeven ?? "—"}</div></div>
+      </div>
+      <div class="trade-rationale">${trade.rationale || ""}</div>`;
+  }
+
+  if (sig && sig.disclaimer) {
+    els.signalDisclaimer.hidden = false;
+    els.signalDisclaimer.textContent = sig.disclaimer;
+  } else {
+    els.signalDisclaimer.hidden = true;
+  }
 }
 
 function renderHistory() {
