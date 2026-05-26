@@ -52,12 +52,27 @@
 
     <section class="card">
       <div class="card-header">
-        <h2>Institutional Flows</h2>
+        <h2>Institutional Ownership — Top 100 S&amp;P</h2>
+        <span id="quarterLabel" class="quarter-label"></span>
+      </div>
+      <div class="seg full" id="stockFilter" role="tablist">
+        <button class="seg-btn active" data-filter="all">All</button>
+        <button class="seg-btn" data-filter="buy">Net buying</button>
+        <button class="seg-btn" data-filter="sell">Net selling</button>
+      </div>
+      <ul id="stocksList" class="stocks-list">
+        <li class="history-empty">Loading 13F summary…</li>
+      </ul>
+      <div id="stocksMeta" class="flows-meta"></div>
+    </section>
+
+    <section class="card">
+      <div class="card-header">
+        <h2>Notable Moves</h2>
         <div class="seg" id="flowFilter" role="tablist">
           <button class="seg-btn active" data-filter="all">All</button>
-          <button class="seg-btn" data-filter="watch">S&amp;P 100</button>
-          <button class="seg-btn" data-filter="buy">Loading</button>
-          <button class="seg-btn" data-filter="sell">Offloading</button>
+          <button class="seg-btn" data-filter="buy">Buys</button>
+          <button class="seg-btn" data-filter="sell">Sells</button>
         </div>
       </div>
       <ul id="flowsList" class="flows-list">

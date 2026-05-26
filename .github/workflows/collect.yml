@@ -2,8 +2,9 @@ name: Collect institutional flows
 
 on:
   schedule:
-    # Weekdays 13:00 UTC. 13F-HR filings post throughout the day; this keeps the feed fresh.
-    - cron: "0 13 * * 1-5"
+    # Twice a week. SEC's bulk 13F data sets refresh ~quarterly (and fill in as
+    # filings arrive after each quarter-end), so frequent runs aren't needed.
+    - cron: "0 13 * * 1,4"
   workflow_dispatch: {}
 
 permissions:

@@ -47,3 +47,27 @@ the app picks it up on the next poll. Expected schema:
 
 When `signal` or `timestamp` changes to a CALL/PUT, the app fires a local
 notification (if notifications are enabled).
+
+## Institutional ownership (SEC 13F)
+
+`scripts/collect.py` builds a per-stock ownership summary for the top-100 S&P
+names. It downloads SEC's **bulk quarterly 13F data sets** (every filer's
+holdings) for the two most recent quarters, diffs each manager's position per
+stock, and writes `dashboard/events.json`:
+
+- `stocks[]` — per stock: how many institutions are buying vs selling, net
+  share/value change, and the top buyers and top sellers.
+- `events[]` — the largest individual buy/sell moves across all filers.
+- `fred[]` — optional macro context (needs `FRED_API_KEY`).
+
+Watchlists live in `scripts/watchlists/`:
+- `sp100.json` — the stock universe (top-100 S&P tickers).
+- `institutions.json` — institutions/banks to highlight (★) in the feed.
+
+This runs in **GitHub Actions** (`.github/workflows/collect.yml`), because SEC's
+servers are not reachable from the web-session sandbox. Trigger it manually via
+**Actions → Collect institutional flows → Run workflow**, or wait for the cron.
+Add a `FRED_API_KEY` repo secret to populate the macro grid.
+
+The committed `dashboard/events.json` ships with illustrative sample data so the
+UI renders before the first CI run replaces it.

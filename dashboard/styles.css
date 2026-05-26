@@ -186,6 +186,60 @@ body {
   white-space: nowrap;
 }
 .seg-btn.active { background: var(--accent); color: #0b1020; }
+.seg.full { display: flex; width: 100%; margin-bottom: 12px; }
+.seg.full .seg-btn { flex: 1; text-align: center; }
+
+.quarter-label { font-size: 11px; color: var(--muted); font-weight: 600; letter-spacing: 0.5px; }
+
+/* Per-stock ownership summary */
+.stocks-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; }
+.stock-item {
+  padding: 12px; border-radius: 12px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border);
+  cursor: pointer;
+}
+.stock-head { display: flex; align-items: center; justify-content: space-between; }
+.stock-id { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+.stock-ticker { font-weight: 800; font-size: 16px; }
+.stock-issuer { font-size: 11px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 60vw; }
+.stock-net { font-weight: 800; font-size: 15px; color: var(--muted); }
+.stock-net.buy { color: var(--green); }
+.stock-net.sell { color: var(--red); }
+
+.stock-bar {
+  height: 6px; border-radius: 999px; margin: 8px 0 8px;
+  background: var(--red);
+  overflow: hidden;
+}
+.stock-bar-buy { height: 100%; background: var(--green); border-radius: 999px; }
+
+.stock-stats { display: flex; gap: 10px; flex-wrap: wrap; font-size: 12px; }
+.stock-stats .buy { color: var(--green); }
+.stock-stats .sell { color: var(--red); }
+.stock-stats .muted { color: var(--muted); margin-left: auto; }
+
+.stock-detail {
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+.stock-item.open .stock-detail { display: grid; }
+.mover-title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+.mover-title.buy { color: var(--green); }
+.mover-title.sell { color: var(--red); }
+.mover { display: flex; align-items: center; gap: 6px; font-size: 12px; padding: 3px 0; }
+.mover.empty { color: var(--muted); }
+.mover-name { flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.mover-tag { font-size: 9px; font-weight: 800; padding: 1px 4px; border-radius: 4px; background: rgba(255,255,255,0.08); }
+.mover-tag.buy { color: var(--green); background: rgba(46,204,113,0.15); }
+.mover-tag.sell { color: var(--red); background: rgba(255,93,108,0.15); }
+.mover-delta { font-weight: 700; }
+.mover-delta.buy { color: var(--green); }
+.mover-delta.sell { color: var(--red); }
 
 /* Flows list */
 .flows-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; }

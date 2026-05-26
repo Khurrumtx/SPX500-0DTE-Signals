@@ -1,23 +1,26 @@
 #!/usr/bin/env python3
-"""Collect institutional 13F flows from SEC EDGAR (+ optional FRED macro) and
-write a feed the PWA renders.
+"""Summarize SEC 13F institutional ownership for the top-100 S&P names.
 
-For each institution in watchlists/institutions.json we:
-  1. validate the CIK (entity name match + has 13F-HR filings),
-  2. fetch the two most recent 13F-HR information tables,
-  3. diff holdings per CUSIP to classify NEW / ADD / TRIM / EXIT,
-  4. tag holdings that map to a top-100 S&P ticker.
+Instead of tracking a handful of named funds, this pulls SEC's *bulk* quarterly
+13F data sets (every filer's holdings as TSV) for the two most recent quarters,
+diffs each manager's holdings per stock, and produces a per-stock summary of who
+is buying and who is selling across ALL institutions and banks.
 
-Significant moves are written to dashboard/events.json.
+Output (dashboard/events.json):
+  - stocks[]:  one row per top-100 stock -> #buyers/#sellers/#holders, net share
+               & value change, plus top buyers and top sellers (by share delta).
+  - events[]:  the largest individual buy/sell moves across all filers.
+  - fred[]:    optional macro context (needs FRED_API_KEY).
 
-Network: SEC EDGAR is free but requires a descriptive User-Agent with a
-contact email (set SEC_USER_AGENT or it falls back to a default). FRED needs
-FRED_API_KEY (optional; skipped if unset).
+Network: SEC is free but wants a descriptive User-Agent w/ contact email
+(SEC_USER_AGENT). The bulk data sets are large; this is meant to run in CI.
 
 Run:  python3 scripts/collect.py
 """
 from __future__ import annotations
 
+import csv
+import io
 import json
 import os
 import re
@@ -25,9 +28,10 @@ import sys
 import time
 import urllib.request
 import urllib.error
+import zipfile
+from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
-from xml.etree import ElementTree as ET
 
 ROOT = Path(__file__).resolve().parent.parent
 WATCHLISTS = ROOT / "scripts" / "watchlists"
@@ -36,31 +40,39 @@ OUT = ROOT / "dashboard" / "events.json"
 USER_AGENT = os.environ.get("SEC_USER_AGENT", "SPX0DTE-Signals research khurrumtx@gmail.com")
 FRED_API_KEY = os.environ.get("FRED_API_KEY", "").strip()
 
-# Thresholds for what counts as a "major event".
-MIN_VALUE = float(os.environ.get("MIN_EVENT_VALUE", "50000000"))   # ~$50M reported value
-MIN_PCT = float(os.environ.get("MIN_EVENT_PCT", "0.20"))           # 20% share change
-MAX_EVENTS = int(os.environ.get("MAX_EVENTS", "120"))
-REQUEST_PAUSE = 0.20  # be polite: <10 req/s
+MIN_PCT = float(os.environ.get("MIN_EVENT_PCT", "0.20"))          # 20% share change = ADD/TRIM
+MIN_EVENT_VALUE = float(os.environ.get("MIN_EVENT_VALUE", "25000000"))  # min $ move for events feed
+MAX_EVENTS = int(os.environ.get("MAX_EVENTS", "150"))
+TOP_MOVERS = int(os.environ.get("TOP_MOVERS", "5"))              # top buyers/sellers per stock
+MAX_QUARTERS_BACK = 8
+
+# Candidate URL templates for the bulk 13F data sets (SEC has moved these around).
+DATASET_URL_TEMPLATES = [
+    "https://www.sec.gov/files/structureddata/data/form-13f-data-sets/{y}q{q}_form13f.zip",
+    "https://www.sec.gov/files/dera/data/form-13f-data-sets/{y}q{q}_form13f.zip",
+    "https://www.sec.gov/Archives/edgar/full-index/form13f/{y}q{q}_form13f.zip",
+]
 
 FRED_SERIES = [
     ("FEDFUNDS", "Fed Funds Rate"),
     ("DGS10", "10Y Treasury"),
     ("T10Y2Y", "10Y-2Y Spread"),
-    ("CPIAUCSL", "CPI"),
-    ("UNRATE", "Unemployment"),
     ("VIXCLS", "VIX"),
 ]
 
 
-def http_get(url: str, accept: str = "application/json") -> bytes:
+# ---------------- HTTP ----------------
+
+def http_get(url: str, accept: str = "*/*") -> bytes:
     req = urllib.request.Request(url, headers={
         "User-Agent": USER_AGENT,
         "Accept-Encoding": "gzip, deflate",
         "Accept": accept,
     })
+    last = None
     for attempt in range(4):
         try:
-            with urllib.request.urlopen(req, timeout=30) as resp:
+            with urllib.request.urlopen(req, timeout=120) as resp:
                 raw = resp.read()
                 if resp.headers.get("Content-Encoding") == "gzip":
                     import gzip
@@ -69,23 +81,19 @@ def http_get(url: str, accept: str = "application/json") -> bytes:
         except urllib.error.HTTPError as e:
             if e.code in (403, 404):
                 raise
+            last = e
             time.sleep(2 ** attempt)
-        except Exception:
+        except Exception as e:
+            last = e
             time.sleep(2 ** attempt)
-    raise RuntimeError(f"failed to GET {url}")
+    raise RuntimeError(f"GET failed {url}: {last}")
 
 
 def get_json(url: str) -> dict:
-    time.sleep(REQUEST_PAUSE)
     return json.loads(http_get(url, "application/json").decode("utf-8", "replace"))
 
 
-def get_text(url: str) -> str:
-    time.sleep(REQUEST_PAUSE)
-    return http_get(url, "*/*").decode("utf-8", "replace")
-
-
-# ---------- name normalization & ticker mapping ----------
+# ---------------- name normalization ----------------
 
 _SUFFIXES = re.compile(
     r"\b(INC|INCORPORATED|CORP|CORPORATION|CO|COMPANY|LTD|LIMITED|PLC|LP|LLC|"
@@ -93,262 +101,305 @@ _SUFFIXES = re.compile(
     r"NEW|DEL|DE|ADR|SP|ORD|SHS|SER|REIT)\b",
     re.I,
 )
+_norm_cache: dict[str, str] = {}
 
 
 def normalize(name: str) -> str:
-    name = name.upper()
-    name = re.sub(r"[^A-Z0-9 ]", " ", name)
-    name = _SUFFIXES.sub(" ", name)
-    name = re.sub(r"\s+", " ", name).strip()
-    return name
+    if name in _norm_cache:
+        return _norm_cache[name]
+    s = name.upper()
+    s = re.sub(r"[^A-Z0-9 ]", " ", s)
+    s = _SUFFIXES.sub(" ", s)
+    s = re.sub(r"\s+", " ", s).strip()
+    _norm_cache[name] = s
+    return s
 
 
-def load_ticker_map() -> tuple[dict, dict]:
-    """Return (norm_title -> ticker, ticker -> CIKint) from SEC's official map."""
+def load_universe():
+    """Return (top100_names set, name->ticker dict) for the S&P watchlist."""
+    sp100 = json.loads((WATCHLISTS / "sp100.json").read_text())["tickers"]
+    sp100_set = {t.upper() for t in sp100}
     data = get_json("https://www.sec.gov/files/company_tickers.json")
-    by_name, by_ticker = {}, {}
+    name_to_ticker = {}
+    top_names = set()
     for row in data.values():
         ticker = str(row["ticker"]).upper()
-        cik = int(row["cik_str"])
-        title = normalize(str(row["title"]))
-        by_ticker[ticker] = cik
-        if title and title not in by_name:
-            by_name[title] = ticker
-    return by_name, by_ticker
+        nname = normalize(str(row["title"]))
+        if nname and nname not in name_to_ticker:
+            name_to_ticker[nname] = ticker
+        if ticker in sp100_set and nname:
+            top_names.add(nname)
+    return top_names, name_to_ticker
 
 
-# ---------- 13F retrieval ----------
+def load_highlights() -> list[str]:
+    insts = json.loads((WATCHLISTS / "institutions.json").read_text())["institutions"]
+    return [normalize(i["name"]).split(" ")[0] for i in insts if normalize(i["name"])]
 
-def institution_recent_13f(cik10: str) -> tuple[str, list[dict]]:
-    """Return (entity_name, [filing dicts]) for recent 13F-HR filings, newest first."""
-    url = f"https://data.sec.gov/submissions/CIK{cik10}.json"
-    data = get_json(url)
-    name = data.get("name", "")
-    recent = data.get("filings", {}).get("recent", {})
-    forms = recent.get("form", [])
-    accns = recent.get("accessionNumber", [])
-    dates = recent.get("filingDate", [])
-    primary = recent.get("primaryDocument", [])
-    report_dates = recent.get("reportDate", [])
+
+# ---------------- bulk 13F data sets ----------------
+
+def quarter_labels(n: int) -> list[tuple[int, int]]:
+    now = datetime.now(timezone.utc)
+    y, q = now.year, (now.month - 1) // 3 + 1
     out = []
-    for i, form in enumerate(forms):
-        if form == "13F-HR":
-            out.append({
-                "accession": accns[i],
-                "filed": dates[i] if i < len(dates) else "",
-                "report_date": report_dates[i] if i < len(report_dates) else "",
-                "primary": primary[i] if i < len(primary) else "",
-            })
-    return name, out
+    for _ in range(n):
+        out.append((y, q))
+        q -= 1
+        if q == 0:
+            q = 4
+            y -= 1
+    return out
 
 
-def fetch_info_table(cik_int: int, accession: str) -> list[dict]:
-    """Download a 13F filing's information table and return aggregated holdings."""
-    accn_nodash = accession.replace("-", "")
-    base = f"https://www.sec.gov/Archives/edgar/data/{cik_int}/{accn_nodash}"
-    index = get_json(f"{base}/index.json")
-    xml_files = [
-        it["name"] for it in index.get("directory", {}).get("item", [])
-        if it["name"].lower().endswith(".xml")
-    ]
-    table_xml = None
-    for fname in xml_files:
-        text = get_text(f"{base}/{fname}")
-        if "infoTable" in text or "informationtable" in text.lower():
-            table_xml = text
-            break
-    if not table_xml:
-        return []
-    return parse_info_table(table_xml)
-
-
-def _local(tag: str) -> str:
-    return tag.rsplit("}", 1)[-1].lower()
-
-
-def parse_info_table(xml_text: str) -> dict:
-    """Parse holdings -> {cusip: {issuer, shares, value}} aggregated per CUSIP."""
-    holdings: dict[str, dict] = {}
-    try:
-        root = ET.fromstring(xml_text)
-    except ET.ParseError:
-        return holdings
-    for info in root.iter():
-        if _local(info.tag) != "infotable":
+def download_dataset(y: int, q: int) -> bytes | None:
+    for tmpl in DATASET_URL_TEMPLATES:
+        url = tmpl.format(y=y, q=q)
+        try:
+            data = http_get(url, "application/zip")
+            if data[:2] == b"PK":
+                print(f"  downloaded {y}Q{q} from {url} ({len(data)//1_000_000}MB)")
+                return data
+        except urllib.error.HTTPError:
             continue
-        issuer = cusip = ""
-        value = shares = 0.0
-        for child in info.iter():
-            tag = _local(child.tag)
-            txt = (child.text or "").strip()
-            if tag == "nameofissuer":
-                issuer = txt
-            elif tag == "cusip":
-                cusip = txt.upper()
-            elif tag == "value" and txt:
-                try:
-                    value = float(txt.replace(",", ""))
-                except ValueError:
-                    pass
-            elif tag == "sshprnamt" and txt:
-                try:
-                    shares = float(txt.replace(",", ""))
-                except ValueError:
-                    pass
+        except Exception as e:
+            print(f"  ! {url}: {e}", file=sys.stderr)
+    return None
+
+
+def _find_member(zf: zipfile.ZipFile, name: str) -> str | None:
+    target = name.lower()
+    for n in zf.namelist():
+        if n.lower().split("/")[-1] == target:
+            return n
+    return None
+
+
+def _reader(zf: zipfile.ZipFile, member: str):
+    f = io.TextIOWrapper(zf.open(member), encoding="utf-8", errors="replace")
+    return csv.DictReader(f, delimiter="\t")
+
+
+def load_quarter_holdings(zip_bytes: bytes, top_names: set[str],
+                          name_to_ticker: dict, extra_cusips: set[str] | None = None):
+    """Return ({(manager, cusip): {shares, value, issuer, ticker, cusip}}, learned_cusips)."""
+    extra_cusips = extra_cusips or set()
+    zf = zipfile.ZipFile(io.BytesIO(zip_bytes))
+
+    cover = _find_member(zf, "COVERPAGE.tsv")
+    info = _find_member(zf, "INFOTABLE.tsv")
+    if not cover or not info:
+        print(f"  ! missing tables (cover={cover}, info={info})", file=sys.stderr)
+        return {}, set()
+
+    # accession -> filing manager name
+    acc_mgr: dict[str, str] = {}
+    for row in _reader(zf, cover):
+        acc = (row.get("ACCESSION_NUMBER") or "").strip()
+        mgr = (row.get("FILINGMANAGER_NAME") or "").strip()
+        if acc and mgr:
+            acc_mgr[acc] = mgr
+
+    # stream holdings, keep only watchlist stocks
+    agg: dict[tuple[str, str], dict] = {}
+    acc_rows: dict[str, int] = defaultdict(int)
+    learned: set[str] = set()
+
+    for row in _reader(zf, info):
+        if (row.get("SSHPRNAMTTYPE") or "").strip().upper() != "SH":
+            continue
+        if (row.get("PUTCALL") or "").strip():
+            continue
+        issuer = (row.get("NAMEOFISSUER") or "").strip()
+        cusip = (row.get("CUSIP") or "").strip().upper()
         if not cusip:
             continue
-        h = holdings.setdefault(cusip, {"issuer": issuer, "shares": 0.0, "value": 0.0})
-        h["shares"] += shares
-        h["value"] += value
-        if issuer and not h["issuer"]:
-            h["issuer"] = issuer
-    return holdings
+        nname = normalize(issuer)
+        ticker = name_to_ticker.get(nname)
+        is_watch = nname in top_names or cusip in extra_cusips
+        if not is_watch:
+            continue
+        learned.add(cusip)
+        acc = (row.get("ACCESSION_NUMBER") or "").strip()
+        try:
+            shares = float((row.get("SSHPRNAMT") or "0").replace(",", ""))
+            value = float((row.get("VALUE") or "0").replace(",", ""))
+        except ValueError:
+            continue
+        key = (acc, cusip)
+        a = agg.setdefault(key, {"shares": 0.0, "value": 0.0, "issuer": issuer, "ticker": ticker, "cusip": cusip})
+        a["shares"] += shares
+        a["value"] += value
+        acc_rows[acc] += 1
+
+    # pick each manager's most complete filing (handles amendments / multiple filings)
+    best_acc: dict[str, str] = {}
+    for acc, mgr in acc_mgr.items():
+        if acc not in acc_rows:
+            continue
+        if mgr not in best_acc or acc_rows[acc] > acc_rows[best_acc[mgr]]:
+            best_acc[mgr] = acc
+
+    holdings: dict[tuple[str, str], dict] = {}
+    for (acc, cusip), a in agg.items():
+        mgr = acc_mgr.get(acc)
+        if not mgr or best_acc.get(mgr) != acc:
+            continue
+        k = (mgr, cusip)
+        h = holdings.setdefault(k, {"shares": 0.0, "value": 0.0, "issuer": a["issuer"], "ticker": a["ticker"], "cusip": cusip})
+        h["shares"] += a["shares"]
+        h["value"] += a["value"]
+    return holdings, learned
 
 
-def classify(prev: float, curr: float) -> tuple[str, float]:
+# ---------------- diff & aggregate ----------------
+
+def classify(prev: float, curr: float) -> str:
     if prev <= 0 and curr > 0:
-        return "NEW", 1.0
+        return "NEW"
     if prev > 0 and curr <= 0:
-        return "EXIT", -1.0
-    if prev <= 0 and curr <= 0:
-        return "", 0.0
+        return "EXIT"
+    if prev <= 0:
+        return ""
     pct = (curr - prev) / prev
     if pct >= MIN_PCT:
-        return "ADD", pct
+        return "ADD"
     if pct <= -MIN_PCT:
-        return "TRIM", pct
-    return "", pct
+        return "TRIM"
+    return "HOLD"
 
 
-def diff_holdings(inst_name, cik, prev, curr, report_date, filed,
-                  name_to_ticker, sp100) -> list[dict]:
-    events = []
-    cusips = set(prev) | set(curr)
-    for cusip in cusips:
-        p = prev.get(cusip, {})
-        c = curr.get(cusip, {})
+def summarize(prev_h: dict, curr_h: dict, highlights: list[str]):
+    keys = set(prev_h) | set(curr_h)
+    per_stock: dict[str, dict] = {}
+    events: list[dict] = []
+
+    for (mgr, cusip) in keys:
+        p = prev_h.get((mgr, cusip), {})
+        c = curr_h.get((mgr, cusip), {})
         p_sh, c_sh = p.get("shares", 0.0), c.get("shares", 0.0)
-        action, pct = classify(p_sh, c_sh)
+        p_val, c_val = p.get("value", 0.0), c.get("value", 0.0)
+        action = classify(p_sh, c_sh)
         if not action:
             continue
-        issuer = c.get("issuer") or p.get("issuer") or ""
-        value = c.get("value", 0.0) or p.get("value", 0.0)
-        ticker = name_to_ticker.get(normalize(issuer))
-        in_watch = bool(ticker and ticker in sp100)
-        # value reported in $1000s historically; treat large raw values as already-dollars
-        if value < MIN_VALUE and not (action in ("NEW", "EXIT") and value > 0):
-            if value * 1000 < MIN_VALUE:
-                continue
-        events.append({
-            "institution": inst_name,
-            "cik": cik,
-            "action": action,
-            "ticker": ticker,
-            "issuer": issuer,
-            "cusip": cusip,
-            "shares_prev": int(p_sh),
-            "shares_curr": int(c_sh),
-            "pct_change": round(pct, 4),
-            "value": int(value),
-            "quarter": report_date,
-            "filed": filed,
-            "in_watchlist": in_watch,
-        })
-    return events
+        ref = c if c else p
+        ticker = ref.get("ticker")
+        issuer = ref.get("issuer", "")
+        d_sh = c_sh - p_sh
+        d_val = c_val - p_val
+        nmgr = normalize(mgr)
+        is_highlight = any(nmgr.startswith(h) or (" " + h) in (" " + nmgr) for h in highlights)
 
+        st = per_stock.setdefault(cusip, {
+            "ticker": ticker, "issuer": issuer, "cusip": cusip,
+            "holders": 0, "buyers": 0, "sellers": 0, "new": 0, "exits": 0,
+            "net_shares": 0.0, "net_value": 0.0, "_buyers": [], "_sellers": [],
+        })
+        if c_sh > 0:
+            st["holders"] += 1
+        st["net_shares"] += d_sh
+        st["net_value"] += d_val
+        if action in ("NEW", "ADD"):
+            st["buyers"] += 1
+            if action == "NEW":
+                st["new"] += 1
+            st["_buyers"].append((d_sh, mgr, action, d_val))
+        elif action in ("TRIM", "EXIT"):
+            st["sellers"] += 1
+            if action == "EXIT":
+                st["exits"] += 1
+            st["_sellers"].append((d_sh, mgr, action, d_val))
+
+        if action != "HOLD" and abs(d_val) >= MIN_EVENT_VALUE:
+            events.append({
+                "institution": mgr, "action": action,
+                "ticker": ticker, "issuer": issuer, "cusip": cusip,
+                "shares_prev": int(p_sh), "shares_curr": int(c_sh),
+                "delta_shares": int(d_sh), "value": int(c_val or p_val),
+                "delta_value": int(d_val), "highlight": is_highlight,
+            })
+
+    stocks = []
+    for cusip, st in per_stock.items():
+        buyers = sorted(st.pop("_buyers"), key=lambda x: x[0], reverse=True)[:TOP_MOVERS]
+        sellers = sorted(st.pop("_sellers"), key=lambda x: x[0])[:TOP_MOVERS]
+        st["top_buyers"] = [{"name": m, "action": a, "delta_shares": int(d), "delta_value": int(dv)} for d, m, a, dv in buyers]
+        st["top_sellers"] = [{"name": m, "action": a, "delta_shares": int(d), "delta_value": int(dv)} for d, m, a, dv in sellers]
+        st["net_shares"] = int(st["net_shares"])
+        st["net_value"] = int(st["net_value"])
+        stocks.append(st)
+
+    stocks.sort(key=lambda s: abs(s["net_value"]), reverse=True)
+    events.sort(key=lambda e: abs(e["delta_value"]), reverse=True)
+    return stocks, events[:MAX_EVENTS]
+
+
+# ---------------- FRED ----------------
 
 def collect_fred() -> list[dict]:
     if not FRED_API_KEY:
         return []
     out = []
-    for series_id, label in FRED_SERIES:
+    for sid, label in FRED_SERIES:
         try:
-            url = (
-                "https://api.stlouisfed.org/fred/series/observations"
-                f"?series_id={series_id}&api_key={FRED_API_KEY}&file_type=json"
-                "&sort_order=desc&limit=2"
-            )
-            data = get_json(url)
-            obs = data.get("observations", [])
-            if not obs:
-                continue
-            latest = obs[0]
-            prev = obs[1] if len(obs) > 1 else None
-            out.append({
-                "series": series_id,
-                "label": label,
-                "value": latest.get("value"),
-                "date": latest.get("date"),
-                "prev": prev.get("value") if prev else None,
-            })
+            url = ("https://api.stlouisfed.org/fred/series/observations"
+                   f"?series_id={sid}&api_key={FRED_API_KEY}&file_type=json&sort_order=desc&limit=2")
+            obs = get_json(url).get("observations", [])
+            if obs:
+                out.append({"series": sid, "label": label,
+                            "value": obs[0].get("value"), "date": obs[0].get("date"),
+                            "prev": obs[1].get("value") if len(obs) > 1 else None})
         except Exception as e:
-            print(f"  ! FRED {series_id} failed: {e}", file=sys.stderr)
+            print(f"  ! FRED {sid}: {e}", file=sys.stderr)
     return out
 
 
+# ---------------- main ----------------
+
 def main() -> int:
-    sp100 = set(json.loads((WATCHLISTS / "sp100.json").read_text())["tickers"])
-    institutions = json.loads((WATCHLISTS / "institutions.json").read_text())["institutions"]
+    print("Loading universe (SEC ticker map + S&P watchlist)...")
+    top_names, name_to_ticker = load_universe()
+    highlights = load_highlights()
+    print(f"  {len(top_names)} watchlist issuer names, {len(highlights)} highlighted institutions")
 
-    print("Loading SEC ticker map...")
-    name_to_ticker, _ = load_ticker_map()
+    print("Locating two most recent 13F data sets...")
+    datasets = []
+    for (y, q) in quarter_labels(MAX_QUARTERS_BACK):
+        data = download_dataset(y, q)
+        if data:
+            datasets.append(((y, q), data))
+        if len(datasets) == 2:
+            break
+    if len(datasets) < 2:
+        print("ERROR: could not find two consecutive 13F data sets.", file=sys.stderr)
+        return 1
 
-    all_events: list[dict] = []
-    processed, skipped = [], []
+    (cy, cq), cur_bytes = datasets[0]
+    (py, pq), prev_bytes = datasets[1]
+    print(f"Current: {cy}Q{cq}  Previous: {py}Q{pq}")
 
-    for inst in institutions:
-        cik10 = str(inst["cik"]).zfill(10)
-        cik_int = int(cik10)
-        want = normalize(inst["name"]).split(" ")[0]
-        try:
-            entity_name, filings = institution_recent_13f(cik10)
-        except Exception as e:
-            skipped.append(f'{inst["name"]} ({cik10}): {e}')
-            continue
+    curr_h, learned = load_quarter_holdings(cur_bytes, top_names, name_to_ticker)
+    prev_h, _ = load_quarter_holdings(prev_bytes, top_names, name_to_ticker, extra_cusips=learned)
+    print(f"  holdings rows: current={len(curr_h)} previous={len(prev_h)}")
 
-        if want and want not in normalize(entity_name):
-            print(f'  ? name mismatch for {inst["name"]}: EDGAR has "{entity_name}"', file=sys.stderr)
-        if len(filings) < 2:
-            skipped.append(f'{inst["name"]}: <2 13F-HR filings')
-            continue
-
-        try:
-            curr = fetch_info_table(cik_int, filings[0]["accession"])
-            prev = fetch_info_table(cik_int, filings[1]["accession"])
-        except Exception as e:
-            skipped.append(f'{inst["name"]}: holdings fetch failed: {e}')
-            continue
-
-        evs = diff_holdings(
-            inst["name"], cik10, prev, curr,
-            filings[0].get("report_date", ""), filings[0].get("filed", ""),
-            name_to_ticker, sp100,
-        )
-        all_events.extend(evs)
-        processed.append(f'{inst["name"]}: {len(evs)} events ({entity_name})')
-        print(f'  + {inst["name"]}: {len(evs)} events')
-
-    # Rank: watchlist hits first, then by reported value.
-    all_events.sort(key=lambda e: (e["in_watchlist"], e["value"]), reverse=True)
-    all_events = all_events[:MAX_EVENTS]
+    stocks, events = summarize(prev_h, curr_h, highlights)
 
     payload = {
         "generated": datetime.now(timezone.utc).isoformat(),
-        "events": all_events,
+        "quarters": {"current": f"{cy}Q{cq}", "previous": f"{py}Q{pq}"},
+        "stocks": stocks,
+        "events": events,
         "fred": collect_fred(),
         "meta": {
-            "institutions_processed": processed,
-            "institutions_skipped": skipped,
-            "min_value": MIN_VALUE,
+            "stocks_with_activity": len(stocks),
+            "total_events": len(events),
             "min_pct": MIN_PCT,
-            "watchlist_size": len(sp100),
+            "min_event_value": MIN_EVENT_VALUE,
         },
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(payload, indent=2))
-    print(f"\nWrote {len(all_events)} events to {OUT}")
-    if skipped:
-        print("Skipped:", *skipped, sep="\n  ")
+    print(f"Wrote {len(stocks)} stock summaries and {len(events)} events to {OUT}")
     return 0
 
 

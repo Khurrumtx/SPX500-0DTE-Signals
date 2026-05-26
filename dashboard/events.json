@@ -1,14 +1,50 @@
 {
   "generated": "2026-05-23T13:00:00+00:00",
+  "quarters": { "current": "2026Q2", "previous": "2026Q1" },
+  "stocks": [
+    {
+      "ticker": "AAPL", "issuer": "APPLE INC", "cusip": "037833100",
+      "holders": 4120, "buyers": 1880, "sellers": 1640, "new": 210, "exits": 145,
+      "net_shares": 92000000, "net_value": 24500000000,
+      "top_buyers": [
+        { "name": "Vanguard Group Inc", "action": "ADD", "delta_shares": 31000000, "delta_value": 8200000000 },
+        { "name": "BlackRock Inc", "action": "ADD", "delta_shares": 24000000, "delta_value": 6300000000 },
+        { "name": "State Street Corp", "action": "ADD", "delta_shares": 12000000, "delta_value": 3100000000 }
+      ],
+      "top_sellers": [
+        { "name": "Berkshire Hathaway Inc", "action": "TRIM", "delta_shares": -300000000, "delta_value": -22000000000 },
+        { "name": "Morgan Stanley", "action": "TRIM", "delta_shares": -9000000, "delta_value": -2400000000 }
+      ]
+    },
+    {
+      "ticker": "NVDA", "issuer": "NVIDIA CORP", "cusip": "67066G104",
+      "holders": 3950, "buyers": 2210, "sellers": 1180, "new": 305, "exits": 90,
+      "net_shares": 140000000, "net_value": 58000000000,
+      "top_buyers": [
+        { "name": "BlackRock Inc", "action": "ADD", "delta_shares": 110000000, "delta_value": 12000000000 },
+        { "name": "FMR LLC", "action": "ADD", "delta_shares": 42000000, "delta_value": 4600000000 }
+      ],
+      "top_sellers": [
+        { "name": "Renaissance Technologies LLC", "action": "TRIM", "delta_shares": -8000000, "delta_value": -900000000 }
+      ]
+    },
+    {
+      "ticker": "TSLA", "issuer": "TESLA INC", "cusip": "88160R101",
+      "holders": 2890, "buyers": 940, "sellers": 1510, "new": 60, "exits": 240,
+      "net_shares": -34000000, "net_value": -8600000000,
+      "top_buyers": [
+        { "name": "Vanguard Group Inc", "action": "ADD", "delta_shares": 4000000, "delta_value": 1000000000 }
+      ],
+      "top_sellers": [
+        { "name": "Citadel Advisors LLC", "action": "EXIT", "delta_shares": -12000000, "delta_value": -3000000000 },
+        { "name": "Two Sigma Investments LP", "action": "TRIM", "delta_shares": -6500000, "delta_value": -1600000000 }
+      ]
+    }
+  ],
   "events": [
-    { "institution": "Berkshire Hathaway", "cik": "0001067983", "action": "TRIM", "ticker": "AAPL", "issuer": "APPLE INC", "cusip": "037833100", "shares_prev": 905560000, "shares_curr": 300000000, "pct_change": -0.6687, "value": 65000000000, "quarter": "2026-03-31", "filed": "2026-05-15", "in_watchlist": true },
-    { "institution": "BlackRock", "cik": "0001364742", "action": "ADD", "ticker": "NVDA", "issuer": "NVIDIA CORP", "cusip": "67066G104", "shares_prev": 410000000, "shares_curr": 520000000, "pct_change": 0.2683, "value": 58000000000, "quarter": "2026-03-31", "filed": "2026-05-14", "in_watchlist": true },
-    { "institution": "Citadel Advisors", "cik": "0001423053", "action": "NEW", "ticker": "PANW", "issuer": "PALO ALTO NETWORKS INC", "cusip": "697435105", "shares_prev": 0, "shares_curr": 12000000, "pct_change": 1.0, "value": 4200000000, "quarter": "2026-03-31", "filed": "2026-05-15", "in_watchlist": true },
-    { "institution": "Vanguard Group", "cik": "0000102909", "action": "ADD", "ticker": "MSFT", "issuer": "MICROSOFT CORP", "cusip": "594918104", "shares_prev": 690000000, "shares_curr": 845000000, "pct_change": 0.2246, "value": 372000000000, "quarter": "2026-03-31", "filed": "2026-05-13", "in_watchlist": true },
-    { "institution": "Renaissance Technologies", "cik": "0001037389", "action": "EXIT", "ticker": "TSLA", "issuer": "TESLA INC", "cusip": "88160R101", "shares_prev": 8500000, "shares_curr": 0, "pct_change": -1.0, "value": 2100000000, "quarter": "2026-03-31", "filed": "2026-05-15", "in_watchlist": true },
-    { "institution": "Bridgewater Associates", "cik": "0001350694", "action": "ADD", "ticker": "GOOGL", "issuer": "ALPHABET INC", "cusip": "02079K305", "shares_prev": 4200000, "shares_curr": 7900000, "pct_change": 0.881, "value": 1400000000, "quarter": "2026-03-31", "filed": "2026-05-14", "in_watchlist": true },
-    { "institution": "Two Sigma Investments", "cik": "0001179392", "action": "TRIM", "ticker": "META", "issuer": "META PLATFORMS INC", "cusip": "30303M102", "shares_prev": 5600000, "shares_curr": 3100000, "pct_change": -0.4464, "value": 1900000000, "quarter": "2026-03-31", "filed": "2026-05-15", "in_watchlist": true },
-    { "institution": "State Street", "cik": "0000093751", "action": "ADD", "ticker": "JPM", "issuer": "JPMORGAN CHASE & CO", "cusip": "46625H100", "shares_prev": 92000000, "shares_curr": 118000000, "pct_change": 0.2826, "value": 31000000000, "quarter": "2026-03-31", "filed": "2026-05-13", "in_watchlist": true }
+    { "institution": "Berkshire Hathaway Inc", "action": "TRIM", "ticker": "AAPL", "issuer": "APPLE INC", "cusip": "037833100", "shares_prev": 905560000, "shares_curr": 605560000, "delta_shares": -300000000, "value": 44000000000, "delta_value": -22000000000, "highlight": true },
+    { "institution": "BlackRock Inc", "action": "ADD", "ticker": "NVDA", "issuer": "NVIDIA CORP", "cusip": "67066G104", "shares_prev": 410000000, "shares_curr": 520000000, "delta_shares": 110000000, "value": 58000000000, "delta_value": 12000000000, "highlight": true },
+    { "institution": "Citadel Advisors LLC", "action": "EXIT", "ticker": "TSLA", "issuer": "TESLA INC", "cusip": "88160R101", "shares_prev": 12000000, "shares_curr": 0, "delta_shares": -12000000, "value": 0, "delta_value": -3000000000, "highlight": true }
   ],
   "fred": [
     { "series": "FEDFUNDS", "label": "Fed Funds Rate", "value": "4.33", "date": "2026-04-01", "prev": "4.58" },
@@ -17,11 +53,10 @@
     { "series": "VIXCLS", "label": "VIX", "value": "17.85", "date": "2026-05-22", "prev": "18.40" }
   ],
   "meta": {
-    "institutions_processed": ["sample data — replaced on first GitHub Action run"],
-    "institutions_skipped": [],
-    "min_value": 50000000,
+    "stocks_with_activity": 3,
+    "total_events": 3,
     "min_pct": 0.2,
-    "watchlist_size": 100,
-    "note": "Seed/sample feed so the UI renders before the collector runs. Numbers are illustrative."
+    "min_event_value": 25000000,
+    "note": "Seed/sample feed so the UI renders before the collector runs in CI. Numbers are illustrative."
   }
 }

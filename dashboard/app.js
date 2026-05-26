@@ -27,6 +27,10 @@ const els = {
   flowsList: document.getElementById("flowsList"),
   flowsMeta: document.getElementById("flowsMeta"),
   flowFilter: document.getElementById("flowFilter"),
+  stocksList: document.getElementById("stocksList"),
+  stocksMeta: document.getElementById("stocksMeta"),
+  stockFilter: document.getElementById("stockFilter"),
+  quarterLabel: document.getElementById("quarterLabel"),
   macroCard: document.getElementById("macroCard"),
   macroGrid: document.getElementById("macroGrid"),
 };
@@ -37,7 +41,10 @@ const state = {
   history: loadHistory(),
   timer: null,
   events: [],
+  stocks: [],
   flowFilter: "all",
+  stockFilter: "all",
+  expanded: new Set(),
 };
 
 function loadHistory() {
@@ -151,24 +158,92 @@ function formatValue(v) {
   return "$" + v;
 }
 
-function formatPct(p) {
-  p = Number(p) || 0;
-  if (p >= 1) return "NEW";
-  if (p <= -1) return "EXIT";
-  const sign = p > 0 ? "+" : "";
-  return sign + Math.round(p * 100) + "%";
+function eventId(e, quarter) {
+  return `${quarter}|${e.institution}|${e.cusip}|${e.action}`;
 }
 
-function eventId(e) {
-  return `${e.cik}|${e.cusip}|${e.quarter}|${e.action}`;
+function signedValue(v) {
+  v = Number(v) || 0;
+  const sign = v > 0 ? "+" : v < 0 ? "-" : "";
+  return sign + formatValue(Math.abs(v));
 }
+
+function shortShares(n) {
+  n = Number(n) || 0;
+  const a = Math.abs(n);
+  const sign = n > 0 ? "+" : n < 0 ? "-" : "";
+  if (a >= 1e9) return sign + (a / 1e9).toFixed(1) + "B sh";
+  if (a >= 1e6) return sign + (a / 1e6).toFixed(1) + "M sh";
+  if (a >= 1e3) return sign + (a / 1e3).toFixed(0) + "K sh";
+  return sign + a + " sh";
+}
+
+// ----- per-stock ownership summary -----
+
+function passesStockFilter(s) {
+  if (state.stockFilter === "buy") return s.net_value > 0;
+  if (state.stockFilter === "sell") return s.net_value < 0;
+  return true;
+}
+
+function moverRows(movers, cls) {
+  if (!movers || movers.length === 0) return `<div class="mover empty">—</div>`;
+  return movers.map((m) => `
+    <div class="mover">
+      <span class="mover-name">${m.name}</span>
+      <span class="mover-tag ${cls}">${m.action}</span>
+      <span class="mover-delta ${cls}">${shortShares(m.delta_shares)}</span>
+    </div>`).join("");
+}
+
+function renderStocks() {
+  const list = state.stocks.filter(passesStockFilter);
+  if (list.length === 0) {
+    els.stocksList.innerHTML = `<li class="history-empty">No matching stocks.</li>`;
+    return;
+  }
+  els.stocksList.innerHTML = list.map((s) => {
+    const net = Number(s.net_value) || 0;
+    const dir = net > 0 ? "buy" : net < 0 ? "sell" : "";
+    const sym = s.ticker || s.issuer || s.cusip;
+    const total = (s.buyers || 0) + (s.sellers || 0) || 1;
+    const buyPct = Math.round(((s.buyers || 0) / total) * 100);
+    const open = state.expanded.has(s.cusip);
+    return `<li class="stock-item ${open ? "open" : ""}" data-cusip="${s.cusip}">
+      <div class="stock-head">
+        <div class="stock-id">
+          <span class="stock-ticker">${sym}</span>
+          <span class="stock-issuer">${s.issuer || ""}</span>
+        </div>
+        <div class="stock-net ${dir}">${signedValue(net)}</div>
+      </div>
+      <div class="stock-bar"><div class="stock-bar-buy" style="width:${buyPct}%"></div></div>
+      <div class="stock-stats">
+        <span class="buy">▲ ${s.buyers || 0} buying${s.new ? ` · ${s.new} new` : ""}</span>
+        <span class="sell">▼ ${s.sellers || 0} selling${s.exits ? ` · ${s.exits} exits` : ""}</span>
+        <span class="muted">${s.holders || 0} holders</span>
+      </div>
+      <div class="stock-detail">
+        <div class="mover-col">
+          <div class="mover-title buy">Top buyers</div>
+          ${moverRows(s.top_buyers, "buy")}
+        </div>
+        <div class="mover-col">
+          <div class="mover-title sell">Top sellers</div>
+          ${moverRows(s.top_sellers, "sell")}
+        </div>
+      </div>
+    </li>`;
+  }).join("");
+}
+
+// ----- notable individual moves -----
 
 function passesFilter(e) {
   switch (state.flowFilter) {
-    case "watch": return !!e.in_watchlist;
-    case "buy":   return BUY_ACTIONS.has(e.action);
-    case "sell":  return SELL_ACTIONS.has(e.action);
-    default:      return true;
+    case "buy":  return BUY_ACTIONS.has(e.action);
+    case "sell": return SELL_ACTIONS.has(e.action);
+    default:     return true;
   }
 }
 
@@ -181,16 +256,16 @@ function renderFlows() {
   els.flowsList.innerHTML = list.map((e) => {
     const cls = actionClass(e.action);
     const sym = e.ticker || e.issuer || "—";
-    const star = e.in_watchlist ? `<span class="watch-star" title="S&amp;P 100">★</span>` : "";
+    const star = e.highlight ? `<span class="watch-star" title="Tracked institution">★</span>` : "";
     return `<li class="flow-item">
       <div class="flow-main">
         <span class="flow-action ${cls}">${e.action}</span>
         <span class="flow-symbol">${sym}${star}</span>
-        <span class="flow-pct ${cls}">${formatPct(e.pct_change)}</span>
+        <span class="flow-pct ${cls}">${signedValue(e.delta_value)}</span>
       </div>
       <div class="flow-sub">
         <span class="flow-inst">${e.institution}</span>
-        <span class="flow-val">${formatValue(e.value)} · ${e.quarter || ""}</span>
+        <span class="flow-val">${shortShares(e.delta_shares)}</span>
       </div>
     </li>`;
   }).join("");
@@ -213,24 +288,23 @@ function renderMacro(fred) {
   }).join("");
 }
 
-function notifyNewFlows(events) {
+function notifyNewFlows(events, quarter) {
   if (!state.notif || !("Notification" in window) || Notification.permission !== "granted") return;
   let seen = [];
   try { seen = JSON.parse(localStorage.getItem(STORAGE.seenEvents)) || []; } catch {}
   const seenSet = new Set(seen);
-  const fresh = events.filter((e) => e.in_watchlist && !seenSet.has(eventId(e)));
-  const ids = events.map(eventId);
-  localStorage.setItem(STORAGE.seenEvents, JSON.stringify(ids.slice(0, 300)));
+  const fresh = events.filter((e) => !seenSet.has(eventId(e, quarter)));
+  const ids = events.map((e) => eventId(e, quarter));
+  localStorage.setItem(STORAGE.seenEvents, JSON.stringify(ids.slice(0, 400)));
 
   // Only notify if we had a prior baseline (avoid alerting on first ever load).
   if (seen.length === 0 || fresh.length === 0) return;
   const top = fresh[0];
   const verb = BUY_ACTIONS.has(top.action) ? "loading up on" : "offloading";
-  const extra = fresh.length > 1 ? ` (+${fresh.length - 1} more)` : "";
   notifyNewSignal({
     signal: `${top.institution} ${verb} ${top.ticker || top.issuer}`,
-    confidence: Math.abs(Math.round((Number(top.pct_change) || 0) * 100)),
-    timestamp: top.filed || new Date().toISOString(),
+    confidence: 0,
+    timestamp: new Date().toISOString(),
   });
 }
 
@@ -240,12 +314,21 @@ async function fetchFlows() {
     if (!res.ok) throw new Error("HTTP " + res.status);
     const data = await res.json();
     state.events = Array.isArray(data.events) ? data.events : [];
+    state.stocks = Array.isArray(data.stocks) ? data.stocks : [];
+
+    renderStocks();
     renderFlows();
     renderMacro(data.fred);
+
+    const q = data.quarters || {};
+    els.quarterLabel.textContent = q.current ? `${q.previous || "?"} → ${q.current}` : "";
     const gen = data.generated ? relativeTime(data.generated) : "";
-    els.flowsMeta.textContent = `${state.events.length} filings · updated ${gen}`;
-    notifyNewFlows(state.events);
+    els.stocksMeta.textContent = `${state.stocks.length} stocks with activity · updated ${gen}`;
+    els.flowsMeta.textContent = `${state.events.length} notable moves`;
+
+    notifyNewFlows(state.events, q.current || "");
   } catch (err) {
+    els.stocksList.innerHTML = `<li class="history-empty">Summary unavailable.</li>`;
     els.flowsList.innerHTML = `<li class="history-empty">Flows unavailable.</li>`;
   }
 }
@@ -355,6 +438,23 @@ function wireUI() {
     state.flowFilter = btn.dataset.filter;
     els.flowFilter.querySelectorAll(".seg-btn").forEach((b) => b.classList.toggle("active", b === btn));
     renderFlows();
+  });
+
+  els.stockFilter.addEventListener("click", (e) => {
+    const btn = e.target.closest(".seg-btn");
+    if (!btn) return;
+    state.stockFilter = btn.dataset.filter;
+    els.stockFilter.querySelectorAll(".seg-btn").forEach((b) => b.classList.toggle("active", b === btn));
+    renderStocks();
+  });
+
+  els.stocksList.addEventListener("click", (e) => {
+    const item = e.target.closest(".stock-item");
+    if (!item) return;
+    const cusip = item.dataset.cusip;
+    if (state.expanded.has(cusip)) state.expanded.delete(cusip);
+    else state.expanded.add(cusip);
+    item.classList.toggle("open");
   });
 
   document.addEventListener("visibilitychange", () => {
