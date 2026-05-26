@@ -71,3 +71,22 @@ Add a `FRED_API_KEY` repo secret to populate the macro grid.
 
 The committed `dashboard/events.json` ships with illustrative sample data so the
 UI renders before the first CI run replaces it.
+
+## Daily activity (Form 4 + 13D/13G)
+
+13F is quarterly, so it can't show daily trading. For day-to-day buying/selling,
+`scripts/collect_daily.py` scans SEC's **daily filing index** for the last few
+days and keeps filings about the top-100 companies:
+
+- **Form 4** — insider transactions (officers, directors, 10%+ owners); the
+  collector parses each one for open-market buys (P) / sells (S), share counts
+  and dollar value.
+- **SC 13D / 13G (+ /A)** — institutions crossing or changing a 5%+ stake.
+
+Output `dashboard/daily.json` powers the app's "Daily Activity" card (filter by
+Buys / Sells / 5%+ stakes). It runs **every weekday** after market close via
+`.github/workflows/collect_daily.yml`.
+
+Note: there is no public feed of *every* institution's trades intraday — 13F
+(quarterly) is the only comprehensive institutional source. Form 4 + 13D/13G are
+the timely, daily-updating signals of who is actually buying and selling.

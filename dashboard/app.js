@@ -1,11 +1,13 @@
 const SIGNAL_URL = "signals/signal.json";
 const EVENTS_URL = "events.json";
+const DAILY_URL = "daily.json";
 const STORAGE = {
   history: "spx0dte:history",
   interval: "spx0dte:interval",
   notif: "spx0dte:notif",
   lastSignalKey: "spx0dte:lastSignalKey",
   seenEvents: "spx0dte:seenEvents",
+  seenDaily: "spx0dte:seenDaily",
 };
 
 const els = {
@@ -31,6 +33,9 @@ const els = {
   stocksMeta: document.getElementById("stocksMeta"),
   stockFilter: document.getElementById("stockFilter"),
   quarterLabel: document.getElementById("quarterLabel"),
+  dailyList: document.getElementById("dailyList"),
+  dailyMeta: document.getElementById("dailyMeta"),
+  dailyFilter: document.getElementById("dailyFilter"),
   macroCard: document.getElementById("macroCard"),
   macroGrid: document.getElementById("macroGrid"),
 };
@@ -42,8 +47,10 @@ const state = {
   timer: null,
   events: [],
   stocks: [],
+  daily: [],
   flowFilter: "all",
   stockFilter: "all",
+  dailyFilter: "all",
   expanded: new Set(),
 };
 
@@ -176,6 +183,100 @@ function shortShares(n) {
   if (a >= 1e6) return sign + (a / 1e6).toFixed(1) + "M sh";
   if (a >= 1e3) return sign + (a / 1e3).toFixed(0) + "K sh";
   return sign + a + " sh";
+}
+
+// ----- daily activity (Form 4 / 13D / 13G) -----
+
+function shortDate(d) {
+  const dt = new Date(d);
+  if (isNaN(dt.getTime())) return d || "";
+  return dt.toLocaleDateString(undefined, { month: "short", day: "numeric" });
+}
+
+function passesDailyFilter(a) {
+  switch (state.dailyFilter) {
+    case "buy":   return a.type === "insider" && a.action === "BUY";
+    case "sell":  return a.type === "insider" && a.action === "SELL";
+    case "stake": return a.type === "stake";
+    default:      return true;
+  }
+}
+
+function renderDaily() {
+  const list = state.daily.filter(passesDailyFilter);
+  if (list.length === 0) {
+    els.dailyList.innerHTML = `<li class="history-empty">No matching activity.</li>`;
+    return;
+  }
+  els.dailyList.innerHTML = list.map((a) => {
+    if (a.type === "stake") {
+      return `<li class="flow-item">
+        <div class="flow-main">
+          <span class="flow-action stake">5%+</span>
+          <span class="flow-symbol">${a.ticker}</span>
+          <span class="flow-pct muted">${a.form}</span>
+        </div>
+        <div class="flow-sub">
+          <span class="flow-inst">${a.company || ""}</span>
+          <span class="flow-val">${shortDate(a.date)}</span>
+        </div>
+      </li>`;
+    }
+    const cls = a.action === "BUY" ? "buy" : "sell";
+    const who = a.title ? `${a.owner} · ${a.title}` : a.owner;
+    const om = a.open_market ? "" : ` <span class="muted">(non-open-mkt)</span>`;
+    return `<li class="flow-item">
+      <div class="flow-main">
+        <span class="flow-action ${cls}">${a.action}</span>
+        <span class="flow-symbol">${a.ticker}</span>
+        <span class="flow-pct ${cls}">${signedValue(a.action === "BUY" ? a.value : -a.value)}</span>
+      </div>
+      <div class="flow-sub">
+        <span class="flow-inst">${who || "Insider"}${om}</span>
+        <span class="flow-val">${shortShares(a.action === "BUY" ? a.shares : -a.shares)} · ${shortDate(a.date)}</span>
+      </div>
+    </li>`;
+  }).join("");
+}
+
+function dailyId(a) {
+  return `${a.date}|${a.ticker}|${a.form}|${a.owner || ""}|${a.shares || 0}`;
+}
+
+function notifyNewDaily(items) {
+  if (!state.notif || !("Notification" in window) || Notification.permission !== "granted") return;
+  let seen = [];
+  try { seen = JSON.parse(localStorage.getItem(STORAGE.seenDaily)) || []; } catch {}
+  const seenSet = new Set(seen);
+  const fresh = items.filter((a) => !seenSet.has(dailyId(a)));
+  localStorage.setItem(STORAGE.seenDaily, JSON.stringify(items.map(dailyId).slice(0, 500)));
+  if (seen.length === 0 || fresh.length === 0) return;
+  const top = fresh[0];
+  const verb = top.type === "stake" ? "filed a 5%+ stake in"
+    : top.action === "BUY" ? "bought" : "sold";
+  const who = top.owner || "An insider";
+  notifyNewSignal({
+    signal: `${who} ${verb} ${top.ticker}`,
+    confidence: 0,
+    timestamp: new Date().toISOString(),
+  });
+}
+
+async function fetchDaily() {
+  try {
+    const res = await fetch(DAILY_URL + "?t=" + Date.now(), { cache: "no-store" });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const data = await res.json();
+    state.daily = Array.isArray(data.activity) ? data.activity : [];
+    renderDaily();
+    const gen = data.generated ? relativeTime(data.generated) : "";
+    const m = data.meta || {};
+    els.dailyMeta.textContent =
+      `${m.insider || 0} insider · ${m.stake || 0} stakes · last ${data.lookback_days || 5}d · ${gen}`;
+    notifyNewDaily(state.daily);
+  } catch (err) {
+    els.dailyList.innerHTML = `<li class="history-empty">Daily activity unavailable.</li>`;
+  }
 }
 
 // ----- per-stock ownership summary -----
@@ -448,6 +549,14 @@ function wireUI() {
     renderStocks();
   });
 
+  els.dailyFilter.addEventListener("click", (e) => {
+    const btn = e.target.closest(".seg-btn");
+    if (!btn) return;
+    state.dailyFilter = btn.dataset.filter;
+    els.dailyFilter.querySelectorAll(".seg-btn").forEach((b) => b.classList.toggle("active", b === btn));
+    renderDaily();
+  });
+
   els.stocksList.addEventListener("click", (e) => {
     const item = e.target.closest(".stock-item");
     if (!item) return;
@@ -458,7 +567,7 @@ function wireUI() {
   });
 
   document.addEventListener("visibilitychange", () => {
-    if (document.visibilityState === "visible") { fetchSignal(); fetchFlows(); }
+    if (document.visibilityState === "visible") { fetchSignal(); fetchDaily(); fetchFlows(); }
   });
 }
 
@@ -472,6 +581,7 @@ function init() {
   updateNotifStatus();
   renderHistory();
   fetchSignal();
+  fetchDaily();
   fetchFlows();
   startPolling();
   registerSW();

@@ -52,6 +52,23 @@
 
     <section class="card">
       <div class="card-header">
+        <h2>Daily Activity — Top 100 S&amp;P</h2>
+        <span id="dailyQuarter" class="quarter-label"></span>
+      </div>
+      <div class="seg full" id="dailyFilter" role="tablist">
+        <button class="seg-btn active" data-filter="all">All</button>
+        <button class="seg-btn" data-filter="buy">Buys</button>
+        <button class="seg-btn" data-filter="sell">Sells</button>
+        <button class="seg-btn" data-filter="stake">5%+ stakes</button>
+      </div>
+      <ul id="dailyList" class="flows-list">
+        <li class="history-empty">Loading daily filings…</li>
+      </ul>
+      <div id="dailyMeta" class="flows-meta"></div>
+    </section>
+
+    <section class="card">
+      <div class="card-header">
         <h2>Institutional Ownership — Top 100 S&amp;P</h2>
         <span id="quarterLabel" class="quarter-label"></span>
       </div>

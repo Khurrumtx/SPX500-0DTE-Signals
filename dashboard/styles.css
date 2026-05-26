@@ -257,6 +257,8 @@ body {
 }
 .flow-action.buy  { background: rgba(46,204,113,0.18); color: var(--green); }
 .flow-action.sell { background: rgba(255,93,108,0.18); color: var(--red); }
+.flow-action.stake { background: rgba(245,196,81,0.18); color: var(--yellow); }
+.flow-pct.muted, .flow-sub .muted { color: var(--muted); }
 .flow-symbol { font-weight: 700; font-size: 15px; }
 .watch-star { color: var(--yellow); font-size: 12px; margin-left: 3px; }
 .flow-pct { margin-left: auto; font-weight: 700; font-size: 13px; color: var(--muted); }

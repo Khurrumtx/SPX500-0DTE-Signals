@@ -1,4 +1,4 @@
-const CACHE = "spx0dte-v2";
+const CACHE = "spx0dte-v3";
 const ASSETS = [
   "./",
   "index.html",
@@ -25,7 +25,9 @@ self.addEventListener("activate", (e) => {
 self.addEventListener("fetch", (e) => {
   const url = new URL(e.request.url);
 
-  if (url.pathname.endsWith("/signals/signal.json") || url.pathname.endsWith("/events.json")) {
+  if (url.pathname.endsWith("/signals/signal.json") ||
+      url.pathname.endsWith("/events.json") ||
+      url.pathname.endsWith("/daily.json")) {
     e.respondWith(
       fetch(e.request).catch(() => caches.match(e.request))
     );

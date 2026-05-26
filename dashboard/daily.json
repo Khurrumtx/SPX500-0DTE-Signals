@@ -1,0 +1,17 @@
+{
+  "generated": "2026-05-23T22:30:00+00:00",
+  "lookback_days": 5,
+  "activity": [
+    { "date": "2026-05-22", "ticker": "AAPL", "company": "APPLE INC", "form": "4", "type": "insider", "owner": "COOK TIMOTHY D", "title": "CEO", "action": "SELL", "shares": 150000, "value": 29350000, "open_market": true, "ten_pct": false, "codes": ["S"] },
+    { "date": "2026-05-22", "ticker": "TSLA", "company": "TESLA INC", "form": "SC 13G/A", "type": "stake", "action": "STAKE", "owner": "", "note": "5%+ ownership filing" },
+    { "date": "2026-05-22", "ticker": "JPM", "company": "JPMORGAN CHASE & CO", "form": "4", "type": "insider", "owner": "DIMON JAMES", "title": "CEO", "action": "BUY", "shares": 50000, "value": 11200000, "open_market": true, "ten_pct": false, "codes": ["P"] },
+    { "date": "2026-05-21", "ticker": "NVDA", "company": "NVIDIA CORP", "form": "4", "type": "insider", "owner": "HUANG JEN HSUN", "title": "CEO", "action": "SELL", "shares": 120000, "value": 13800000, "open_market": true, "ten_pct": false, "codes": ["S"] },
+    { "date": "2026-05-21", "ticker": "META", "company": "META PLATFORMS INC", "form": "4", "type": "insider", "owner": "ZUCKERBERG MARK", "title": "CEO", "action": "SELL", "shares": 40000, "value": 24000000, "open_market": true, "ten_pct": false, "codes": ["S"] },
+    { "date": "2026-05-20", "ticker": "SHW", "company": "SHERWIN WILLIAMS CO", "form": "SC 13D/A", "type": "stake", "action": "STAKE", "owner": "", "note": "5%+ ownership filing" },
+    { "date": "2026-05-20", "ticker": "DIS", "company": "WALT DISNEY CO", "form": "4", "type": "insider", "owner": "IGER ROBERT A", "title": "CEO", "action": "BUY", "shares": 25000, "value": 2700000, "open_market": true, "ten_pct": false, "codes": ["P"] }
+  ],
+  "meta": {
+    "total": 7, "insider": 5, "stake": 2, "companies": 100,
+    "note": "Seed/sample feed so the UI renders before the collector runs in CI. Numbers are illustrative."
+  }
+}
