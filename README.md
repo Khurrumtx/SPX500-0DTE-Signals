@@ -90,3 +90,23 @@ Buys / Sells / 5%+ stakes). It runs **every weekday** after market close via
 Note: there is no public feed of *every* institution's trades intraday — 13F
 (quarterly) is the only comprehensive institutional source. Form 4 + 13D/13G are
 the timely, daily-updating signals of who is actually buying and selling.
+
+## Data sources & keys
+
+Two ways to get the daily insider feed:
+
+| Source | Script | Key needed | Notes |
+| --- | --- | --- | --- |
+| **SEC EDGAR (direct)** | `collect_daily.py` | none (just a User-Agent email) | Free, unlimited, scrapes the daily index + Form 4 XML. Default. |
+| **Alpha Vantage** | `collect_av.py` | `ALPHAVANTAGE_API_KEY` | Parsed SEC insider JSON (no XML). Free tier = **25 req/day, 1/sec**, so it only covers ~20 tickers/day; a premium key is needed for all 100. |
+
+The committed `dashboard/daily.json` currently holds **real AAPL insider data**
+pulled from Alpha Vantage as a working sample.
+
+**Keys live in GitHub Actions secrets, never in the repo or chat.** Add them at
+**Settings → Secrets and variables → Actions**:
+- `FRED_API_KEY` — macro grid (optional).
+- `ALPHAVANTAGE_API_KEY` — only if you use the Alpha Vantage collector.
+
+SEC EDGAR needs **no key** — its APIs are free and open; the only requirement is
+a descriptive `User-Agent` with a contact email, already set in the workflows.

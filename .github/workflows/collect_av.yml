@@ -1,0 +1,49 @@
+name: Collect daily activity (Alpha Vantage)
+
+# Alternative to collect_daily.yml that uses Alpha Vantage's parsed SEC insider
+# data instead of scraping EDGAR. Requires an ALPHAVANTAGE_API_KEY secret.
+# Free tier is 25 req/day, so AV_MAX_TICKERS is kept small; raise it with a
+# premium key. Disabled on schedule by default — run manually until you've
+# added the secret and chosen a tier.
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_tickers:
+        description: "How many top-100 tickers to pull (free tier ~20/day)"
+        default: "20"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collect-av
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run Alpha Vantage collector
+        env:
+          ALPHAVANTAGE_API_KEY: ${{ secrets.ALPHAVANTAGE_API_KEY }}
+          AV_MAX_TICKERS: ${{ github.event.inputs.max_tickers }}
+        run: python3 scripts/collect_av.py
+
+      - name: Commit updated feed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet -- dashboard/daily.json; then
+            git add dashboard/daily.json
+            git commit -m "Update daily insider feed (Alpha Vantage)"
+            git push
+          else
+            echo "No changes to daily.json"
+          fi
