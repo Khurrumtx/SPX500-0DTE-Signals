@@ -1,0 +1,19 @@
+{
+  "description": "Major institutions & funds whose 13F-HR filings we track. CIKs are validated at runtime (name match + presence of 13F-HR filings); mismatches are skipped and logged. Add/remove entries freely.",
+  "institutions": [
+    { "name": "Berkshire Hathaway",        "cik": "0001067983" },
+    { "name": "BlackRock",                 "cik": "0001364742" },
+    { "name": "Vanguard Group",            "cik": "0000102909" },
+    { "name": "State Street",              "cik": "0000093751" },
+    { "name": "FMR LLC (Fidelity)",        "cik": "0000315066" },
+    { "name": "Citadel Advisors",          "cik": "0001423053" },
+    { "name": "Renaissance Technologies",  "cik": "0001037389" },
+    { "name": "Two Sigma Investments",     "cik": "0001179392" },
+    { "name": "Bridgewater Associates",    "cik": "0001350694" },
+    { "name": "Morgan Stanley",            "cik": "0000895421" },
+    { "name": "JPMorgan Chase",            "cik": "0000019617" },
+    { "name": "Goldman Sachs Group",       "cik": "0000886982" },
+    { "name": "Bank of America",           "cik": "0000070858" },
+    { "name": "Soros Fund Management",     "cik": "0001029160" }
+  ]
+}

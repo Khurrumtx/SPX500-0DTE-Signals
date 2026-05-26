@@ -1,0 +1,62 @@
+{
+  "generated": "2026-05-23T13:00:00+00:00",
+  "quarters": { "current": "2026Q2", "previous": "2026Q1" },
+  "stocks": [
+    {
+      "ticker": "AAPL", "issuer": "APPLE INC", "cusip": "037833100",
+      "holders": 4120, "buyers": 1880, "sellers": 1640, "new": 210, "exits": 145,
+      "net_shares": 92000000, "net_value": 24500000000,
+      "top_buyers": [
+        { "name": "Vanguard Group Inc", "action": "ADD", "delta_shares": 31000000, "delta_value": 8200000000 },
+        { "name": "BlackRock Inc", "action": "ADD", "delta_shares": 24000000, "delta_value": 6300000000 },
+        { "name": "State Street Corp", "action": "ADD", "delta_shares": 12000000, "delta_value": 3100000000 }
+      ],
+      "top_sellers": [
+        { "name": "Berkshire Hathaway Inc", "action": "TRIM", "delta_shares": -300000000, "delta_value": -22000000000 },
+        { "name": "Morgan Stanley", "action": "TRIM", "delta_shares": -9000000, "delta_value": -2400000000 }
+      ]
+    },
+    {
+      "ticker": "NVDA", "issuer": "NVIDIA CORP", "cusip": "67066G104",
+      "holders": 3950, "buyers": 2210, "sellers": 1180, "new": 305, "exits": 90,
+      "net_shares": 140000000, "net_value": 58000000000,
+      "top_buyers": [
+        { "name": "BlackRock Inc", "action": "ADD", "delta_shares": 110000000, "delta_value": 12000000000 },
+        { "name": "FMR LLC", "action": "ADD", "delta_shares": 42000000, "delta_value": 4600000000 }
+      ],
+      "top_sellers": [
+        { "name": "Renaissance Technologies LLC", "action": "TRIM", "delta_shares": -8000000, "delta_value": -900000000 }
+      ]
+    },
+    {
+      "ticker": "TSLA", "issuer": "TESLA INC", "cusip": "88160R101",
+      "holders": 2890, "buyers": 940, "sellers": 1510, "new": 60, "exits": 240,
+      "net_shares": -34000000, "net_value": -8600000000,
+      "top_buyers": [
+        { "name": "Vanguard Group Inc", "action": "ADD", "delta_shares": 4000000, "delta_value": 1000000000 }
+      ],
+      "top_sellers": [
+        { "name": "Citadel Advisors LLC", "action": "EXIT", "delta_shares": -12000000, "delta_value": -3000000000 },
+        { "name": "Two Sigma Investments LP", "action": "TRIM", "delta_shares": -6500000, "delta_value": -1600000000 }
+      ]
+    }
+  ],
+  "events": [
+    { "institution": "Berkshire Hathaway Inc", "action": "TRIM", "ticker": "AAPL", "issuer": "APPLE INC", "cusip": "037833100", "shares_prev": 905560000, "shares_curr": 605560000, "delta_shares": -300000000, "value": 44000000000, "delta_value": -22000000000, "highlight": true },
+    { "institution": "BlackRock Inc", "action": "ADD", "ticker": "NVDA", "issuer": "NVIDIA CORP", "cusip": "67066G104", "shares_prev": 410000000, "shares_curr": 520000000, "delta_shares": 110000000, "value": 58000000000, "delta_value": 12000000000, "highlight": true },
+    { "institution": "Citadel Advisors LLC", "action": "EXIT", "ticker": "TSLA", "issuer": "TESLA INC", "cusip": "88160R101", "shares_prev": 12000000, "shares_curr": 0, "delta_shares": -12000000, "value": 0, "delta_value": -3000000000, "highlight": true }
+  ],
+  "fred": [
+    { "series": "FEDFUNDS", "label": "Fed Funds Rate", "value": "4.33", "date": "2026-04-01", "prev": "4.58" },
+    { "series": "DGS10", "label": "10Y Treasury", "value": "4.21", "date": "2026-05-22", "prev": "4.18" },
+    { "series": "T10Y2Y", "label": "10Y-2Y Spread", "value": "0.42", "date": "2026-05-22", "prev": "0.39" },
+    { "series": "VIXCLS", "label": "VIX", "value": "17.85", "date": "2026-05-22", "prev": "18.40" }
+  ],
+  "meta": {
+    "stocks_with_activity": 3,
+    "total_events": 3,
+    "min_pct": 0.2,
+    "min_event_value": 25000000,
+    "note": "Seed/sample feed so the UI renders before the collector runs in CI. Numbers are illustrative."
+  }
+}

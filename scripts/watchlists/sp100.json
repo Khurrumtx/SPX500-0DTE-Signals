@@ -1,0 +1,15 @@
+{
+  "description": "Top ~100 S&P companies by market cap (watchlist for institutional-flow tagging). Tickers are resolved to SEC CIK at runtime.",
+  "tickers": [
+    "AAPL","MSFT","NVDA","AMZN","GOOGL","GOOG","META","BRK-B","AVGO","TSLA",
+    "LLY","JPM","V","UNH","XOM","MA","COST","HD","PG","JNJ",
+    "WMT","NFLX","ABBV","BAC","ORCL","CRM","CVX","KO","MRK","AMD",
+    "PEP","ADBE","ACN","LIN","TMO","MCD","CSCO","WFC","ABT","GE",
+    "IBM","NOW","DIS","CAT","QCOM","INTU","TXN","VZ","ISRG","CMCSA",
+    "AXP","BX","MS","DHR","RTX","AMGN","T","NEE","PFE","PM",
+    "GS","SPGI","UNP","LOW","HON","SCHW","BKNG","COP","UBER","SYK",
+    "BLK","ETN","C","TJX","VRTX","ADP","BSX","MDT","GILD","MMC",
+    "ADI","LMT","CB","PLD","REGN","MU","AMAT","FI","KLAC","PANW",
+    "SBUX","BMY","CI","SO","MO","DE","ELV","DUK","ICE","SHW"
+  ]
+}
