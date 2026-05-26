@@ -157,21 +157,30 @@ def round5(x: float) -> int:
     return int(round(x / 5.0) * 5)
 
 
+def decide_structure(sig: dict):
+    """Return (kind, right): kind in none/long/spread; right in CALL/PUT/None."""
+    if sig["direction"] == "NEUTRAL" or sig["conviction"] < 35:
+        return "none", None
+    right = "CALL" if sig["direction"] == "BULLISH" else "PUT"
+    prefer_long = sig["regime"] == "low" and sig["conviction"] >= 65
+    return ("long" if prefer_long else "spread"), right
+
+
 def build_trade(spx: float, sig: dict, T: float) -> dict:
     direction, conviction, rv = sig["direction"], sig["conviction"], sig["rv"]
     sigma = max(0.05, rv)
     expiry = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
-    if direction == "NEUTRAL" or conviction < 35:
+    kind, right = decide_structure(sig)
+    if kind == "none":
         return {"type": "none", "strategy": "No trade",
                 "rationale": "No clear directional edge (low conviction); standing aside.",
                 "expiry": f"0DTE ({expiry})"}
 
-    right = "CALL" if direction == "BULLISH" else "PUT"
     atm = round5(spx)
     atm_price = bs_price(spx, atm, T, sigma, right)
 
-    use_long = sig["regime"] == "low" and conviction >= 65 and atm_price * CONTRACT_MULT <= MAX_RISK
+    use_long = kind == "long" and atm_price * CONTRACT_MULT <= MAX_RISK
 
     if use_long:  # aggressive single long option
         contracts = max(1, int(MAX_RISK // (atm_price * CONTRACT_MULT)))
@@ -228,6 +237,112 @@ def build_trade(spx: float, sig: dict, T: float) -> dict:
     }
 
 
+def _to_price(r: dict):
+    for k in ("mark", "last"):
+        try:
+            v = float(r.get(k, ""))
+            if v > 0:
+                return v
+        except (ValueError, TypeError):
+            pass
+    try:
+        b, a = float(r.get("bid", "")), float(r.get("ask", ""))
+        if b > 0 and a > 0:
+            return (a + b) / 2
+    except (ValueError, TypeError):
+        pass
+    return None
+
+
+def fetch_option_chain(symbol: str, want_exp: str):
+    """Return {'chain': {(type, strike): mark}, 'expiration': exp} or None.
+    None when the premium endpoint is unavailable (free key) — caller falls back."""
+    data = av_get("REALTIME_OPTIONS", symbol=symbol, expiration=want_exp, datatype="json")
+    rows = data.get("data")
+    if not rows or "premium" in str(data.get("message", "")).lower():
+        return None
+    by_exp: dict[str, list] = {}
+    for r in rows:
+        by_exp.setdefault(r.get("expiration", ""), []).append(r)
+    if not by_exp:
+        return None
+    exp = want_exp if want_exp in by_exp else min((e for e in by_exp if e >= want_exp), default=sorted(by_exp)[0])
+    chain = {}
+    for r in by_exp[exp]:
+        try:
+            strike = round(float(r["strike"]), 2)
+        except (ValueError, TypeError, KeyError):
+            continue
+        mark = _to_price(r)
+        if mark is not None:
+            chain[(r.get("type", "").lower(), strike)] = mark
+    return {"chain": chain, "expiration": exp} if chain else None
+
+
+def build_trade_live(underlying: float, sig: dict, chainobj: dict) -> dict | None:
+    """Build a defined-risk trade from a real option chain (exact prices)."""
+    kind, right = decide_structure(sig)
+    exp = chainobj["expiration"]
+    if kind == "none":
+        return {"type": "none", "strategy": "No trade",
+                "rationale": "No clear directional edge (low conviction); standing aside.",
+                "expiry": f"0DTE ({exp})"}
+    chain = chainobj["chain"]
+    typ = "call" if right == "CALL" else "put"
+    strikes = sorted({s for (t, s) in chain if t == typ})
+    if not strikes:
+        return None
+    atm = min(strikes, key=lambda s: abs(s - underlying))
+    atm_mark = chain.get((typ, atm))
+    if not atm_mark or atm_mark <= 0:
+        return None
+    why = f"{sig['direction'].title()} bias (RSI {sig['rsi']}, conviction {sig['conviction']})"
+
+    if kind == "long" and atm_mark * CONTRACT_MULT <= MAX_RISK:
+        contracts = max(1, int(MAX_RISK // (atm_mark * CONTRACT_MULT)))
+        debit = atm_mark * CONTRACT_MULT * contracts
+        be = atm + atm_mark if right == "CALL" else atm - atm_mark
+        return {
+            "type": "long_option", "strategy": f"Long {right.title()} (0DTE)",
+            "expiry": f"0DTE ({exp})",
+            "legs": [{"action": "BUY", "right": right, "strike": atm, "est_price": round(atm_mark, 2)}],
+            "contracts": contracts, "est_debit": int(debit), "max_risk": int(debit),
+            "max_reward": "open-ended", "breakeven": round(be, 2),
+            "rationale": f"{why}; low vol favors buying premium. Live chain prices.",
+        }
+
+    best = None
+    for width in (5, 4, 3, 2, 1):
+        short_k = round(atm + width, 2) if right == "CALL" else round(atm - width, 2)
+        short_mark = chain.get((typ, short_k))
+        if short_mark is None:
+            continue
+        debit = atm_mark - short_mark
+        if debit > 0 and debit * CONTRACT_MULT <= MAX_RISK:
+            best = (width, short_k, short_mark, debit)
+            break
+    if best is None:
+        return None
+    width, short_k, short_mark, debit = best
+    contracts = max(1, int(MAX_RISK // (debit * CONTRACT_MULT)))
+    be = atm + debit if right == "CALL" else atm - debit
+    max_reward = (width * CONTRACT_MULT - debit * CONTRACT_MULT) * contracts
+    name = "Bull Call" if right == "CALL" else "Bear Put"
+    return {
+        "type": "debit_spread", "strategy": f"{name} Debit Spread (0DTE)",
+        "expiry": f"0DTE ({exp})",
+        "legs": [
+            {"action": "BUY", "right": right, "strike": atm, "est_price": round(atm_mark, 2)},
+            {"action": "SELL", "right": right, "strike": short_k, "est_price": round(short_mark, 2)},
+        ],
+        "contracts": contracts, "width": width,
+        "est_debit": int(debit * CONTRACT_MULT * contracts),
+        "max_risk": int(debit * CONTRACT_MULT * contracts), "max_reward": int(max_reward),
+        "breakeven": round(be, 2),
+        "rationale": f"{why}; defined-risk debit spread. Live chain prices.",
+    }
+
+
 def main() -> int:
     if not API_KEY:
         print("ERROR: set ALPHAVANTAGE_API_KEY", file=sys.stderr)
@@ -238,20 +353,39 @@ def main() -> int:
         print(f"data fetch failed: {e}", file=sys.stderr)
         return 1
 
-    spx = closes[0] * SPX_MULT
+    spy_last = closes[0]
+    spx = spy_last * SPX_MULT
     sig = compute_signal([c * SPX_MULT for c in closes])
-    trade = build_trade(spx, sig, hours_to_close_T())
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+
+    trade, pricing, instrument = None, "estimate", "SPX"
+    if os.environ.get("USE_LIVE_CHAIN", "1") != "0":
+        try:
+            chainobj = fetch_option_chain(SYMBOL, today)
+            if chainobj:
+                live = build_trade_live(spy_last, sig, chainobj)
+                if live:
+                    trade, pricing, instrument = live, "live", SYMBOL
+        except Exception as e:
+            print(f"chain fetch failed, using estimate: {e}", file=sys.stderr)
+    if trade is None:
+        trade = build_trade(spx, sig, hours_to_close_T())
+    trade["pricing"], trade["instrument"] = pricing, instrument
 
     direction = sig["direction"]
+    disc_price = ("Live option-chain prices; actual fills still vary."
+                  if pricing == "live" else
+                  "Prices are Black-Scholes estimates; actual fills vary.")
     payload = {
         "signal": "CALL" if direction == "BULLISH" else "PUT" if direction == "BEARISH" else "NONE",
         "timestamp": datetime.now(timezone.utc).isoformat(),
         "confidence": sig["conviction"],
         "direction": direction,
         "spx": round(spx, 2),
+        "pricing": pricing, "instrument": instrument,
         "rsi": sig["rsi"], "realized_vol": sig["rv"], "vol_regime": sig["regime"],
         "trade": trade,
-        "disclaimer": "Educational rule-based signal. 0DTE options are extremely high risk and can expire worthless. Not financial advice. Prices are Black-Scholes estimates; actual fills vary.",
+        "disclaimer": f"Educational rule-based signal. 0DTE options are extremely high risk and can expire worthless. Not financial advice. {disc_price}",
     }
     for path in (OUT, OUT_DASH):
         path.parent.mkdir(parents=True, exist_ok=True)

@@ -134,8 +134,9 @@ function renderTrade(trade, sig) {
     els.tradeBox.innerHTML = `
       <div class="trade-head">
         <span class="trade-name">${trade.strategy}</span>
-        <span class="trade-expiry">${trade.expiry || ""}</span>
+        <span class="trade-badge ${trade.pricing === "live" ? "live" : "est"}">${trade.pricing === "live" ? "LIVE " + (trade.instrument || "") : "ESTIMATE"}</span>
       </div>
+      <div class="trade-expiry-row">${trade.expiry || ""}${trade.instrument ? " · " + trade.instrument : ""}</div>
       <div class="legs">${legs}</div>
       <div class="trade-stats">
         <div><div class="ts-label">Max risk</div><div class="ts-val sell">${money(trade.max_risk)}</div></div>

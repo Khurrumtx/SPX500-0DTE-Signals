@@ -108,6 +108,12 @@ the timely, daily-updating signals of who is actually buying and selling.
   **max risk** (sized to `MAX_RISK`, default $1,000), max reward and breakeven.
 - Writes `signals/signal.json`, rendered in the app's top card.
 
+**Pricing:** with a **premium** Alpha Vantage key the engine pulls the real 0DTE
+option chain (`REALTIME_OPTIONS`) and shows **exact** strikes/debit/risk on SPY
+(1/10 of SPX, same exposure) — the card shows a green **LIVE** badge. With a free
+key it falls back to Black-Scholes **estimates** on SPX (grey **ESTIMATE** badge).
+Set `USE_LIVE_CHAIN=0` to force estimate mode.
+
 Runs a few times per US session via `.github/workflows/signal.yml` (needs
 `ALPHAVANTAGE_API_KEY`). GitHub's scheduler isn't real-time, so this suits a few
 signals a day, not second-by-second trading.
