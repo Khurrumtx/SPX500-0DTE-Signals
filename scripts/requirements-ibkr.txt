@@ -1,0 +1,6 @@
+# Local-only deps for scripts/ibkr_chain.py (pulls the IBKR 0DTE chain to Excel).
+# Install on the machine running TWS / IB Gateway:
+#   pip install -r scripts/requirements-ibkr.txt
+ib_insync>=0.9.86
+pandas>=2.0
+openpyxl>=3.1
