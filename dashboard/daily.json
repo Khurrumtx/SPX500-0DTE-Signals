@@ -1,7 +1,319 @@
 {
-  "generated": "2026-05-27T23:03:13.447984+00:00",
+  "generated": "2026-05-28T23:01:18.091107+00:00",
   "lookback_days": 5,
   "activity": [
+    {
+      "date": "20260527",
+      "ticker": "PANW",
+      "company": "Palo Alto Networks Inc",
+      "form": "4",
+      "type": "insider",
+      "owner": "Klarich Lee",
+      "title": "EVP Chief Product & Tech Ofcr",
+      "action": "SELL",
+      "shares": 62904,
+      "value": 16270351,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260527",
+      "ticker": "GILD",
+      "company": "GILEAD SCIENCES, INC.",
+      "form": "4",
+      "type": "insider",
+      "owner": "GILEAD SCIENCES, INC.",
+      "title": "",
+      "action": "BUY",
+      "shares": 471698,
+      "value": 12499997,
+      "open_market": false,
+      "ten_pct": true,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260527",
+      "ticker": "BKNG",
+      "company": "Booking Holdings Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "MILLONES PETER J",
+      "title": "EXECUTIVE VP, GENERAL COUNSEL",
+      "action": "SELL",
+      "shares": 62500,
+      "value": 10229456,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260527",
+      "ticker": "ADI",
+      "company": "ANALOG DEVICES INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "ROCHE VINCENT",
+      "title": "Chair & CEO",
+      "action": "BUY",
+      "shares": 0,
+      "value": 8643600,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "M",
+        "S"
+      ]
+    },
+    {
+      "date": "20260527",
+      "ticker": "CSCO",
+      "company": "CISCO SYSTEMS, INC.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Robbins Charles",
+      "title": "Chair and CEO",
+      "action": "SELL",
+      "shares": 21400,
+      "value": 2568583,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260527",
+      "ticker": "GOOG",
+      "company": "Alphabet Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Pichai Sundar",
+      "title": "Chief Executive Officer",
+      "action": "SELL",
+      "shares": 3700,
+      "value": 1403706,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "C",
+        "F"
+      ]
+    },
+    {
+      "date": "20260527",
+      "ticker": "GOOG",
+      "company": "Alphabet Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Schindler Philipp",
+      "title": "SVP, Chief Business Officer",
+      "action": "SELL",
+      "shares": 2013,
+      "value": 763691,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "C",
+        "F"
+      ]
+    },
+    {
+      "date": "20260527",
+      "ticker": "GOOG",
+      "company": "Alphabet Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Ashkenazi Anat",
+      "title": "SVP, Chief Financial Officer",
+      "action": "SELL",
+      "shares": 1780,
+      "value": 675296,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "C",
+        "F"
+      ]
+    },
+    {
+      "date": "20260527",
+      "ticker": "GOOG",
+      "company": "Alphabet Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Porat Ruth",
+      "title": "President and CIO",
+      "action": "SELL",
+      "shares": 1639,
+      "value": 621803,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "C",
+        "F"
+      ]
+    },
+    {
+      "date": "20260527",
+      "ticker": "GOOG",
+      "company": "Alphabet Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "WALKER JOHN KENT",
+      "title": "President, Global Affairs, CLO",
+      "action": "SELL",
+      "shares": 1639,
+      "value": 621803,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "C",
+        "F"
+      ]
+    },
+    {
+      "date": "20260527",
+      "ticker": "ICE",
+      "company": "Intercontinental Exchange, Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Bowen Sharon",
+      "title": "",
+      "action": "SELL",
+      "shares": 667,
+      "value": 100903,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260527",
+      "ticker": "MCD",
+      "company": "MCDONALDS CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "Erlinger Joseph M.",
+      "title": "President, McDonald's USA",
+      "action": "SELL",
+      "shares": 333,
+      "value": 93276,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260527",
+      "ticker": "SCHW",
+      "company": "SCHWAB CHARLES CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "HERRINGER FRANK C",
+      "title": "",
+      "action": "BUY",
+      "shares": 1602,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260527",
+      "ticker": "SCHW",
+      "company": "SCHWAB CHARLES CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "DODDS CHRISTOPHER V",
+      "title": "",
+      "action": "BUY",
+      "shares": 1602,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260527",
+      "ticker": "SCHW",
+      "company": "SCHWAB CHARLES CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "Sarin Arun",
+      "title": "",
+      "action": "BUY",
+      "shares": 1602,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260527",
+      "ticker": "SCHW",
+      "company": "SCHWAB CHARLES CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "SNEED PAULA A",
+      "title": "",
+      "action": "BUY",
+      "shares": 1602,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260527",
+      "ticker": "SCHW",
+      "company": "SCHWAB CHARLES CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "Ellis Stephen A",
+      "title": "",
+      "action": "BUY",
+      "shares": 1602,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260527",
+      "ticker": "SCHW",
+      "company": "SCHWAB CHARLES CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "Brown Marianne Catherine",
+      "title": "",
+      "action": "BUY",
+      "shares": 1602,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
     {
       "date": "20260526",
       "ticker": "WMT",
@@ -2017,1224 +2329,11 @@
       "codes": [
         "G"
       ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "BX",
-      "company": "Blackstone Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "SCHWARZMAN STEPHEN A",
-      "title": "",
-      "action": "BUY",
-      "shares": 9486795,
-      "value": 189735900,
-      "open_market": true,
-      "ten_pct": true,
-      "codes": [
-        "P"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "KO",
-      "company": "COCA COLA CO",
-      "form": "4",
-      "type": "insider",
-      "owner": "QUAN NANCY",
-      "title": "Executive Vice President",
-      "action": "BUY",
-      "shares": 0,
-      "value": 1436881,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "M",
-        "S"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "CSCO",
-      "company": "CISCO SYSTEMS, INC.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Patel Jeetendra I",
-      "title": "President and CPO",
-      "action": "SELL",
-      "shares": 7169,
-      "value": 840780,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "CSCO",
-      "company": "CISCO SYSTEMS, INC.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Stahlkopf Deborah L",
-      "title": "EVP and Chief Legal Officer",
-      "action": "SELL",
-      "shares": 6586,
-      "value": 772579,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "CSCO",
-      "company": "CISCO SYSTEMS, INC.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Patterson Mark",
-      "title": "EVP and CFO",
-      "action": "SELL",
-      "shares": 5512,
-      "value": 646484,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "VRTX",
-      "company": "VERTEX PHARMACEUTICALS INC / MA",
-      "form": "4",
-      "type": "insider",
-      "owner": "Bozic Carmen",
-      "title": "EVP and CMO",
-      "action": "SELL",
-      "shares": 1354,
-      "value": 613971,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "AMD",
-      "company": "ADVANCED MICRO DEVICES INC",
-      "form": "4",
-      "type": "insider",
-      "owner": "Papermaster Mark D",
-      "title": "Chief Technology Officer & EVP",
-      "action": "BUY",
-      "shares": 0,
-      "value": 509099,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "M",
-        "S"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "GOOG",
-      "company": "Alphabet Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Hennessy John L.",
-      "title": "",
-      "action": "SELL",
-      "shares": 1050,
-      "value": 412919,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "CSCO",
-      "company": "CISCO SYSTEMS, INC.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Tuszik Oliver",
-      "title": "EVP, Global Sales",
-      "action": "SELL",
-      "shares": 2761,
-      "value": 316438,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "DHR",
-      "company": "DANAHER CORP /DE/",
-      "form": "4",
-      "type": "insider",
-      "owner": "Couchara Georgeann",
-      "title": "SVP, Human Resources",
-      "action": "SELL",
-      "shares": 281,
-      "value": 45496,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "LLY",
-      "company": "ELI LILLY & Co",
-      "form": "4",
-      "type": "insider",
-      "owner": "LUCIANO JUAN R",
-      "title": "",
-      "action": "BUY",
-      "shares": 16,
-      "value": 15917,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "VRTX",
-      "company": "VERTEX PHARMACEUTICALS INC / MA",
-      "form": "4",
-      "type": "insider",
-      "owner": "Bunnage Mark E.",
-      "title": "EVP, Chief Scientific Officer",
-      "action": "SELL",
-      "shares": 33,
-      "value": 14963,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "LLY",
-      "company": "ELI LILLY & Co",
-      "form": "4",
-      "type": "insider",
-      "owner": "Alvarez Ralph",
-      "title": "",
-      "action": "BUY",
-      "shares": 12,
-      "value": 12416,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "LLY",
-      "company": "ELI LILLY & Co",
-      "form": "4",
-      "type": "insider",
-      "owner": "Fyrwald J Erik",
-      "title": "",
-      "action": "BUY",
-      "shares": 10,
-      "value": 9916,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "LLY",
-      "company": "ELI LILLY & Co",
-      "form": "4",
-      "type": "insider",
-      "owner": "Sulzberger Gabrielle",
-      "title": "",
-      "action": "BUY",
-      "shares": 5,
-      "value": 4958,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "AMZN",
-      "company": "AMAZON COM INC",
-      "form": "4",
-      "type": "insider",
-      "owner": "NOOYI INDRA K",
-      "title": "",
-      "action": "BUY",
-      "shares": 1602,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "M"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "AMZN",
-      "company": "AMAZON COM INC",
-      "form": "4",
-      "type": "insider",
-      "owner": "Ng Andrew Y.",
-      "title": "",
-      "action": "BUY",
-      "shares": 1984,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "M"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "AMZN",
-      "company": "AMAZON COM INC",
-      "form": "4",
-      "type": "insider",
-      "owner": "Herrington Douglas J",
-      "title": "CEO Worldwide Amazon Stores",
-      "action": "BUY",
-      "shares": 5611,
-      "value": 0,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "M",
-        "S"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "AMZN",
-      "company": "AMAZON COM INC",
-      "form": "4",
-      "type": "insider",
-      "owner": "Garman Matthew S",
-      "title": "CEO Amazon Web Services",
-      "action": "BUY",
-      "shares": 2025,
-      "value": 0,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "M",
-        "S"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "META",
-      "company": "Meta Platforms, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Alford Peggy",
-      "title": "",
-      "action": "BUY",
-      "shares": 600,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "M"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "META",
-      "company": "Meta Platforms, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Collison Patrick",
-      "title": "",
-      "action": "BUY",
-      "shares": 703,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "M"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "META",
-      "company": "Meta Platforms, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Houston Andrew",
-      "title": "",
-      "action": "BUY",
-      "shares": 600,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "M"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "META",
-      "company": "Meta Platforms, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Killefer Nancy",
-      "title": "",
-      "action": "BUY",
-      "shares": 600,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "M"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "META",
-      "company": "Meta Platforms, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "TAN HOCK E",
-      "title": "",
-      "action": "BUY",
-      "shares": 767,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "M"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "META",
-      "company": "Meta Platforms, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Travis Tracey Thomas",
-      "title": "",
-      "action": "BUY",
-      "shares": 600,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "M"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "META",
-      "company": "Meta Platforms, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "White Dana",
-      "title": "",
-      "action": "BUY",
-      "shares": 709,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "M"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "META",
-      "company": "Meta Platforms, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Xu Tony",
-      "title": "",
-      "action": "BUY",
-      "shares": 600,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "M"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "META",
-      "company": "Meta Platforms, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Andreessen Marc L",
-      "title": "",
-      "action": "BUY",
-      "shares": 480,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "M"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "META",
-      "company": "Meta Platforms, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Arnold John Douglas",
-      "title": "",
-      "action": "BUY",
-      "shares": 767,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "M"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "META",
-      "company": "Meta Platforms, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Elkann John",
-      "title": "",
-      "action": "BUY",
-      "shares": 632,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F",
-        "M"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "META",
-      "company": "Meta Platforms, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "KIMMITT ROBERT M",
-      "title": "",
-      "action": "BUY",
-      "shares": 600,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "M"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "META",
-      "company": "Meta Platforms, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Songhurst Charles",
-      "title": "",
-      "action": "BUY",
-      "shares": 601,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F",
-        "M"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "META",
-      "company": "Meta Platforms, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Anderson Aaron",
-      "title": "Chief Accounting Officer",
-      "action": "BUY",
-      "shares": 1233,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F",
-        "M"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "META",
-      "company": "Meta Platforms, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "LI SUSAN J",
-      "title": "Chief Financial Officer",
-      "action": "BUY",
-      "shares": 0,
-      "value": 0,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "C",
-        "F",
-        "M",
-        "S"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "META",
-      "company": "Meta Platforms, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Bosworth Andrew",
-      "title": "Chief Technology Officer",
-      "action": "BUY",
-      "shares": 414,
-      "value": 0,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "F",
-        "M",
-        "S"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "META",
-      "company": "Meta Platforms, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Cox Christopher K",
-      "title": "Chief Product Officer",
-      "action": "BUY",
-      "shares": 8261,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F",
-        "M"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "META",
-      "company": "Meta Platforms, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Mahoney Curtis J.",
-      "title": "Chief Legal Officer",
-      "action": "BUY",
-      "shares": 3197,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F",
-        "M"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "META",
-      "company": "Meta Platforms, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Olivan Javier",
-      "title": "Chief Operating Officer",
-      "action": "BUY",
-      "shares": 7178,
-      "value": 0,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "F",
-        "M",
-        "S"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "META",
-      "company": "Meta Platforms, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Powell Dina H.",
-      "title": "President and Vice Chairman",
-      "action": "BUY",
-      "shares": 5251,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F",
-        "M"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "ACN",
-      "company": "Accenture plc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Sarin Arun",
-      "title": "",
-      "action": "BUY",
-      "shares": 14,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "ACN",
-      "company": "Accenture plc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Travis Tracey Thomas",
-      "title": "",
-      "action": "BUY",
-      "shares": 15,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "ACN",
-      "company": "Accenture plc",
-      "form": "4",
-      "type": "insider",
-      "owner": "McKinstry Nancy",
-      "title": "",
-      "action": "BUY",
-      "shares": 12,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "ACN",
-      "company": "Accenture plc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Price Paula A",
-      "title": "",
-      "action": "BUY",
-      "shares": 15,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "ACN",
-      "company": "Accenture plc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Burgum Melissa A",
-      "title": "Chief Accounting Officer",
-      "action": "BUY",
-      "shares": 23,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "ACN",
-      "company": "Accenture plc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Sweet Julie Spellman",
-      "title": "Chair and CEO",
-      "action": "BUY",
-      "shares": 49,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "ACN",
-      "company": "Accenture plc",
-      "form": "4",
-      "type": "insider",
-      "owner": "RENDUCHINTALA VENKATA S M",
-      "title": "",
-      "action": "BUY",
-      "shares": 9,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "ACN",
-      "company": "Accenture plc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Unruch Joel",
-      "title": "General Counsel/Corp Secretary",
-      "action": "BUY",
-      "shares": 90,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "ACN",
-      "company": "Accenture plc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Walsh John F",
-      "title": "CEO-The Americas",
-      "action": "BUY",
-      "shares": 25,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "ACN",
-      "company": "Accenture plc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Sharma Manish",
-      "title": "Chief Strategy & Services Ofcr",
-      "action": "BUY",
-      "shares": 17,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "ACN",
-      "company": "Accenture plc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Jope Alan C.",
-      "title": "",
-      "action": "BUY",
-      "shares": 15,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "ACN",
-      "company": "Accenture plc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Brudermueller Martin",
-      "title": "",
-      "action": "BUY",
-      "shares": 9,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "ACN",
-      "company": "Accenture plc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Park Angie Y",
-      "title": "Chief Financial Officer",
-      "action": "BUY",
-      "shares": 24,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "ACN",
-      "company": "Accenture plc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Nason Jennifer",
-      "title": "",
-      "action": "BUY",
-      "shares": 9,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "ACN",
-      "company": "Accenture plc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Uotani Masahiko",
-      "title": "",
-      "action": "BUY",
-      "shares": 9,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "ACN",
-      "company": "Accenture plc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Hogan Catherine Kiernan",
-      "title": "Chief Operating Officer",
-      "action": "BUY",
-      "shares": 54,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "ACN",
-      "company": "Accenture plc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Clifford Katherine Lee",
-      "title": "Chief Leadership & HR Officer",
-      "action": "BUY",
-      "shares": 51,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "UBER",
-      "company": "Uber Technologies, Inc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Ceremony Glen",
-      "title": "See Remarks",
-      "action": "BUY",
-      "shares": 3326,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F",
-        "M"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "UBER",
-      "company": "Uber Technologies, Inc",
-      "form": "4",
-      "type": "insider",
-      "owner": "West Tony",
-      "title": "See Remarks",
-      "action": "BUY",
-      "shares": 3626,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F",
-        "M"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "UBER",
-      "company": "Uber Technologies, Inc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Hazelbaker Jill",
-      "title": "See Remarks",
-      "action": "BUY",
-      "shares": 4355,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F",
-        "M"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "UBER",
-      "company": "Uber Technologies, Inc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Macdonald Andrew",
-      "title": "See Remarks",
-      "action": "BUY",
-      "shares": 4483,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F",
-        "M"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "UBER",
-      "company": "Uber Technologies, Inc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Krishnamurthy Balaji (A)",
-      "title": "Chief Financial Officer",
-      "action": "BUY",
-      "shares": 2139,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F",
-        "M"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "DHR",
-      "company": "DANAHER CORP /DE/",
-      "form": "4",
-      "type": "insider",
-      "owner": "Lamanna Charles W",
-      "title": "",
-      "action": "BUY",
-      "shares": 680,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "DHR",
-      "company": "DANAHER CORP /DE/",
-      "form": "4",
-      "type": "insider",
-      "owner": "Dewan Feroz",
-      "title": "",
-      "action": "BUY",
-      "shares": 680,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "DHR",
-      "company": "DANAHER CORP /DE/",
-      "form": "4",
-      "type": "insider",
-      "owner": "Zerhouni Elias A.",
-      "title": "",
-      "action": "BUY",
-      "shares": 680,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "DHR",
-      "company": "DANAHER CORP /DE/",
-      "form": "4",
-      "type": "insider",
-      "owner": "List Teri",
-      "title": "",
-      "action": "BUY",
-      "shares": 680,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "DHR",
-      "company": "DANAHER CORP /DE/",
-      "form": "4",
-      "type": "insider",
-      "owner": "Sanders A Shane",
-      "title": "",
-      "action": "BUY",
-      "shares": 680,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "DHR",
-      "company": "DANAHER CORP /DE/",
-      "form": "4",
-      "type": "insider",
-      "owner": "SPOON ALAN G",
-      "title": "",
-      "action": "BUY",
-      "shares": 680,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "DHR",
-      "company": "DANAHER CORP /DE/",
-      "form": "4",
-      "type": "insider",
-      "owner": "Stevens Raymond C",
-      "title": "",
-      "action": "BUY",
-      "shares": 680,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "DHR",
-      "company": "DANAHER CORP /DE/",
-      "form": "4",
-      "type": "insider",
-      "owner": "FILLER LINDA",
-      "title": "",
-      "action": "BUY",
-      "shares": 680,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260519",
-      "ticker": "BAC",
-      "company": "BANK OF AMERICA CORP /DE/",
-      "form": "4",
-      "type": "insider",
-      "owner": "MOYNIHAN BRIAN T",
-      "title": "Chair and CEO",
-      "action": "BUY",
-      "shares": 0,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "D",
-        "M"
-      ]
     }
   ],
   "meta": {
-    "total": 186,
-    "insider": 186,
+    "total": 134,
+    "insider": 134,
     "stake": 0,
     "companies": 97
   }
