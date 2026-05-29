@@ -1,7 +1,297 @@
 {
-  "generated": "2026-05-28T23:01:18.091107+00:00",
+  "generated": "2026-05-29T22:59:13.125933+00:00",
   "lookback_days": 5,
   "activity": [
+    {
+      "date": "20260528",
+      "ticker": "SYK",
+      "company": "STRYKER CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "STRYKER RONDA E",
+      "title": "",
+      "action": "SELL",
+      "shares": 310000,
+      "value": 96792668,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260528",
+      "ticker": "SCHW",
+      "company": "SCHWAB CHARLES CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "Wurster Richard A",
+      "title": "President & CEO",
+      "action": "BUY",
+      "shares": 21959,
+      "value": 1849512,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "P"
+      ]
+    },
+    {
+      "date": "20260528",
+      "ticker": "META",
+      "company": "Meta Platforms, Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Olivan Javier",
+      "title": "Chief Operating Officer",
+      "action": "SELL",
+      "shares": 1466,
+      "value": 892764,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260528",
+      "ticker": "ICE",
+      "company": "Intercontinental Exchange, Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Surdykowski Andrew J",
+      "title": "General Counsel",
+      "action": "SELL",
+      "shares": 2508,
+      "value": 693072,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "M",
+        "S"
+      ]
+    },
+    {
+      "date": "20260528",
+      "ticker": "AMAT",
+      "company": "APPLIED MATERIALS INC /DE",
+      "form": "4",
+      "type": "insider",
+      "owner": "BRUNER JUDY",
+      "title": "",
+      "action": "SELL",
+      "shares": 1128,
+      "value": 507600,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260528",
+      "ticker": "MO",
+      "company": "ALTRIA GROUP, INC.",
+      "form": "4",
+      "type": "insider",
+      "owner": "KELLY ENNIS DEBRA J",
+      "title": "",
+      "action": "SELL",
+      "shares": 5790,
+      "value": 418317,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260528",
+      "ticker": "MO",
+      "company": "ALTRIA GROUP, INC.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Strahlman Ellen R",
+      "title": "",
+      "action": "SELL",
+      "shares": 2000,
+      "value": 145118,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260528",
+      "ticker": "MDT",
+      "company": "Medtronic plc",
+      "form": "4",
+      "type": "insider",
+      "owner": "Wall Brett A.",
+      "title": "EVP & Pres Neuroscience",
+      "action": "BUY",
+      "shares": 26907,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "M"
+      ]
+    },
+    {
+      "date": "20260528",
+      "ticker": "MDT",
+      "company": "Medtronic plc",
+      "form": "4",
+      "type": "insider",
+      "owner": "Martha Geoffrey",
+      "title": "Chairman and CEO",
+      "action": "BUY",
+      "shares": 94963,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "M"
+      ]
+    },
+    {
+      "date": "20260528",
+      "ticker": "MDT",
+      "company": "Medtronic plc",
+      "form": "4",
+      "type": "insider",
+      "owner": "KIIL HARRY SKIP",
+      "title": "EVP & President Cardiovascular",
+      "action": "BUY",
+      "shares": 15195,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "M"
+      ]
+    },
+    {
+      "date": "20260528",
+      "ticker": "MDT",
+      "company": "Medtronic plc",
+      "form": "4",
+      "type": "insider",
+      "owner": "Marinaro Michael",
+      "title": "EVP, Pres MedSurg and Americas",
+      "action": "BUY",
+      "shares": 18994,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "M"
+      ]
+    },
+    {
+      "date": "20260528",
+      "ticker": "MDT",
+      "company": "Medtronic plc",
+      "form": "4",
+      "type": "insider",
+      "owner": "Walter Matthew R.",
+      "title": "SVP, Chief HR Officer",
+      "action": "BUY",
+      "shares": 9149,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "M"
+      ]
+    },
+    {
+      "date": "20260528",
+      "ticker": "MDT",
+      "company": "Medtronic plc",
+      "form": "4",
+      "type": "insider",
+      "owner": "Blomquist Denise L.",
+      "title": "Chief Accounting Officer",
+      "action": "BUY",
+      "shares": 1712,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "M"
+      ]
+    },
+    {
+      "date": "20260528",
+      "ticker": "SCHW",
+      "company": "SCHWAB CHARLES CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "ADAMS JOHN K JR",
+      "title": "",
+      "action": "BUY",
+      "shares": 1602,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260528",
+      "ticker": "SCHW",
+      "company": "SCHWAB CHARLES CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "Dea Joan",
+      "title": "",
+      "action": "BUY",
+      "shares": 1602,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260528",
+      "ticker": "SCHW",
+      "company": "SCHWAB CHARLES CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "Ruffel Charles A.",
+      "title": "",
+      "action": "BUY",
+      "shares": 1602,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260528",
+      "ticker": "SCHW",
+      "company": "SCHWAB CHARLES CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "Schwab-Pomerantz Carolyn",
+      "title": "",
+      "action": "BUY",
+      "shares": 1602,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
     {
       "date": "20260527",
       "ticker": "PANW",
@@ -1983,357 +2273,11 @@
         "M",
         "S"
       ]
-    },
-    {
-      "date": "20260520",
-      "ticker": "SCHW",
-      "company": "SCHWAB CHARLES CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Schwab Charles R.",
-      "title": "Co-Chairman",
-      "action": "SELL",
-      "shares": 27500,
-      "value": 2536127,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260520",
-      "ticker": "JPM",
-      "company": "JPMORGAN CHASE & CO",
-      "form": "4",
-      "type": "insider",
-      "owner": "Friedman Stacey",
-      "title": "General Counsel",
-      "action": "SELL",
-      "shares": 5468,
-      "value": 1641855,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260520",
-      "ticker": "ELV",
-      "company": "Elevance Health, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Penczek Ronald W",
-      "title": "CAO & Controller",
-      "action": "BUY",
-      "shares": 0,
-      "value": 450578,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "M",
-        "S"
-      ]
-    },
-    {
-      "date": "20260520",
-      "ticker": "ICE",
-      "company": "Intercontinental Exchange, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Gardiner Warren",
-      "title": "Chief Financial Officer",
-      "action": "SELL",
-      "shares": 2490,
-      "value": 390033,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260520",
-      "ticker": "ISRG",
-      "company": "INTUITIVE SURGICAL INC",
-      "form": "4",
-      "type": "insider",
-      "owner": "Brosius Mark",
-      "title": "EVP & Chief Mfg and Supply Cha",
-      "action": "SELL",
-      "shares": 54,
-      "value": 23463,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260520",
-      "ticker": "BAC",
-      "company": "BANK OF AMERICA CORP /DE/",
-      "form": "4",
-      "type": "insider",
-      "owner": "MERRILL LYNCH, PIERCE, FENNER & SMITH INC.",
-      "title": "",
-      "action": "BUY",
-      "shares": 0,
-      "value": 10610,
-      "open_market": true,
-      "ten_pct": true,
-      "codes": [
-        "P",
-        "S"
-      ]
-    },
-    {
-      "date": "20260520",
-      "ticker": "BRK-B",
-      "company": "BERKSHIRE HATHAWAY INC",
-      "form": "4",
-      "type": "insider",
-      "owner": "BUFFETT WARREN E",
-      "title": "",
-      "action": "BUY",
-      "shares": 208,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": true,
-      "codes": [
-        "C",
-        "G"
-      ]
-    },
-    {
-      "date": "20260520",
-      "ticker": "CMCSA",
-      "company": "COMCAST CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "ROBERTS BRIAN L",
-      "title": "Chairman of Board & Co-CEO",
-      "action": "SELL",
-      "shares": 202500,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "G"
-      ]
-    },
-    {
-      "date": "20260520",
-      "ticker": "DUK",
-      "company": "Duke Energy CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "CRAVER THEODORE F JR",
-      "title": "",
-      "action": "SELL",
-      "shares": 2402,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "G"
-      ]
-    },
-    {
-      "date": "20260520",
-      "ticker": "ICE",
-      "company": "Intercontinental Exchange, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Hill Jonathan Hopkin",
-      "title": "",
-      "action": "BUY",
-      "shares": 1671,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A",
-        "F"
-      ]
-    },
-    {
-      "date": "20260520",
-      "ticker": "ICE",
-      "company": "Intercontinental Exchange, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Bowen Sharon",
-      "title": "",
-      "action": "BUY",
-      "shares": 1538,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260520",
-      "ticker": "ICE",
-      "company": "Intercontinental Exchange, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Cooper Shantella E.",
-      "title": "",
-      "action": "BUY",
-      "shares": 1538,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260520",
-      "ticker": "ICE",
-      "company": "Intercontinental Exchange, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "NOONAN THOMAS E",
-      "title": "",
-      "action": "BUY",
-      "shares": 1538,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260520",
-      "ticker": "ICE",
-      "company": "Intercontinental Exchange, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Tirinnanzi Martha A",
-      "title": "",
-      "action": "BUY",
-      "shares": 1698,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260520",
-      "ticker": "ICE",
-      "company": "Intercontinental Exchange, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Silver Caroline Louise",
-      "title": "",
-      "action": "BUY",
-      "shares": 1634,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A",
-        "F"
-      ]
-    },
-    {
-      "date": "20260520",
-      "ticker": "ICE",
-      "company": "Intercontinental Exchange, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Pinto Daniel E",
-      "title": "",
-      "action": "BUY",
-      "shares": 1538,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260520",
-      "ticker": "ICE",
-      "company": "Intercontinental Exchange, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Mulhern Mark F",
-      "title": "",
-      "action": "BUY",
-      "shares": 1538,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260520",
-      "ticker": "ICE",
-      "company": "Intercontinental Exchange, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Hague William Jefferson",
-      "title": "",
-      "action": "BUY",
-      "shares": 1488,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A",
-        "F"
-      ]
-    },
-    {
-      "date": "20260520",
-      "ticker": "ICE",
-      "company": "Intercontinental Exchange, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Farooqui Duriya M",
-      "title": "",
-      "action": "BUY",
-      "shares": 1538,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260520",
-      "ticker": "GOOG",
-      "company": "Alphabet Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Schindler Philipp",
-      "title": "SVP, Chief Business Officer",
-      "action": "SELL",
-      "shares": 429,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "G"
-      ]
     }
   ],
   "meta": {
-    "total": 134,
-    "insider": 134,
+    "total": 131,
+    "insider": 131,
     "stake": 0,
     "companies": 97
   }
