@@ -1,7 +1,161 @@
 {
-  "generated": "2026-06-01T23:11:54.658948+00:00",
+  "generated": "2026-06-02T23:11:45.785736+00:00",
   "lookback_days": 5,
   "activity": [
+    {
+      "date": "20260601",
+      "ticker": "BX",
+      "company": "Blackstone Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "SCHWARZMAN STEPHEN A",
+      "title": "",
+      "action": "SELL",
+      "shares": 33756038,
+      "value": 1217349994,
+      "open_market": true,
+      "ten_pct": true,
+      "codes": [
+        "J",
+        "S"
+      ]
+    },
+    {
+      "date": "20260601",
+      "ticker": "MCD",
+      "company": "MCDONALDS CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "Ralls-Morrison Desiree",
+      "title": "EVP, Chief Legal Officer",
+      "action": "SELL",
+      "shares": 2763,
+      "value": 769108,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260601",
+      "ticker": "MSFT",
+      "company": "MICROSOFT CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "Coleman Amy",
+      "title": "EVP, Chief Human Resources Off",
+      "action": "SELL",
+      "shares": 433,
+      "value": 195326,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F"
+      ]
+    },
+    {
+      "date": "20260601",
+      "ticker": "MSFT",
+      "company": "MICROSOFT CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "Jolla Alice L.",
+      "title": "Chief Accounting Officer",
+      "action": "SELL",
+      "shares": 412,
+      "value": 185759,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F"
+      ]
+    },
+    {
+      "date": "20260601",
+      "ticker": "NOW",
+      "company": "ServiceNow, Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Briggs Teresa",
+      "title": "",
+      "action": "SELL",
+      "shares": 1595,
+      "value": 173376,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260601",
+      "ticker": "GOOG",
+      "company": "Alphabet Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "ARNOLD FRANCES",
+      "title": "",
+      "action": "SELL",
+      "shares": 102,
+      "value": 38862,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260601",
+      "ticker": "SO",
+      "company": "SOUTHERN CO",
+      "form": "4",
+      "type": "insider",
+      "owner": "Kim Matthew M.",
+      "title": "Comptroller",
+      "action": "SELL",
+      "shares": 100,
+      "value": 9116,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260601",
+      "ticker": "GOOG",
+      "company": "Alphabet Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Shriram Kavitark Ram",
+      "title": "",
+      "action": "BUY",
+      "shares": 0,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "G"
+      ]
+    },
+    {
+      "date": "20260601",
+      "ticker": "BSX",
+      "company": "BOSTON SCIENTIFIC CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "Mahoney Michael F",
+      "title": "Chairman, President & CEO",
+      "action": "SELL",
+      "shares": 386755,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "G"
+      ]
+    },
     {
       "date": "20260529",
       "ticker": "WMT",
@@ -1945,372 +2099,11 @@
         "F",
         "M"
       ]
-    },
-    {
-      "date": "20260522",
-      "ticker": "XOM",
-      "company": "EXXON MOBIL CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "EXXON MOBIL CORP",
-      "title": "",
-      "action": "SELL",
-      "shares": 16600000,
-      "value": 276556000,
-      "open_market": true,
-      "ten_pct": true,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260522",
-      "ticker": "CVX",
-      "company": "CHEVRON CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "HESS JOHN B",
-      "title": "",
-      "action": "SELL",
-      "shares": 380000,
-      "value": 73414765,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260522",
-      "ticker": "AMD",
-      "company": "ADVANCED MICRO DEVICES INC",
-      "form": "4",
-      "type": "insider",
-      "owner": "Norrod Forrest Eugene",
-      "title": "EVP & GM DESG",
-      "action": "SELL",
-      "shares": 11250,
-      "value": 8406783,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "M",
-        "S"
-      ]
-    },
-    {
-      "date": "20260522",
-      "ticker": "WMT",
-      "company": "Walmart Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Furner John R.",
-      "title": "President & CEO",
-      "action": "SELL",
-      "shares": 13125,
-      "value": 1628574,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260522",
-      "ticker": "WMT",
-      "company": "Walmart Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Nicholas Christopher James",
-      "title": "Executive Vice President",
-      "action": "SELL",
-      "shares": 2900,
-      "value": 359368,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260522",
-      "ticker": "PANW",
-      "company": "Palo Alto Networks Inc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Paul Josh D.",
-      "title": "Chief Accounting Officer",
-      "action": "SELL",
-      "shares": 400,
-      "value": 94780,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260522",
-      "ticker": "ETN",
-      "company": "Eaton Corp plc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Thompson Dorothy C",
-      "title": "",
-      "action": "SELL",
-      "shares": 167,
-      "value": 64295,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260522",
-      "ticker": "BAC",
-      "company": "BANK OF AMERICA CORP /DE/",
-      "form": "4",
-      "type": "insider",
-      "owner": "MERRILL LYNCH, PIERCE, FENNER & SMITH INC.",
-      "title": "",
-      "action": "BUY",
-      "shares": 0,
-      "value": 32832,
-      "open_market": true,
-      "ten_pct": true,
-      "codes": [
-        "P",
-        "S"
-      ]
-    },
-    {
-      "date": "20260522",
-      "ticker": "ISRG",
-      "company": "INTUITIVE SURGICAL INC",
-      "form": "4",
-      "type": "insider",
-      "owner": "Brosius Mark",
-      "title": "EVP & Chief Mfg and Supply Cha",
-      "action": "SELL",
-      "shares": 36,
-      "value": 15945,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260522",
-      "ticker": "BAC",
-      "company": "BANK OF AMERICA CORP /DE/",
-      "form": "4",
-      "type": "insider",
-      "owner": "MERRILL LYNCH, PIERCE, FENNER & SMITH INC.",
-      "title": "",
-      "action": "BUY",
-      "shares": 0,
-      "value": 5001,
-      "open_market": true,
-      "ten_pct": true,
-      "codes": [
-        "P",
-        "S"
-      ]
-    },
-    {
-      "date": "20260522",
-      "ticker": "AMAT",
-      "company": "APPLIED MATERIALS INC /DE",
-      "form": "4",
-      "type": "insider",
-      "owner": "DE GEUS AART",
-      "title": "",
-      "action": "SELL",
-      "shares": 17855,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "G"
-      ]
-    },
-    {
-      "date": "20260522",
-      "ticker": "TMO",
-      "company": "THERMO FISHER SCIENTIFIC INC.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Chai Nelson",
-      "title": "",
-      "action": "BUY",
-      "shares": 499,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260522",
-      "ticker": "TMO",
-      "company": "THERMO FISHER SCIENTIFIC INC.",
-      "form": "4",
-      "type": "insider",
-      "owner": "CHANDY RUBY R",
-      "title": "",
-      "action": "BUY",
-      "shares": 499,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260522",
-      "ticker": "TMO",
-      "company": "THERMO FISHER SCIENTIFIC INC.",
-      "form": "4",
-      "type": "insider",
-      "owner": "HARRIS C MARTIN",
-      "title": "",
-      "action": "BUY",
-      "shares": 499,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260522",
-      "ticker": "TMO",
-      "company": "THERMO FISHER SCIENTIFIC INC.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Jacks Tyler",
-      "title": "",
-      "action": "BUY",
-      "shares": 499,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260522",
-      "ticker": "TMO",
-      "company": "THERMO FISHER SCIENTIFIC INC.",
-      "form": "4",
-      "type": "insider",
-      "owner": "JOHNSON JENNIFER M",
-      "title": "",
-      "action": "BUY",
-      "shares": 499,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260522",
-      "ticker": "TMO",
-      "company": "THERMO FISHER SCIENTIFIC INC.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Keith R. Alexandra",
-      "title": "",
-      "action": "BUY",
-      "shares": 499,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260522",
-      "ticker": "TMO",
-      "company": "THERMO FISHER SCIENTIFIC INC.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Lynch Karen S",
-      "title": "",
-      "action": "BUY",
-      "shares": 499,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260522",
-      "ticker": "TMO",
-      "company": "THERMO FISHER SCIENTIFIC INC.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Spar Debora L",
-      "title": "",
-      "action": "BUY",
-      "shares": 499,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260522",
-      "ticker": "TMO",
-      "company": "THERMO FISHER SCIENTIFIC INC.",
-      "form": "4",
-      "type": "insider",
-      "owner": "SPERLING SCOTT M",
-      "title": "",
-      "action": "BUY",
-      "shares": 499,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260522",
-      "ticker": "TMO",
-      "company": "THERMO FISHER SCIENTIFIC INC.",
-      "form": "4",
-      "type": "insider",
-      "owner": "WEISLER DION J",
-      "title": "",
-      "action": "BUY",
-      "shares": 418,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A",
-        "F"
-      ]
     }
   ],
   "meta": {
-    "total": 133,
-    "insider": 133,
+    "total": 121,
+    "insider": 121,
     "stake": 0,
     "companies": 97
   }
