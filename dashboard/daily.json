@@ -1,7 +1,231 @@
 {
-  "generated": "2026-06-03T23:14:17.732298+00:00",
+  "generated": "2026-06-04T22:57:41.513351+00:00",
   "lookback_days": 5,
   "activity": [
+    {
+      "date": "20260603",
+      "ticker": "ADI",
+      "company": "ANALOG DEVICES INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "Cotter Martin",
+      "title": "SVP, Vertical Business Units",
+      "action": "BUY",
+      "shares": 0,
+      "value": 1468747,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "M",
+        "S"
+      ]
+    },
+    {
+      "date": "20260603",
+      "ticker": "META",
+      "company": "Meta Platforms, Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Olivan Javier",
+      "title": "Chief Operating Officer",
+      "action": "SELL",
+      "shares": 1466,
+      "value": 922539,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260603",
+      "ticker": "VRTX",
+      "company": "VERTEX PHARMACEUTICALS INC / MA",
+      "form": "4",
+      "type": "insider",
+      "owner": "Liu Joy",
+      "title": "EVP and Chief Legal Officer",
+      "action": "SELL",
+      "shares": 828,
+      "value": 364245,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260603",
+      "ticker": "META",
+      "company": "Meta Platforms, Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "KIMMITT ROBERT M",
+      "title": "",
+      "action": "SELL",
+      "shares": 504,
+      "value": 317162,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260603",
+      "ticker": "AMZN",
+      "company": "AMAZON COM INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "Herrington Douglas J",
+      "title": "CEO Worldwide Amazon Stores",
+      "action": "SELL",
+      "shares": 1000,
+      "value": 266190,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260603",
+      "ticker": "CI",
+      "company": "Cigna Group",
+      "form": "4",
+      "type": "insider",
+      "owner": "Koka Durga Prasad",
+      "title": "EVP, Global CIO",
+      "action": "SELL",
+      "shares": 729,
+      "value": 200861,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F"
+      ]
+    },
+    {
+      "date": "20260603",
+      "ticker": "PEP",
+      "company": "PEPSICO INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "Diamond Susan M",
+      "title": "",
+      "action": "BUY",
+      "shares": 693,
+      "value": 79999,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260603",
+      "ticker": "PEP",
+      "company": "PEPSICO INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "Bailey Jennifer",
+      "title": "",
+      "action": "BUY",
+      "shares": 548,
+      "value": 59999,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260603",
+      "ticker": "PEP",
+      "company": "PEPSICO INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "VASELLA DANIEL",
+      "title": "",
+      "action": "BUY",
+      "shares": 1904,
+      "value": 59999,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260603",
+      "ticker": "PEP",
+      "company": "PEPSICO INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "Gibbs David W",
+      "title": "",
+      "action": "BUY",
+      "shares": 70,
+      "value": 9999,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260603",
+      "ticker": "COP",
+      "company": "CONOCOPHILLIPS",
+      "form": "4",
+      "type": "insider",
+      "owner": "LUNDQUIST ANDREW D",
+      "title": "Senior Vice President",
+      "action": "BUY",
+      "shares": 1611,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260603",
+      "ticker": "BLK",
+      "company": "BlackRock, Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "FINK LAURENCE",
+      "title": "Chairman and CEO",
+      "action": "SELL",
+      "shares": 4780,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "G"
+      ]
+    },
+    {
+      "date": "20260603",
+      "ticker": "HON",
+      "company": "HONEYWELL INTERNATIONAL INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "Kapur Vimal",
+      "title": "Chief Executive Officer",
+      "action": "BUY",
+      "shares": 1129,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
     {
       "date": "20260602",
       "ticker": "MU",
@@ -1610,323 +1834,11 @@
       "codes": [
         "A"
       ]
-    },
-    {
-      "date": "20260527",
-      "ticker": "PANW",
-      "company": "Palo Alto Networks Inc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Klarich Lee",
-      "title": "EVP Chief Product & Tech Ofcr",
-      "action": "SELL",
-      "shares": 62904,
-      "value": 16270351,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260527",
-      "ticker": "GILD",
-      "company": "GILEAD SCIENCES, INC.",
-      "form": "4",
-      "type": "insider",
-      "owner": "GILEAD SCIENCES, INC.",
-      "title": "",
-      "action": "BUY",
-      "shares": 471698,
-      "value": 12499997,
-      "open_market": false,
-      "ten_pct": true,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260527",
-      "ticker": "BKNG",
-      "company": "Booking Holdings Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "MILLONES PETER J",
-      "title": "EXECUTIVE VP, GENERAL COUNSEL",
-      "action": "SELL",
-      "shares": 62500,
-      "value": 10229456,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260527",
-      "ticker": "ADI",
-      "company": "ANALOG DEVICES INC",
-      "form": "4",
-      "type": "insider",
-      "owner": "ROCHE VINCENT",
-      "title": "Chair & CEO",
-      "action": "BUY",
-      "shares": 0,
-      "value": 8643600,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "M",
-        "S"
-      ]
-    },
-    {
-      "date": "20260527",
-      "ticker": "CSCO",
-      "company": "CISCO SYSTEMS, INC.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Robbins Charles",
-      "title": "Chair and CEO",
-      "action": "SELL",
-      "shares": 21400,
-      "value": 2568583,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260527",
-      "ticker": "GOOG",
-      "company": "Alphabet Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Pichai Sundar",
-      "title": "Chief Executive Officer",
-      "action": "SELL",
-      "shares": 3700,
-      "value": 1403706,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "C",
-        "F"
-      ]
-    },
-    {
-      "date": "20260527",
-      "ticker": "GOOG",
-      "company": "Alphabet Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Schindler Philipp",
-      "title": "SVP, Chief Business Officer",
-      "action": "SELL",
-      "shares": 2013,
-      "value": 763691,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "C",
-        "F"
-      ]
-    },
-    {
-      "date": "20260527",
-      "ticker": "GOOG",
-      "company": "Alphabet Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Ashkenazi Anat",
-      "title": "SVP, Chief Financial Officer",
-      "action": "SELL",
-      "shares": 1780,
-      "value": 675296,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "C",
-        "F"
-      ]
-    },
-    {
-      "date": "20260527",
-      "ticker": "GOOG",
-      "company": "Alphabet Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Porat Ruth",
-      "title": "President and CIO",
-      "action": "SELL",
-      "shares": 1639,
-      "value": 621803,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "C",
-        "F"
-      ]
-    },
-    {
-      "date": "20260527",
-      "ticker": "GOOG",
-      "company": "Alphabet Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "WALKER JOHN KENT",
-      "title": "President, Global Affairs, CLO",
-      "action": "SELL",
-      "shares": 1639,
-      "value": 621803,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "C",
-        "F"
-      ]
-    },
-    {
-      "date": "20260527",
-      "ticker": "ICE",
-      "company": "Intercontinental Exchange, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Bowen Sharon",
-      "title": "",
-      "action": "SELL",
-      "shares": 667,
-      "value": 100903,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260527",
-      "ticker": "MCD",
-      "company": "MCDONALDS CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Erlinger Joseph M.",
-      "title": "President, McDonald's USA",
-      "action": "SELL",
-      "shares": 333,
-      "value": 93276,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260527",
-      "ticker": "SCHW",
-      "company": "SCHWAB CHARLES CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "HERRINGER FRANK C",
-      "title": "",
-      "action": "BUY",
-      "shares": 1602,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260527",
-      "ticker": "SCHW",
-      "company": "SCHWAB CHARLES CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "DODDS CHRISTOPHER V",
-      "title": "",
-      "action": "BUY",
-      "shares": 1602,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260527",
-      "ticker": "SCHW",
-      "company": "SCHWAB CHARLES CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Sarin Arun",
-      "title": "",
-      "action": "BUY",
-      "shares": 1602,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260527",
-      "ticker": "SCHW",
-      "company": "SCHWAB CHARLES CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "SNEED PAULA A",
-      "title": "",
-      "action": "BUY",
-      "shares": 1602,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260527",
-      "ticker": "SCHW",
-      "company": "SCHWAB CHARLES CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Ellis Stephen A",
-      "title": "",
-      "action": "BUY",
-      "shares": 1602,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260527",
-      "ticker": "SCHW",
-      "company": "SCHWAB CHARLES CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Brown Marianne Catherine",
-      "title": "",
-      "action": "BUY",
-      "shares": 1602,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
     }
   ],
   "meta": {
-    "total": 112,
-    "insider": 112,
+    "total": 107,
+    "insider": 107,
     "stake": 0,
     "companies": 97
   }
