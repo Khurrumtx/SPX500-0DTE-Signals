@@ -1,7 +1,161 @@
 {
-  "generated": "2026-06-05T22:53:04.137156+00:00",
+  "generated": "2026-06-08T23:02:14.499463+00:00",
   "lookback_days": 5,
   "activity": [
+    {
+      "date": "20260605",
+      "ticker": "AMAT",
+      "company": "APPLIED MATERIALS INC /DE",
+      "form": "4",
+      "type": "insider",
+      "owner": "Raja Prabu G.",
+      "title": "President, Semi. Products Grp.",
+      "action": "SELL",
+      "shares": 50000,
+      "value": 25264196,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260605",
+      "ticker": "TJX",
+      "company": "TJX COMPANIES INC /DE/",
+      "form": "4",
+      "type": "insider",
+      "owner": "Herrman Ernie",
+      "title": "CEO & President",
+      "action": "SELL",
+      "shares": 67551,
+      "value": 10692896,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260605",
+      "ticker": "TJX",
+      "company": "TJX COMPANIES INC /DE/",
+      "form": "4",
+      "type": "insider",
+      "owner": "Canestrari Kenneth",
+      "title": "SEVP - Group President",
+      "action": "SELL",
+      "shares": 31447,
+      "value": 4952814,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260605",
+      "ticker": "NVDA",
+      "company": "NVIDIA CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "Neal Stephen C",
+      "title": "",
+      "action": "SELL",
+      "shares": 15500,
+      "value": 3343863,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260605",
+      "ticker": "AMAT",
+      "company": "APPLIED MATERIALS INC /DE",
+      "form": "4",
+      "type": "insider",
+      "owner": "Hill Brice",
+      "title": "SVP, CFO",
+      "action": "SELL",
+      "shares": 2500,
+      "value": 1247153,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260605",
+      "ticker": "TJX",
+      "company": "TJX COMPANIES INC /DE/",
+      "form": "4",
+      "type": "insider",
+      "owner": "Klinger John",
+      "title": "SEVP, CFO",
+      "action": "SELL",
+      "shares": 6235,
+      "value": 1002405,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260605",
+      "ticker": "TJX",
+      "company": "TJX COMPANIES INC /DE/",
+      "form": "4",
+      "type": "insider",
+      "owner": "Benjamin Peter",
+      "title": "SEVP, Group President",
+      "action": "BUY",
+      "shares": 0,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "G"
+      ]
+    },
+    {
+      "date": "20260605",
+      "ticker": "BMY",
+      "company": "BRISTOL MYERS SQUIBB CO",
+      "form": "4",
+      "type": "insider",
+      "owner": "Short Bartie Wendy",
+      "title": "EVP, Corporate Affairs",
+      "action": "BUY",
+      "shares": 4164,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260605",
+      "ticker": "JPM",
+      "company": "JPMORGAN CHASE & CO",
+      "form": "4",
+      "type": "insider",
+      "owner": "DNT Asset Trust",
+      "title": "",
+      "action": "BUY",
+      "shares": 0,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": true,
+      "codes": [
+        "J"
+      ]
+    },
     {
       "date": "20260604",
       "ticker": "UBER",
@@ -1407,370 +1561,11 @@
       "codes": [
         "G"
       ]
-    },
-    {
-      "date": "20260529",
-      "ticker": "WMT",
-      "company": "Walmart Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Walton Family Holdings Trust",
-      "title": "",
-      "action": "SELL",
-      "shares": 461827,
-      "value": 54973734,
-      "open_market": true,
-      "ten_pct": true,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260529",
-      "ticker": "AAPL",
-      "company": "Apple Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "LEVINSON ARTHUR D",
-      "title": "",
-      "action": "SELL",
-      "shares": 115000,
-      "value": 15551000,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "G",
-        "S"
-      ]
-    },
-    {
-      "date": "20260529",
-      "ticker": "CB",
-      "company": "Chubb Ltd",
-      "form": "4",
-      "type": "insider",
-      "owner": "Keogh John W",
-      "title": "President &COO",
-      "action": "SELL",
-      "shares": 24352,
-      "value": 7394740,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "G",
-        "S"
-      ]
-    },
-    {
-      "date": "20260529",
-      "ticker": "TXN",
-      "company": "TEXAS INSTRUMENTS INC",
-      "form": "4",
-      "type": "insider",
-      "owner": "Craighead Martin S",
-      "title": "",
-      "action": "SELL",
-      "shares": 10000,
-      "value": 3204288,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260529",
-      "ticker": "WMT",
-      "company": "Walmart Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "McMillon C Douglas",
-      "title": "",
-      "action": "SELL",
-      "shares": 19416,
-      "value": 2303252,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260529",
-      "ticker": "SYK",
-      "company": "STRYKER CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Fletcher Robert S",
-      "title": "VP, Chief Legal Officer",
-      "action": "SELL",
-      "shares": 4544,
-      "value": 1394409,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260529",
-      "ticker": "WMT",
-      "company": "Walmart Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Watkins Latriece",
-      "title": "Executive Vice President",
-      "action": "SELL",
-      "shares": 11000,
-      "value": 1308670,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260529",
-      "ticker": "META",
-      "company": "Meta Platforms, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Mahoney Curtis J.",
-      "title": "Chief Legal Officer",
-      "action": "SELL",
-      "shares": 2079,
-      "value": 1268023,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260529",
-      "ticker": "NVDA",
-      "company": "NVIDIA CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Dabiri John",
-      "title": "",
-      "action": "SELL",
-      "shares": 625,
-      "value": 133750,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260529",
-      "ticker": "WMT",
-      "company": "Walmart Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Bartlett Daniel J",
-      "title": "Executive Vice President",
-      "action": "SELL",
-      "shares": 424,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "G"
-      ]
-    },
-    {
-      "date": "20260529",
-      "ticker": "CVX",
-      "company": "CHEVRON CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Austin Wanda M",
-      "title": "",
-      "action": "BUY",
-      "shares": 1272,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260529",
-      "ticker": "CVX",
-      "company": "CHEVRON CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Frank John",
-      "title": "",
-      "action": "BUY",
-      "shares": 1272,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260529",
-      "ticker": "CVX",
-      "company": "CHEVRON CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "HERNANDEZ ENRIQUE JR",
-      "title": "",
-      "action": "BUY",
-      "shares": 1272,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260529",
-      "ticker": "CVX",
-      "company": "CHEVRON CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "HESS JOHN B",
-      "title": "",
-      "action": "BUY",
-      "shares": 1272,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260529",
-      "ticker": "CVX",
-      "company": "CHEVRON CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "HEWSON MARILLYN A",
-      "title": "",
-      "action": "BUY",
-      "shares": 1272,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260529",
-      "ticker": "CVX",
-      "company": "CHEVRON CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "HORTON THOMAS W",
-      "title": "",
-      "action": "BUY",
-      "shares": 1272,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260529",
-      "ticker": "CVX",
-      "company": "CHEVRON CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Moyo Dambisa F",
-      "title": "",
-      "action": "BUY",
-      "shares": 1272,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260529",
-      "ticker": "CVX",
-      "company": "CHEVRON CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Umpleby III Donald J",
-      "title": "",
-      "action": "BUY",
-      "shares": 1272,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260529",
-      "ticker": "CVX",
-      "company": "CHEVRON CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "WARNER CYNTHIA J",
-      "title": "",
-      "action": "BUY",
-      "shares": 1272,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260529",
-      "ticker": "CVX",
-      "company": "CHEVRON CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "REED DEBRA L",
-      "title": "",
-      "action": "BUY",
-      "shares": 1272,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260529",
-      "ticker": "CVX",
-      "company": "CHEVRON CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Huntsman Jon M Jr",
-      "title": "",
-      "action": "BUY",
-      "shares": 1272,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
     }
   ],
   "meta": {
-    "total": 103,
-    "insider": 103,
+    "total": 91,
+    "insider": 91,
     "stake": 0,
     "companies": 97
   }
