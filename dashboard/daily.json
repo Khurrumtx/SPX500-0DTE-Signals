@@ -1,7 +1,416 @@
 {
-  "generated": "2026-06-08T23:02:14.499463+00:00",
+  "generated": "2026-06-09T23:03:09.129624+00:00",
   "lookback_days": 5,
   "activity": [
+    {
+      "date": "20260608",
+      "ticker": "KO",
+      "company": "COCA COLA CO",
+      "form": "4",
+      "type": "insider",
+      "owner": "Quincey James",
+      "title": "Chairman",
+      "action": "BUY",
+      "shares": 0,
+      "value": 19760064,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "M",
+        "S"
+      ]
+    },
+    {
+      "date": "20260608",
+      "ticker": "MDT",
+      "company": "Medtronic plc",
+      "form": "4",
+      "type": "insider",
+      "owner": "Martha Geoffrey",
+      "title": "Chairman and CEO",
+      "action": "SELL",
+      "shares": 41936,
+      "value": 3494107,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F"
+      ]
+    },
+    {
+      "date": "20260608",
+      "ticker": "MDT",
+      "company": "Medtronic plc",
+      "form": "4",
+      "type": "insider",
+      "owner": "Marinaro Michael",
+      "title": "EVP, Pres MedSurg and Americas",
+      "action": "SELL",
+      "shares": 7471,
+      "value": 622483,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F"
+      ]
+    },
+    {
+      "date": "20260608",
+      "ticker": "MDT",
+      "company": "Medtronic plc",
+      "form": "4",
+      "type": "insider",
+      "owner": "KIIL HARRY SKIP",
+      "title": "EVP & President Cardiovascular",
+      "action": "SELL",
+      "shares": 6817,
+      "value": 567992,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F"
+      ]
+    },
+    {
+      "date": "20260608",
+      "ticker": "MDT",
+      "company": "Medtronic plc",
+      "form": "4",
+      "type": "insider",
+      "owner": "Walter Matthew R.",
+      "title": "SVP, Chief HR Officer",
+      "action": "SELL",
+      "shares": 2840,
+      "value": 236628,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F"
+      ]
+    },
+    {
+      "date": "20260608",
+      "ticker": "ACN",
+      "company": "Accenture plc",
+      "form": "4",
+      "type": "insider",
+      "owner": "Sweet Julie Spellman",
+      "title": "Chair and CEO",
+      "action": "BUY",
+      "shares": 216,
+      "value": 38827,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260608",
+      "ticker": "ACN",
+      "company": "Accenture plc",
+      "form": "4",
+      "type": "insider",
+      "owner": "Unruch Joel",
+      "title": "General Counsel/Corp Secretary",
+      "action": "BUY",
+      "shares": 153,
+      "value": 27502,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260608",
+      "ticker": "ACN",
+      "company": "Accenture plc",
+      "form": "4",
+      "type": "insider",
+      "owner": "Walsh John F",
+      "title": "CEO-The Americas",
+      "action": "BUY",
+      "shares": 153,
+      "value": 27502,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260608",
+      "ticker": "ACN",
+      "company": "Accenture plc",
+      "form": "4",
+      "type": "insider",
+      "owner": "Park Angie Y",
+      "title": "Chief Financial Officer",
+      "action": "BUY",
+      "shares": 153,
+      "value": 27502,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260608",
+      "ticker": "ACN",
+      "company": "Accenture plc",
+      "form": "4",
+      "type": "insider",
+      "owner": "Hogan Catherine Kiernan",
+      "title": "Chief Operating Officer",
+      "action": "BUY",
+      "shares": 119,
+      "value": 21390,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260608",
+      "ticker": "ACN",
+      "company": "Accenture plc",
+      "form": "4",
+      "type": "insider",
+      "owner": "Burgum Melissa A",
+      "title": "Chief Accounting Officer",
+      "action": "BUY",
+      "shares": 112,
+      "value": 20132,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260608",
+      "ticker": "MDT",
+      "company": "Medtronic plc",
+      "form": "4",
+      "type": "insider",
+      "owner": "Blomquist Denise L.",
+      "title": "Chief Accounting Officer",
+      "action": "SELL",
+      "shares": 237,
+      "value": 19746,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F"
+      ]
+    },
+    {
+      "date": "20260608",
+      "ticker": "ACN",
+      "company": "Accenture plc",
+      "form": "4",
+      "type": "insider",
+      "owner": "Sharma Manish",
+      "title": "Chief Strategy & Services Ofcr",
+      "action": "BUY",
+      "shares": 102,
+      "value": 18335,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260608",
+      "ticker": "ACN",
+      "company": "Accenture plc",
+      "form": "4",
+      "type": "insider",
+      "owner": "Clifford Katherine Lee",
+      "title": "Chief Leadership & HR Officer",
+      "action": "BUY",
+      "shares": 98,
+      "value": 17615,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260608",
+      "ticker": "WMT",
+      "company": "Walmart Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Penner Gregory Boyd",
+      "title": "",
+      "action": "BUY",
+      "shares": 2881,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260608",
+      "ticker": "WMT",
+      "company": "Walmart Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Walton Steuart L",
+      "title": "",
+      "action": "BUY",
+      "shares": 1935,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260608",
+      "ticker": "WMT",
+      "company": "Walmart Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Mehrotra Shishir",
+      "title": "",
+      "action": "BUY",
+      "shares": 1935,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260608",
+      "ticker": "WMT",
+      "company": "Walmart Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "HORTON THOMAS W",
+      "title": "",
+      "action": "BUY",
+      "shares": 1935,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260608",
+      "ticker": "WMT",
+      "company": "Walmart Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "STEPHENSON RANDALL L",
+      "title": "",
+      "action": "BUY",
+      "shares": 1935,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260608",
+      "ticker": "WMT",
+      "company": "Walmart Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "MAYER MARISSA A",
+      "title": "",
+      "action": "BUY",
+      "shares": 1935,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260608",
+      "ticker": "WMT",
+      "company": "Walmart Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Friar Sarah",
+      "title": "",
+      "action": "BUY",
+      "shares": 1935,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260608",
+      "ticker": "WMT",
+      "company": "Walmart Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Conde Cesar",
+      "title": "",
+      "action": "BUY",
+      "shares": 1935,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260608",
+      "ticker": "WMT",
+      "company": "Walmart Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Harris Carla A",
+      "title": "",
+      "action": "BUY",
+      "shares": 1935,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260608",
+      "ticker": "WMT",
+      "company": "Walmart Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Moritz Robert Edward Jr.",
+      "title": "",
+      "action": "BUY",
+      "shares": 1935,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
     {
       "date": "20260605",
       "ticker": "AMAT",
@@ -1407,165 +1816,11 @@
       "codes": [
         "A"
       ]
-    },
-    {
-      "date": "20260601",
-      "ticker": "BX",
-      "company": "Blackstone Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "SCHWARZMAN STEPHEN A",
-      "title": "",
-      "action": "SELL",
-      "shares": 33756038,
-      "value": 1217349994,
-      "open_market": true,
-      "ten_pct": true,
-      "codes": [
-        "J",
-        "S"
-      ]
-    },
-    {
-      "date": "20260601",
-      "ticker": "MCD",
-      "company": "MCDONALDS CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Ralls-Morrison Desiree",
-      "title": "EVP, Chief Legal Officer",
-      "action": "SELL",
-      "shares": 2763,
-      "value": 769108,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260601",
-      "ticker": "MSFT",
-      "company": "MICROSOFT CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Coleman Amy",
-      "title": "EVP, Chief Human Resources Off",
-      "action": "SELL",
-      "shares": 433,
-      "value": 195326,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F"
-      ]
-    },
-    {
-      "date": "20260601",
-      "ticker": "MSFT",
-      "company": "MICROSOFT CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Jolla Alice L.",
-      "title": "Chief Accounting Officer",
-      "action": "SELL",
-      "shares": 412,
-      "value": 185759,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F"
-      ]
-    },
-    {
-      "date": "20260601",
-      "ticker": "NOW",
-      "company": "ServiceNow, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Briggs Teresa",
-      "title": "",
-      "action": "SELL",
-      "shares": 1595,
-      "value": 173376,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260601",
-      "ticker": "GOOG",
-      "company": "Alphabet Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "ARNOLD FRANCES",
-      "title": "",
-      "action": "SELL",
-      "shares": 102,
-      "value": 38862,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260601",
-      "ticker": "SO",
-      "company": "SOUTHERN CO",
-      "form": "4",
-      "type": "insider",
-      "owner": "Kim Matthew M.",
-      "title": "Comptroller",
-      "action": "SELL",
-      "shares": 100,
-      "value": 9116,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260601",
-      "ticker": "GOOG",
-      "company": "Alphabet Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Shriram Kavitark Ram",
-      "title": "",
-      "action": "BUY",
-      "shares": 0,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "G"
-      ]
-    },
-    {
-      "date": "20260601",
-      "ticker": "BSX",
-      "company": "BOSTON SCIENTIFIC CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Mahoney Michael F",
-      "title": "Chairman, President & CEO",
-      "action": "SELL",
-      "shares": 386755,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "G"
-      ]
     }
   ],
   "meta": {
-    "total": 91,
-    "insider": 91,
+    "total": 106,
+    "insider": 106,
     "stake": 0,
     "companies": 97
   }
