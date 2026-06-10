@@ -1,7 +1,179 @@
 {
-  "generated": "2026-06-09T23:03:09.129624+00:00",
+  "generated": "2026-06-10T23:05:48.526876+00:00",
   "lookback_days": 5,
   "activity": [
+    {
+      "date": "20260609",
+      "ticker": "KO",
+      "company": "COCA COLA CO",
+      "form": "4",
+      "type": "insider",
+      "owner": "MANN JENNIFER K",
+      "title": "Executive Vice President",
+      "action": "BUY",
+      "shares": 0,
+      "value": 4812979,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "M",
+        "S"
+      ]
+    },
+    {
+      "date": "20260609",
+      "ticker": "VRTX",
+      "company": "VERTEX PHARMACEUTICALS INC / MA",
+      "form": "4",
+      "type": "insider",
+      "owner": "Bozic Carmen",
+      "title": "EVP and CMO",
+      "action": "SELL",
+      "shares": 1745,
+      "value": 785250,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260609",
+      "ticker": "MDT",
+      "company": "Medtronic plc",
+      "form": "4",
+      "type": "insider",
+      "owner": "KIIL HARRY SKIP",
+      "title": "EVP & President Cardiovascular",
+      "action": "SELL",
+      "shares": 4189,
+      "value": 336965,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260609",
+      "ticker": "UNH",
+      "company": "UNITEDHEALTH GROUP INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "Conway Patrick Hugh",
+      "title": "Chief Executive Officer, Optum",
+      "action": "SELL",
+      "shares": 686,
+      "value": 274380,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F"
+      ]
+    },
+    {
+      "date": "20260609",
+      "ticker": "SBUX",
+      "company": "STARBUCKS CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "BREWER BRADY",
+      "title": "ceo, International",
+      "action": "SELL",
+      "shares": 1641,
+      "value": 154795,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260609",
+      "ticker": "TSLA",
+      "company": "Tesla, Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Taneja Vaibhav",
+      "title": "Chief Financial Officer",
+      "action": "BUY",
+      "shares": 3932,
+      "value": 0,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "M",
+        "S"
+      ]
+    },
+    {
+      "date": "20260609",
+      "ticker": "MSFT",
+      "company": "MICROSOFT CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "Di Sibio Carmine",
+      "title": "",
+      "action": "BUY",
+      "shares": 15,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260609",
+      "ticker": "MSFT",
+      "company": "MICROSOFT CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "STANTON JOHN W",
+      "title": "",
+      "action": "BUY",
+      "shares": 149,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260609",
+      "ticker": "MSFT",
+      "company": "MICROSOFT CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "List Teri",
+      "title": "",
+      "action": "BUY",
+      "shares": 149,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260609",
+      "ticker": "MSFT",
+      "company": "MICROSOFT CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "SCHARF CHARLES W",
+      "title": "",
+      "action": "BUY",
+      "shares": 149,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
     {
       "date": "20260608",
       "ticker": "KO",
@@ -1010,817 +1182,11 @@
         "F",
         "M"
       ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "MU",
-      "company": "MICRON TECHNOLOGY INC",
-      "form": "4",
-      "type": "insider",
-      "owner": "MEHROTRA SANJAY",
-      "title": "President and CEO",
-      "action": "SELL",
-      "shares": 37439,
-      "value": 35955527,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "MSFT",
-      "company": "MICROSOFT CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Althoff Judson",
-      "title": "CEO Microsoft Commercial",
-      "action": "SELL",
-      "shares": 15500,
-      "value": 7145314,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "AMD",
-      "company": "ADVANCED MICRO DEVICES INC",
-      "form": "4",
-      "type": "insider",
-      "owner": "Denzel Nora",
-      "title": "",
-      "action": "SELL",
-      "shares": 10447,
-      "value": 5453334,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "NFLX",
-      "company": "NETFLIX INC",
-      "form": "4",
-      "type": "insider",
-      "owner": "HASTINGS REED",
-      "title": "",
-      "action": "BUY",
-      "shares": 0,
-      "value": 3968702,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "M",
-        "S"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "VZ",
-      "company": "VERIZON COMMUNICATIONS INC",
-      "form": "4",
-      "type": "insider",
-      "owner": "Hammock Samantha",
-      "title": "EVP & Chief HR Officer",
-      "action": "SELL",
-      "shares": 73069,
-      "value": 3495036,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "MU",
-      "company": "MICRON TECHNOLOGY INC",
-      "form": "4",
-      "type": "insider",
-      "owner": "MEHROTRA SANJAY",
-      "title": "President and CEO",
-      "action": "SELL",
-      "shares": 2561,
-      "value": 2498588,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "GILD",
-      "company": "GILEAD SCIENCES, INC.",
-      "form": "4",
-      "type": "insider",
-      "owner": "O'Day Daniel Patrick",
-      "title": "Chairman & CEO",
-      "action": "SELL",
-      "shares": 15000,
-      "value": 1971846,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "ADI",
-      "company": "ANALOG DEVICES INC",
-      "form": "4",
-      "type": "insider",
-      "owner": "ROCHE VINCENT",
-      "title": "Chair & CEO",
-      "action": "BUY",
-      "shares": 0,
-      "value": 1080800,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "M",
-        "S"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "VRTX",
-      "company": "VERTEX PHARMACEUTICALS INC / MA",
-      "form": "4",
-      "type": "insider",
-      "owner": "Bozic Carmen",
-      "title": "EVP and CMO",
-      "action": "SELL",
-      "shares": 1974,
-      "value": 888300,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "ISRG",
-      "company": "INTUITIVE SURGICAL INC",
-      "form": "4",
-      "type": "insider",
-      "owner": "Jeddi Iman",
-      "title": "SVP & GM da Vinci Platforms &",
-      "action": "BUY",
-      "shares": 0,
-      "value": 433118,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "M",
-        "S"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "PANW",
-      "company": "Palo Alto Networks Inc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Paul Josh D.",
-      "title": "Chief Accounting Officer",
-      "action": "SELL",
-      "shares": 1100,
-      "value": 313588,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "MS",
-      "company": "MORGAN STANLEY",
-      "form": "4",
-      "type": "insider",
-      "owner": "GLOCER THOMAS H",
-      "title": "",
-      "action": "BUY",
-      "shares": 1821,
-      "value": 107500,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "MS",
-      "company": "MORGAN STANLEY",
-      "form": "4",
-      "type": "insider",
-      "owner": "TRAQUINA PERRY M",
-      "title": "",
-      "action": "BUY",
-      "shares": 1678,
-      "value": 77500,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "MS",
-      "company": "MORGAN STANLEY",
-      "form": "4",
-      "type": "insider",
-      "owner": "NALLY DENNIS M",
-      "title": "",
-      "action": "BUY",
-      "shares": 1655,
-      "value": 72499,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "PANW",
-      "company": "Palo Alto Networks Inc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Thorning-Schmidt Helle",
-      "title": "",
-      "action": "SELL",
-      "shares": 211,
-      "value": 59436,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "MS",
-      "company": "MORGAN STANLEY",
-      "form": "4",
-      "type": "insider",
-      "owner": "Peterson Douglas L.",
-      "title": "",
-      "action": "BUY",
-      "shares": 1583,
-      "value": 57499,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "MS",
-      "company": "MORGAN STANLEY",
-      "form": "4",
-      "type": "insider",
-      "owner": "GOOD LYNN J",
-      "title": "",
-      "action": "BUY",
-      "shares": 1583,
-      "value": 57499,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "T",
-      "company": "AT&T INC.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Desroches Pascal",
-      "title": "Sr. Exec VP and CFO",
-      "action": "BUY",
-      "shares": 1629,
-      "value": 40416,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "T",
-      "company": "AT&T INC.",
-      "form": "4",
-      "type": "insider",
-      "owner": "McElfresh Jeffery S.",
-      "title": "Chief Operating Officer",
-      "action": "BUY",
-      "shares": 504,
-      "value": 12499,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "T",
-      "company": "AT&T INC.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Lee Lori M",
-      "title": "Global Mktg Ofr & SEVP Intl",
-      "action": "BUY",
-      "shares": 226,
-      "value": 5616,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "T",
-      "company": "AT&T INC.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Sabrina Sanders S",
-      "title": "SVP-ChiefActngOfcr&Controller",
-      "action": "BUY",
-      "shares": 132,
-      "value": 3275,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "BKNG",
-      "company": "Booking Holdings Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "NOSKI CHARLES H",
-      "title": "",
-      "action": "BUY",
-      "shares": 1583,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "BKNG",
-      "company": "Booking Holdings Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "GRADDICK WEIR MIRIAN M",
-      "title": "",
-      "action": "BUY",
-      "shares": 1583,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "BKNG",
-      "company": "Booking Holdings Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "MYLOD ROBERT J JR",
-      "title": "",
-      "action": "BUY",
-      "shares": 2240,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "BKNG",
-      "company": "Booking Holdings Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "ROTHMAN THOMAS E",
-      "title": "",
-      "action": "BUY",
-      "shares": 1583,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "BKNG",
-      "company": "Booking Holdings Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "WITTMAN VANESSA AMES",
-      "title": "",
-      "action": "BUY",
-      "shares": 1583,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "BKNG",
-      "company": "Booking Holdings Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Radakovich Lynn Vojvodich",
-      "title": "",
-      "action": "BUY",
-      "shares": 0,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "G"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "BKNG",
-      "company": "Booking Holdings Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Sievers Kurt",
-      "title": "",
-      "action": "BUY",
-      "shares": 1846,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "BKNG",
-      "company": "Booking Holdings Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Read Nicholas",
-      "title": "",
-      "action": "BUY",
-      "shares": 1435,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A",
-        "F"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "BKNG",
-      "company": "Booking Holdings Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Singh Sumit",
-      "title": "",
-      "action": "BUY",
-      "shares": 1583,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "BKNG",
-      "company": "Booking Holdings Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Quinlan Larry",
-      "title": "",
-      "action": "BUY",
-      "shares": 1583,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "BKNG",
-      "company": "Booking Holdings Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Grier Kelly J",
-      "title": "",
-      "action": "BUY",
-      "shares": 1583,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "ORCL",
-      "company": "ORACLE CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Ablo Awo",
-      "title": "",
-      "action": "BUY",
-      "shares": 2034,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F",
-        "M"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "ORCL",
-      "company": "ORACLE CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "BERG JEFFREY",
-      "title": "",
-      "action": "BUY",
-      "shares": 2114,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "M"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "ORCL",
-      "company": "ORACLE CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "BOSKIN MICHAEL J",
-      "title": "",
-      "action": "BUY",
-      "shares": 2114,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "M"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "ORCL",
-      "company": "ORACLE CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "CHIZEN BRUCE R",
-      "title": "",
-      "action": "BUY",
-      "shares": 2114,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "M"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "ORCL",
-      "company": "ORACLE CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Fairhead Rona Alison",
-      "title": "",
-      "action": "BUY",
-      "shares": 2056,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F",
-        "M"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "ORCL",
-      "company": "ORACLE CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "MOORMAN CHARLES W",
-      "title": "",
-      "action": "BUY",
-      "shares": 2114,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "M"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "SYK",
-      "company": "STRYKER CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Stiles Spencer S",
-      "title": "President and COO",
-      "action": "SELL",
-      "shares": 1607,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "G"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "BAC",
-      "company": "BANK OF AMERICA CORP /DE/",
-      "form": "4",
-      "type": "insider",
-      "owner": "BANK OF AMERICA NA",
-      "title": "",
-      "action": "SELL",
-      "shares": 614,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": true,
-      "codes": [
-        "J"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "MS",
-      "company": "MORGAN STANLEY",
-      "form": "4",
-      "type": "insider",
-      "owner": "SCHAPIRO MARY L",
-      "title": "",
-      "action": "BUY",
-      "shares": 1309,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "MS",
-      "company": "MORGAN STANLEY",
-      "form": "4",
-      "type": "insider",
-      "owner": "Leibowitz Shelley B",
-      "title": "",
-      "action": "BUY",
-      "shares": 1309,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "MS",
-      "company": "MORGAN STANLEY",
-      "form": "4",
-      "type": "insider",
-      "owner": "Herz Robert H",
-      "title": "",
-      "action": "BUY",
-      "shares": 1309,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "MS",
-      "company": "MORGAN STANLEY",
-      "form": "4",
-      "type": "insider",
-      "owner": "Miscik Judith A",
-      "title": "",
-      "action": "BUY",
-      "shares": 1309,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "MS",
-      "company": "MORGAN STANLEY",
-      "form": "4",
-      "type": "insider",
-      "owner": "James Erika H",
-      "title": "",
-      "action": "BUY",
-      "shares": 1309,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "MS",
-      "company": "MORGAN STANLEY",
-      "form": "4",
-      "type": "insider",
-      "owner": "BUTLER MEGAN",
-      "title": "",
-      "action": "BUY",
-      "shares": 1119,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A",
-        "F"
-      ]
-    },
-    {
-      "date": "20260602",
-      "ticker": "MS",
-      "company": "MORGAN STANLEY",
-      "form": "4",
-      "type": "insider",
-      "owner": "WILKINS RAYFORD JR",
-      "title": "",
-      "action": "BUY",
-      "shares": 1309,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
     }
   ],
   "meta": {
-    "total": 106,
-    "insider": 106,
+    "total": 69,
+    "insider": 69,
     "stake": 0,
     "companies": 97
   }
