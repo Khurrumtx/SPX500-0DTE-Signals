@@ -1,7 +1,644 @@
 {
-  "generated": "2026-06-11T23:05:41.319267+00:00",
+  "generated": "2026-06-12T23:01:41.509946+00:00",
   "lookback_days": 5,
   "activity": [
+    {
+      "date": "20260611",
+      "ticker": "KLAC",
+      "company": "KLA CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "WALLACE RICHARD P",
+      "title": "President and CEO",
+      "action": "SELL",
+      "shares": 4512,
+      "value": 9986725,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260611",
+      "ticker": "KO",
+      "company": "COCA COLA CO",
+      "form": "4",
+      "type": "insider",
+      "owner": "MANN JENNIFER K",
+      "title": "Executive Vice President",
+      "action": "SELL",
+      "shares": 26016,
+      "value": 8074790,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "M",
+        "S"
+      ]
+    },
+    {
+      "date": "20260611",
+      "ticker": "LLY",
+      "company": "ELI LILLY & Co",
+      "form": "4",
+      "type": "insider",
+      "owner": "Yuffa Ilya",
+      "title": "EVP&Pres, LLY USA&Global Capab",
+      "action": "SELL",
+      "shares": 2500,
+      "value": 2876925,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260611",
+      "ticker": "TJX",
+      "company": "TJX COMPANIES INC /DE/",
+      "form": "4",
+      "type": "insider",
+      "owner": "Benjamin Peter",
+      "title": "SEVP, Group President",
+      "action": "SELL",
+      "shares": 10926,
+      "value": 1802790,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260611",
+      "ticker": "CSCO",
+      "company": "CISCO SYSTEMS, INC.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Patterson Mark",
+      "title": "EVP and CFO",
+      "action": "SELL",
+      "shares": 13796,
+      "value": 1657517,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "S"
+      ]
+    },
+    {
+      "date": "20260611",
+      "ticker": "CSCO",
+      "company": "CISCO SYSTEMS, INC.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Tuszik Oliver",
+      "title": "EVP, Global Sales",
+      "action": "SELL",
+      "shares": 8149,
+      "value": 982912,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "S"
+      ]
+    },
+    {
+      "date": "20260611",
+      "ticker": "ADI",
+      "company": "ANALOG DEVICES INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "STATA RAY",
+      "title": "",
+      "action": "SELL",
+      "shares": 1432,
+      "value": 573982,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260611",
+      "ticker": "QCOM",
+      "company": "QUALCOMM INC/DE",
+      "form": "4",
+      "type": "insider",
+      "owner": "Palkhiwala Akash J.",
+      "title": "EVP, CFO & COO",
+      "action": "SELL",
+      "shares": 2500,
+      "value": 493379,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260611",
+      "ticker": "INTU",
+      "company": "INTUIT INC.",
+      "form": "4",
+      "type": "insider",
+      "owner": "DALZELL RICHARD L",
+      "title": "",
+      "action": "SELL",
+      "shares": 1004,
+      "value": 289447,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260611",
+      "ticker": "CSCO",
+      "company": "CISCO SYSTEMS, INC.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Subaiya Thimaya K.",
+      "title": "EVP, Operations",
+      "action": "SELL",
+      "shares": 1715,
+      "value": 206473,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F"
+      ]
+    },
+    {
+      "date": "20260611",
+      "ticker": "ICE",
+      "company": "Intercontinental Exchange, Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Hague William Jefferson",
+      "title": "",
+      "action": "SELL",
+      "shares": 91,
+      "value": 12603,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260611",
+      "ticker": "UNP",
+      "company": "UNION PACIFIC CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "Rocker Kenyatta G",
+      "title": "EVP MARKETING & SALES",
+      "action": "BUY",
+      "shares": 15,
+      "value": 4243,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260611",
+      "ticker": "UNP",
+      "company": "UNION PACIFIC CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "Gehringer Eric J",
+      "title": "EVP OPERATIONS",
+      "action": "BUY",
+      "shares": 13,
+      "value": 3499,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260611",
+      "ticker": "UNP",
+      "company": "UNION PACIFIC CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "Jalali Rahul",
+      "title": "EVP & CHIEF INFORMATION OFFICE",
+      "action": "BUY",
+      "shares": 8,
+      "value": 2400,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260611",
+      "ticker": "UNP",
+      "company": "UNION PACIFIC CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "Hamann Jennifer L",
+      "title": "EVP & CHIEF FINANCIAL OFFICER",
+      "action": "BUY",
+      "shares": 8,
+      "value": 2325,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260611",
+      "ticker": "UNP",
+      "company": "UNION PACIFIC CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "Conlin Christina B",
+      "title": "EVP CHIEF LEGAL OFFICER & CORP",
+      "action": "BUY",
+      "shares": 7,
+      "value": 1904,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260611",
+      "ticker": "UNP",
+      "company": "UNION PACIFIC CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "Powers Carrie J",
+      "title": "VP & CONTROLLER",
+      "action": "BUY",
+      "shares": 5,
+      "value": 1580,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260611",
+      "ticker": "TJX",
+      "company": "TJX COMPANIES INC /DE/",
+      "form": "4",
+      "type": "insider",
+      "owner": "GOODWIN C KIM",
+      "title": "",
+      "action": "BUY",
+      "shares": 802,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "M"
+      ]
+    },
+    {
+      "date": "20260611",
+      "ticker": "TJX",
+      "company": "TJX COMPANIES INC /DE/",
+      "form": "4",
+      "type": "insider",
+      "owner": "LANE AMY B",
+      "title": "",
+      "action": "BUY",
+      "shares": 802,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "M"
+      ]
+    },
+    {
+      "date": "20260611",
+      "ticker": "TJX",
+      "company": "TJX COMPANIES INC /DE/",
+      "form": "4",
+      "type": "insider",
+      "owner": "Nemerov Jackwyn",
+      "title": "",
+      "action": "BUY",
+      "shares": 802,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "M"
+      ]
+    },
+    {
+      "date": "20260611",
+      "ticker": "TJX",
+      "company": "TJX COMPANIES INC /DE/",
+      "form": "4",
+      "type": "insider",
+      "owner": "BERKERY ROSEMARY T",
+      "title": "",
+      "action": "BUY",
+      "shares": 802,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "M"
+      ]
+    },
+    {
+      "date": "20260611",
+      "ticker": "TJX",
+      "company": "TJX COMPANIES INC /DE/",
+      "form": "4",
+      "type": "insider",
+      "owner": "CHING DAVID T",
+      "title": "",
+      "action": "BUY",
+      "shares": 802,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "M"
+      ]
+    },
+    {
+      "date": "20260611",
+      "ticker": "CAT",
+      "company": "CATERPILLAR INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "Fish James C Jr",
+      "title": "",
+      "action": "BUY",
+      "shares": 211,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260611",
+      "ticker": "CAT",
+      "company": "CATERPILLAR INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "Johnson Gerald",
+      "title": "",
+      "action": "BUY",
+      "shares": 211,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260611",
+      "ticker": "CAT",
+      "company": "CATERPILLAR INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "KEENE NAZZIC S",
+      "title": "",
+      "action": "BUY",
+      "shares": 211,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260611",
+      "ticker": "CAT",
+      "company": "CATERPILLAR INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "MacLennan David",
+      "title": "",
+      "action": "BUY",
+      "shares": 211,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260611",
+      "ticker": "CAT",
+      "company": "CATERPILLAR INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "Marks Judith Fran",
+      "title": "",
+      "action": "BUY",
+      "shares": 211,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260611",
+      "ticker": "CAT",
+      "company": "CATERPILLAR INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "REED DEBRA L",
+      "title": "",
+      "action": "BUY",
+      "shares": 211,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260611",
+      "ticker": "CAT",
+      "company": "CATERPILLAR INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "SCHWAB SUSAN C",
+      "title": "",
+      "action": "BUY",
+      "shares": 211,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260611",
+      "ticker": "CAT",
+      "company": "CATERPILLAR INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "WILKINS RAYFORD JR",
+      "title": "",
+      "action": "BUY",
+      "shares": 211,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260611",
+      "ticker": "LOW",
+      "company": "LOWES COMPANIES INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "Vagell Margrethe R",
+      "title": "EVP, Supply Chain",
+      "action": "SELL",
+      "shares": 455,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "G"
+      ]
+    },
+    {
+      "date": "20260611",
+      "ticker": "MU",
+      "company": "MICRON TECHNOLOGY INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "Bjorlin Alexis",
+      "title": "",
+      "action": "BUY",
+      "shares": 63,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260611",
+      "ticker": "GILD",
+      "company": "GILEAD SCIENCES, INC.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Dickinson Andrew D",
+      "title": "Chief Financial Officer",
+      "action": "BUY",
+      "shares": 1455,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260611",
+      "ticker": "GILD",
+      "company": "GILEAD SCIENCES, INC.",
+      "form": "4",
+      "type": "insider",
+      "owner": "O'Day Daniel Patrick",
+      "title": "Chairman & CEO",
+      "action": "BUY",
+      "shares": 4566,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260611",
+      "ticker": "GILD",
+      "company": "GILEAD SCIENCES, INC.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Berger Dietmar",
+      "title": "Chief Medical Officer",
+      "action": "BUY",
+      "shares": 270,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260611",
+      "ticker": "GILD",
+      "company": "GILEAD SCIENCES, INC.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Mercier Johanna",
+      "title": "Chief Comm & Corp Aff Officer",
+      "action": "BUY",
+      "shares": 1455,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260611",
+      "ticker": "GILD",
+      "company": "GILEAD SCIENCES, INC.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Cain Wettan Keeley M",
+      "title": "EVP Gen Counsel,  Legal & Comp",
+      "action": "BUY",
+      "shares": 306,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
     {
       "date": "20260610",
       "ticker": "TJX",
@@ -1047,233 +1684,11 @@
       "codes": [
         "J"
       ]
-    },
-    {
-      "date": "20260604",
-      "ticker": "UBER",
-      "company": "Uber Technologies, Inc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Uber Technologies, Inc",
-      "title": "",
-      "action": "SELL",
-      "shares": 67500000,
-      "value": 479250000,
-      "open_market": true,
-      "ten_pct": true,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260604",
-      "ticker": "NVDA",
-      "company": "NVIDIA CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "STEVENS MARK A",
-      "title": "",
-      "action": "SELL",
-      "shares": 1307500,
-      "value": 221102600,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "G",
-        "S"
-      ]
-    },
-    {
-      "date": "20260604",
-      "ticker": "WMT",
-      "company": "Walmart Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Walton Family Holdings Trust",
-      "title": "",
-      "action": "SELL",
-      "shares": 1771333,
-      "value": 200723322,
-      "open_market": true,
-      "ten_pct": true,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260604",
-      "ticker": "UNP",
-      "company": "UNION PACIFIC CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Gehringer Eric J",
-      "title": "EVP OPERATIONS",
-      "action": "SELL",
-      "shares": 2991,
-      "value": 789504,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260604",
-      "ticker": "SCHW",
-      "company": "SCHWAB CHARLES CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Verdeschi Michael D",
-      "title": "CFO",
-      "action": "SELL",
-      "shares": 6519,
-      "value": 569890,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F"
-      ]
-    },
-    {
-      "date": "20260604",
-      "ticker": "UNH",
-      "company": "UNITEDHEALTH GROUP INC",
-      "form": "4",
-      "type": "insider",
-      "owner": "Conway Patrick Hugh",
-      "title": "Chief Executive Officer, Optum",
-      "action": "SELL",
-      "shares": 203,
-      "value": 77028,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F"
-      ]
-    },
-    {
-      "date": "20260604",
-      "ticker": "UNH",
-      "company": "UNITEDHEALTH GROUP INC",
-      "form": "4",
-      "type": "insider",
-      "owner": "Zaetta Christopher R",
-      "title": "EVP & Chief Legal Officer",
-      "action": "SELL",
-      "shares": 134,
-      "value": 50525,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F"
-      ]
-    },
-    {
-      "date": "20260604",
-      "ticker": "WMT",
-      "company": "Walmart Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Dallaire Seth",
-      "title": "Executive Vice President",
-      "action": "SELL",
-      "shares": 388,
-      "value": 44512,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F"
-      ]
-    },
-    {
-      "date": "20260604",
-      "ticker": "WMT",
-      "company": "Walmart Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Watkins Latriece",
-      "title": "Executive Vice President",
-      "action": "SELL",
-      "shares": 228,
-      "value": 26148,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F"
-      ]
-    },
-    {
-      "date": "20260604",
-      "ticker": "WMT",
-      "company": "Walmart Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Milum Dwayne M",
-      "title": "SVP & Controller",
-      "action": "SELL",
-      "shares": 121,
-      "value": 13951,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F"
-      ]
-    },
-    {
-      "date": "20260604",
-      "ticker": "WMT",
-      "company": "Walmart Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Guggina David W",
-      "title": "Executive Vice President",
-      "action": "SELL",
-      "shares": 118,
-      "value": 13553,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F"
-      ]
-    },
-    {
-      "date": "20260604",
-      "ticker": "IBM",
-      "company": "INTERNATIONAL BUSINESS MACHINES CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Fehring Nicolas A.",
-      "title": "VP, Controller",
-      "action": "SELL",
-      "shares": 400,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "G"
-      ]
-    },
-    {
-      "date": "20260604",
-      "ticker": "CSCO",
-      "company": "CISCO SYSTEMS, INC.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Fink Nichlas A",
-      "title": "SVP, Chief Accounting Officer",
-      "action": "BUY",
-      "shares": 4501,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
     }
   ],
   "meta": {
-    "total": 74,
-    "insider": 74,
+    "total": 98,
+    "insider": 98,
     "stake": 0,
     "companies": 97
   }
