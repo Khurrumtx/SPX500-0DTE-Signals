@@ -1,7 +1,548 @@
 {
-  "generated": "2026-06-17T23:02:58.980172+00:00",
+  "generated": "2026-06-18T23:11:05.250922+00:00",
   "lookback_days": 5,
   "activity": [
+    {
+      "date": "20260617",
+      "ticker": "TSLA",
+      "company": "Tesla, Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Musk Elon",
+      "title": "CEO",
+      "action": "BUY",
+      "shares": 286428773,
+      "value": 7094441104,
+      "open_market": false,
+      "ten_pct": true,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260617",
+      "ticker": "AMAT",
+      "company": "APPLIED MATERIALS INC /DE",
+      "form": "4",
+      "type": "insider",
+      "owner": "DICKERSON GARY E",
+      "title": "President and CEO",
+      "action": "SELL",
+      "shares": 100000,
+      "value": 49239083,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "G",
+        "S"
+      ]
+    },
+    {
+      "date": "20260617",
+      "ticker": "AMAT",
+      "company": "APPLIED MATERIALS INC /DE",
+      "form": "4",
+      "type": "insider",
+      "owner": "Nalamasu Omkaram",
+      "title": "Senior Vice President, CTO",
+      "action": "SELL",
+      "shares": 35000,
+      "value": 20754197,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260617",
+      "ticker": "AMAT",
+      "company": "APPLIED MATERIALS INC /DE",
+      "form": "4",
+      "type": "insider",
+      "owner": "Iannotti Thomas J",
+      "title": "",
+      "action": "SELL",
+      "shares": 10000,
+      "value": 5547872,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "G",
+        "S"
+      ]
+    },
+    {
+      "date": "20260617",
+      "ticker": "AMAT",
+      "company": "APPLIED MATERIALS INC /DE",
+      "form": "4",
+      "type": "insider",
+      "owner": "Deane Timothy M",
+      "title": "SVP, Applied Global Services",
+      "action": "SELL",
+      "shares": 10166,
+      "value": 5092984,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "G",
+        "S"
+      ]
+    },
+    {
+      "date": "20260617",
+      "ticker": "LOW",
+      "company": "LOWES COMPANIES INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "Dupre Janice",
+      "title": "EVP, Human Resources",
+      "action": "SELL",
+      "shares": 476,
+      "value": 3139885,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "G",
+        "M",
+        "S"
+      ]
+    },
+    {
+      "date": "20260617",
+      "ticker": "AXP",
+      "company": "AMERICAN EXPRESS CO",
+      "form": "4",
+      "type": "insider",
+      "owner": "McNeal Glenda G",
+      "title": "Chief Partner Officer",
+      "action": "SELL",
+      "shares": 7033,
+      "value": 2386718,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260617",
+      "ticker": "VRTX",
+      "company": "VERTEX PHARMACEUTICALS INC / MA",
+      "form": "4",
+      "type": "insider",
+      "owner": "Bozic Carmen",
+      "title": "EVP and CMO",
+      "action": "SELL",
+      "shares": 4062,
+      "value": 1827900,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260617",
+      "ticker": "CSCO",
+      "company": "CISCO SYSTEMS, INC.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Subaiya Thimaya K.",
+      "title": "EVP, Operations",
+      "action": "SELL",
+      "shares": 7127,
+      "value": 854599,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260617",
+      "ticker": "META",
+      "company": "Meta Platforms, Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Olivan Javier",
+      "title": "Chief Operating Officer",
+      "action": "SELL",
+      "shares": 1398,
+      "value": 838800,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260617",
+      "ticker": "PLD",
+      "company": "Prologis, Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Arndt Timothy D",
+      "title": "Chief Financial Officer",
+      "action": "SELL",
+      "shares": 3597,
+      "value": 539550,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260617",
+      "ticker": "AMD",
+      "company": "ADVANCED MICRO DEVICES INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "Papermaster Mark D",
+      "title": "Chief Technology Officer & EVP",
+      "action": "BUY",
+      "shares": 0,
+      "value": 509099,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "M",
+        "S"
+      ]
+    },
+    {
+      "date": "20260617",
+      "ticker": "WMT",
+      "company": "Walmart Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Watkins Latriece",
+      "title": "Executive Vice President",
+      "action": "SELL",
+      "shares": 3667,
+      "value": 443072,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F"
+      ]
+    },
+    {
+      "date": "20260617",
+      "ticker": "WMT",
+      "company": "Walmart Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Bartlett Daniel J",
+      "title": "Executive Vice President",
+      "action": "SELL",
+      "shares": 1385,
+      "value": 165964,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260617",
+      "ticker": "INTU",
+      "company": "INTUIT INC.",
+      "form": "4",
+      "type": "insider",
+      "owner": "DALZELL RICHARD L",
+      "title": "",
+      "action": "SELL",
+      "shares": 284,
+      "value": 80144,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260617",
+      "ticker": "SBUX",
+      "company": "STARBUCKS CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "KELLY SARA",
+      "title": "evp, chief partner officer",
+      "action": "SELL",
+      "shares": 315,
+      "value": 32084,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F"
+      ]
+    },
+    {
+      "date": "20260617",
+      "ticker": "GS",
+      "company": "GOLDMAN SACHS GROUP INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "GOLDMAN SACHS & CO. LLC",
+      "title": "",
+      "action": "SELL",
+      "shares": 48,
+      "value": 475,
+      "open_market": true,
+      "ten_pct": true,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260617",
+      "ticker": "NOW",
+      "company": "ServiceNow, Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Yuan Eric S.",
+      "title": "",
+      "action": "BUY",
+      "shares": 2747,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260617",
+      "ticker": "GOOG",
+      "company": "Alphabet Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Shriram Kavitark Ram",
+      "title": "",
+      "action": "BUY",
+      "shares": 2,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260617",
+      "ticker": "GOOG",
+      "company": "Alphabet Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Washington Robin L",
+      "title": "",
+      "action": "BUY",
+      "shares": 2,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260617",
+      "ticker": "GOOG",
+      "company": "Alphabet Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "DOERR L JOHN",
+      "title": "",
+      "action": "BUY",
+      "shares": 2,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260617",
+      "ticker": "GOOG",
+      "company": "Alphabet Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Ferguson Roger W. Jr.",
+      "title": "",
+      "action": "BUY",
+      "shares": 0,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260617",
+      "ticker": "GOOG",
+      "company": "Alphabet Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "CHAVEZ R. MARTIN",
+      "title": "",
+      "action": "BUY",
+      "shares": 2,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260617",
+      "ticker": "GOOG",
+      "company": "Alphabet Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Pichai Sundar",
+      "title": "Chief Executive Officer",
+      "action": "BUY",
+      "shares": 137,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260617",
+      "ticker": "AVGO",
+      "company": "Broadcom Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "O'Toole Amie Thuener",
+      "title": "Chief Financial Officer",
+      "action": "BUY",
+      "shares": 50000,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260617",
+      "ticker": "AMD",
+      "company": "ADVANCED MICRO DEVICES INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "GUIDO PHILIP",
+      "title": "EVP & Chief Commercial Officer",
+      "action": "BUY",
+      "shares": 4545,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260617",
+      "ticker": "AAPL",
+      "company": "Apple Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Borders Ben",
+      "title": "Principal Accounting Officer",
+      "action": "BUY",
+      "shares": 0,
+      "value": 0,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M",
+        "S"
+      ]
+    },
+    {
+      "date": "20260617",
+      "ticker": "AAPL",
+      "company": "Apple Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Newstead Jennifer",
+      "title": "SVP, GC and Secretary",
+      "action": "BUY",
+      "shares": 13866,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260617",
+      "ticker": "BAC",
+      "company": "BANK OF AMERICA CORP /DE/",
+      "form": "4",
+      "type": "insider",
+      "owner": "MOYNIHAN BRIAN T",
+      "title": "Chair and CEO",
+      "action": "BUY",
+      "shares": 0,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "D",
+        "M"
+      ]
+    },
+    {
+      "date": "20260617",
+      "ticker": "WFC",
+      "company": "WELLS FARGO & COMPANY/MN",
+      "form": "4",
+      "type": "insider",
+      "owner": "Rosenberg Jason M.",
+      "title": "SEVP & Head of Public Affairs",
+      "action": "BUY",
+      "shares": 9138,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260617",
+      "ticker": "ADBE",
+      "company": "ADOBE INC.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Day Steven",
+      "title": "Interim CFO and SVP",
+      "action": "BUY",
+      "shares": 276,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
     {
       "date": "20260616",
       "ticker": "PANW",
@@ -1292,322 +1833,11 @@
         "F",
         "M"
       ]
-    },
-    {
-      "date": "20260610",
-      "ticker": "TJX",
-      "company": "TJX COMPANIES INC /DE/",
-      "form": "4",
-      "type": "insider",
-      "owner": "MEYROWITZ CAROL",
-      "title": "Executive Chairman",
-      "action": "SELL",
-      "shares": 55624,
-      "value": 9102739,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260610",
-      "ticker": "KO",
-      "company": "COCA COLA CO",
-      "form": "4",
-      "type": "insider",
-      "owner": "MANN JENNIFER K",
-      "title": "Executive Vice President",
-      "action": "BUY",
-      "shares": 0,
-      "value": 5510694,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "M",
-        "S"
-      ]
-    },
-    {
-      "date": "20260610",
-      "ticker": "MSFT",
-      "company": "MICROSOFT CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Numoto Takeshi",
-      "title": "EVP, Chief Marketing Officer",
-      "action": "SELL",
-      "shares": 2500,
-      "value": 1031125,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260610",
-      "ticker": "MCD",
-      "company": "MCDONALDS CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Erlinger Joseph M.",
-      "title": "President, McDonald's USA",
-      "action": "BUY",
-      "shares": 0,
-      "value": 828713,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "M",
-        "S"
-      ]
-    },
-    {
-      "date": "20260610",
-      "ticker": "CB",
-      "company": "Chubb Ltd",
-      "form": "4",
-      "type": "insider",
-      "owner": "Ortega Juan Luis",
-      "title": "Executive Vice President*",
-      "action": "BUY",
-      "shares": 0,
-      "value": 540192,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "M",
-        "S"
-      ]
-    },
-    {
-      "date": "20260610",
-      "ticker": "COP",
-      "company": "CONOCOPHILLIPS",
-      "form": "4",
-      "type": "insider",
-      "owner": "Mulligan Sharmila",
-      "title": "",
-      "action": "SELL",
-      "shares": 1974,
-      "value": 234906,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260610",
-      "ticker": "ISRG",
-      "company": "INTUITIVE SURGICAL INC",
-      "form": "4",
-      "type": "insider",
-      "owner": "LOEB GARY",
-      "title": "EVP & Chief Legal and Complian",
-      "action": "SELL",
-      "shares": 400,
-      "value": 169656,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260610",
-      "ticker": "PFE",
-      "company": "PFIZER INC",
-      "form": "4",
-      "type": "insider",
-      "owner": "DAMICO JENNIFER B.",
-      "title": "SVP & Controller",
-      "action": "SELL",
-      "shares": 2000,
-      "value": 51400,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260610",
-      "ticker": "ISRG",
-      "company": "INTUITIVE SURGICAL INC",
-      "form": "4",
-      "type": "insider",
-      "owner": "Brosius Mark",
-      "title": "EVP & Chief Mfg and Supply Cha",
-      "action": "SELL",
-      "shares": 69,
-      "value": 29103,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260610",
-      "ticker": "ISRG",
-      "company": "INTUITIVE SURGICAL INC",
-      "form": "4",
-      "type": "insider",
-      "owner": "Rosa David J.",
-      "title": "Chief Executive Officer (CEO)",
-      "action": "BUY",
-      "shares": 684,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F",
-        "M"
-      ]
-    },
-    {
-      "date": "20260610",
-      "ticker": "NVDA",
-      "company": "NVIDIA CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "GAWEL SCOTT",
-      "title": "Principal Accounting Officer",
-      "action": "BUY",
-      "shares": 59509,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260610",
-      "ticker": "LIN",
-      "company": "LINDE PLC",
-      "form": "4",
-      "type": "insider",
-      "owner": "Innocenzi Stefanos",
-      "title": "SVP, Linde Engineering",
-      "action": "BUY",
-      "shares": 1973,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F",
-        "M"
-      ]
-    },
-    {
-      "date": "20260610",
-      "ticker": "PG",
-      "company": "PROCTER & GAMBLE Co",
-      "form": "4",
-      "type": "insider",
-      "owner": "ARNOLD CRAIG",
-      "title": "",
-      "action": "BUY",
-      "shares": 202,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260610",
-      "ticker": "PG",
-      "company": "PROCTER & GAMBLE Co",
-      "form": "4",
-      "type": "insider",
-      "owner": "JIMENEZ JOSEPH",
-      "title": "",
-      "action": "BUY",
-      "shares": 320,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260610",
-      "ticker": "PG",
-      "company": "PROCTER & GAMBLE Co",
-      "form": "4",
-      "type": "insider",
-      "owner": "Kempczinski Christopher J",
-      "title": "",
-      "action": "BUY",
-      "shares": 258,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260610",
-      "ticker": "PG",
-      "company": "PROCTER & GAMBLE Co",
-      "form": "4",
-      "type": "insider",
-      "owner": "McCarthy Christine M",
-      "title": "",
-      "action": "BUY",
-      "shares": 253,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260610",
-      "ticker": "PG",
-      "company": "PROCTER & GAMBLE Co",
-      "form": "4",
-      "type": "insider",
-      "owner": "McEvoy Ashley",
-      "title": "",
-      "action": "BUY",
-      "shares": 202,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260610",
-      "ticker": "PG",
-      "company": "PROCTER & GAMBLE Co",
-      "form": "4",
-      "type": "insider",
-      "owner": "Portman Robert Jones",
-      "title": "",
-      "action": "BUY",
-      "shares": 51,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
     }
   ],
   "meta": {
-    "total": 93,
-    "insider": 93,
+    "total": 106,
+    "insider": 106,
     "stake": 0,
     "companies": 97
   }
