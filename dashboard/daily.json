@@ -1,7 +1,92 @@
 {
-  "generated": "2026-06-22T23:03:54.705918+00:00",
+  "generated": "2026-06-23T22:54:53.101441+00:00",
   "lookback_days": 5,
   "activity": [
+    {
+      "date": "20260622",
+      "ticker": "AMAT",
+      "company": "APPLIED MATERIALS INC /DE",
+      "form": "4",
+      "type": "insider",
+      "owner": "Raja Prabu G.",
+      "title": "President, Semi. Products Grp.",
+      "action": "SELL",
+      "shares": 10000,
+      "value": 6335300,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260622",
+      "ticker": "JPM",
+      "company": "JPMORGAN CHASE & CO",
+      "form": "4",
+      "type": "insider",
+      "owner": "Friedman Stacey",
+      "title": "General Counsel",
+      "action": "SELL",
+      "shares": 5467,
+      "value": 1808121,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260622",
+      "ticker": "LOW",
+      "company": "LOWES COMPANIES INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "Vagell Margrethe R",
+      "title": "EVP, Supply Chain",
+      "action": "SELL",
+      "shares": 2500,
+      "value": 559575,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260622",
+      "ticker": "WMT",
+      "company": "Walmart Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Nicholas Christopher James",
+      "title": "Executive Vice President",
+      "action": "SELL",
+      "shares": 2900,
+      "value": 342752,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260622",
+      "ticker": "PANW",
+      "company": "Palo Alto Networks Inc",
+      "form": "4",
+      "type": "insider",
+      "owner": "Bawa Aparna",
+      "title": "",
+      "action": "SELL",
+      "shares": 345,
+      "value": 100108,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
     {
       "date": "20260618",
       "ticker": "WMT",
@@ -1509,217 +1594,11 @@
       "codes": [
         "G"
       ]
-    },
-    {
-      "date": "20260612",
-      "ticker": "AMD",
-      "company": "ADVANCED MICRO DEVICES INC",
-      "form": "4",
-      "type": "insider",
-      "owner": "Su Lisa T",
-      "title": "Chair, President & CEO",
-      "action": "SELL",
-      "shares": 155000,
-      "value": 57585714,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "G",
-        "S"
-      ]
-    },
-    {
-      "date": "20260612",
-      "ticker": "PANW",
-      "company": "Palo Alto Networks Inc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Key John P.",
-      "title": "",
-      "action": "SELL",
-      "shares": 7500,
-      "value": 2094300,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260612",
-      "ticker": "KO",
-      "company": "COCA COLA CO",
-      "form": "4",
-      "type": "insider",
-      "owner": "MANN JENNIFER K",
-      "title": "Executive Vice President",
-      "action": "SELL",
-      "shares": 23984,
-      "value": 2000594,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260612",
-      "ticker": "MSFT",
-      "company": "MICROSOFT CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Numoto Takeshi",
-      "title": "EVP, Chief Marketing Officer",
-      "action": "SELL",
-      "shares": 4500,
-      "value": 1812780,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260612",
-      "ticker": "WMT",
-      "company": "Walmart Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Guggina David W",
-      "title": "Executive Vice President",
-      "action": "SELL",
-      "shares": 11978,
-      "value": 1435203,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260612",
-      "ticker": "JNJ",
-      "company": "JOHNSON & JOHNSON",
-      "form": "4",
-      "type": "insider",
-      "owner": "Wengel Kathryn E",
-      "title": "EVP, Chief TO and Risk Officer",
-      "action": "BUY",
-      "shares": 0,
-      "value": 1156700,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "M",
-        "S"
-      ]
-    },
-    {
-      "date": "20260612",
-      "ticker": "ADI",
-      "company": "ANALOG DEVICES INC",
-      "form": "4",
-      "type": "insider",
-      "owner": "STATA RAY",
-      "title": "",
-      "action": "SELL",
-      "shares": 1416,
-      "value": 563722,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260612",
-      "ticker": "PANW",
-      "company": "Palo Alto Networks Inc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Bawa Aparna",
-      "title": "",
-      "action": "SELL",
-      "shares": 1468,
-      "value": 399835,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260612",
-      "ticker": "TJX",
-      "company": "TJX COMPANIES INC /DE/",
-      "form": "4",
-      "type": "insider",
-      "owner": "Nemerov Jackwyn",
-      "title": "",
-      "action": "SELL",
-      "shares": 957,
-      "value": 161345,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260612",
-      "ticker": "ELV",
-      "company": "Elevance Health, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Dixon Robert L JR",
-      "title": "",
-      "action": "SELL",
-      "shares": 151,
-      "value": 60667,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260612",
-      "ticker": "ISRG",
-      "company": "INTUITIVE SURGICAL INC",
-      "form": "4",
-      "type": "insider",
-      "owner": "Brosius Mark",
-      "title": "EVP & Chief Mfg and Supply Cha",
-      "action": "SELL",
-      "shares": 48,
-      "value": 19832,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260612",
-      "ticker": "WFC",
-      "company": "WELLS FARGO & COMPANY/MN",
-      "form": "4",
-      "type": "insider",
-      "owner": "Wells Fargo Municipal Capital Strategies, LLC",
-      "title": "",
-      "action": "SELL",
-      "shares": 750,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": true,
-      "codes": [
-        "J"
-      ]
     }
   ],
   "meta": {
-    "total": 99,
-    "insider": 99,
+    "total": 92,
+    "insider": 92,
     "stake": 0,
     "companies": 97
   }
