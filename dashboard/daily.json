@@ -1,7 +1,233 @@
 {
-  "generated": "2026-06-23T22:54:53.101441+00:00",
+  "generated": "2026-06-24T22:54:55.768694+00:00",
   "lookback_days": 5,
   "activity": [
+    {
+      "date": "20260623",
+      "ticker": "NVDA",
+      "company": "NVIDIA CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "STEVENS MARK A",
+      "title": "",
+      "action": "SELL",
+      "shares": 885000,
+      "value": 185999938,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260623",
+      "ticker": "NVDA",
+      "company": "NVIDIA CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "HUANG JEN HSUN",
+      "title": "President and CEO",
+      "action": "SELL",
+      "shares": 45723,
+      "value": 9483407,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F"
+      ]
+    },
+    {
+      "date": "20260623",
+      "ticker": "NVDA",
+      "company": "NVIDIA CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "Kress Colette",
+      "title": "EVP & Chief Financial Officer",
+      "action": "SELL",
+      "shares": 40746,
+      "value": 8451127,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F"
+      ]
+    },
+    {
+      "date": "20260623",
+      "ticker": "NVDA",
+      "company": "NVIDIA CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "Puri Ajay K",
+      "title": "EVP, Worldwide Field Ops",
+      "action": "SELL",
+      "shares": 36927,
+      "value": 7659029,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F"
+      ]
+    },
+    {
+      "date": "20260623",
+      "ticker": "NVDA",
+      "company": "NVIDIA CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "Teter Timothy S.",
+      "title": "EVP, General Counsel and Sec",
+      "action": "SELL",
+      "shares": 35742,
+      "value": 7413248,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F"
+      ]
+    },
+    {
+      "date": "20260623",
+      "ticker": "NVDA",
+      "company": "NVIDIA CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "Shoquist Debora",
+      "title": "EVP, Operations",
+      "action": "SELL",
+      "shares": 35012,
+      "value": 7261838,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F"
+      ]
+    },
+    {
+      "date": "20260623",
+      "ticker": "VRTX",
+      "company": "VERTEX PHARMACEUTICALS INC / MA",
+      "form": "4",
+      "type": "insider",
+      "owner": "Bozic Carmen",
+      "title": "EVP and CMO",
+      "action": "SELL",
+      "shares": 1020,
+      "value": 471413,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260623",
+      "ticker": "MA",
+      "company": "Mastercard Inc",
+      "form": "4",
+      "type": "insider",
+      "owner": "Matsumoto Oki",
+      "title": "",
+      "action": "SELL",
+      "shares": 98,
+      "value": 48260,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F"
+      ]
+    },
+    {
+      "date": "20260623",
+      "ticker": "CRM",
+      "company": "Salesforce, Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Milano Miguel",
+      "title": "President and CRO",
+      "action": "BUY",
+      "shares": 1540,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260623",
+      "ticker": "CRM",
+      "company": "Salesforce, Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Harris Parker",
+      "title": "Co-Founder and CTO, Slack",
+      "action": "BUY",
+      "shares": 1279,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260623",
+      "ticker": "CRM",
+      "company": "Salesforce, Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Washington Robin L",
+      "title": "President and COFO",
+      "action": "BUY",
+      "shares": 923,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260623",
+      "ticker": "CRM",
+      "company": "Salesforce, Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Niles Sabastian",
+      "title": "President and CLO",
+      "action": "BUY",
+      "shares": 908,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260623",
+      "ticker": "CRM",
+      "company": "Salesforce, Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Tallapragada Srinivas",
+      "title": "Chief Eng/Cust Success Officer",
+      "action": "BUY",
+      "shares": 1690,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
     {
       "date": "20260622",
       "ticker": "AMAT",
@@ -1474,131 +1700,11 @@
         "F",
         "M"
       ]
-    },
-    {
-      "date": "20260615",
-      "ticker": "ADI",
-      "company": "ANALOG DEVICES INC",
-      "form": "4",
-      "type": "insider",
-      "owner": "Golz Karen",
-      "title": "",
-      "action": "SELL",
-      "shares": 1000,
-      "value": 411950,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260615",
-      "ticker": "AVGO",
-      "company": "Broadcom Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "You Harry L.",
-      "title": "",
-      "action": "BUY",
-      "shares": 1000,
-      "value": 373570,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "P"
-      ]
-    },
-    {
-      "date": "20260615",
-      "ticker": "ELV",
-      "company": "Elevance Health, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Penczek Ronald W",
-      "title": "CAO & Controller",
-      "action": "SELL",
-      "shares": 369,
-      "value": 148766,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260615",
-      "ticker": "SBUX",
-      "company": "STARBUCKS CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "BREWER BRADY",
-      "title": "ceo, International",
-      "action": "SELL",
-      "shares": 588,
-      "value": 58800,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260615",
-      "ticker": "MSFT",
-      "company": "MICROSOFT CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Coleman Amy",
-      "title": "EVP, Chief Human Resources Off",
-      "action": "SELL",
-      "shares": 35,
-      "value": 14044,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F"
-      ]
-    },
-    {
-      "date": "20260615",
-      "ticker": "BAC",
-      "company": "BANK OF AMERICA CORP /DE/",
-      "form": "4",
-      "type": "insider",
-      "owner": "BOFA SECURITIES, INC.",
-      "title": "",
-      "action": "SELL",
-      "shares": 8,
-      "value": 0,
-      "open_market": true,
-      "ten_pct": true,
-      "codes": [
-        "P",
-        "S"
-      ]
-    },
-    {
-      "date": "20260615",
-      "ticker": "LMT",
-      "company": "LOCKHEED MARTIN CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Hill Stephanie C.",
-      "title": "Pres. Rotary & Mission Systems",
-      "action": "SELL",
-      "shares": 368,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "G"
-      ]
     }
   ],
   "meta": {
-    "total": 92,
-    "insider": 92,
+    "total": 98,
+    "insider": 98,
     "stake": 0,
     "companies": 97
   }
