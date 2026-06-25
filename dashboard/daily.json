@@ -1,7 +1,76 @@
 {
-  "generated": "2026-06-24T22:54:55.768694+00:00",
+  "generated": "2026-06-25T23:01:01.345919+00:00",
   "lookback_days": 5,
   "activity": [
+    {
+      "date": "20260624",
+      "ticker": "BX",
+      "company": "Blackstone Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "SCHWARZMAN STEPHEN A",
+      "title": "",
+      "action": "BUY",
+      "shares": 765110,
+      "value": 19999999,
+      "open_market": true,
+      "ten_pct": true,
+      "codes": [
+        "P"
+      ]
+    },
+    {
+      "date": "20260624",
+      "ticker": "PANW",
+      "company": "Palo Alto Networks Inc",
+      "form": "4",
+      "type": "insider",
+      "owner": "Golechha Dipak",
+      "title": "EVP, Chief Financial Officer",
+      "action": "SELL",
+      "shares": 5000,
+      "value": 1447824,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260624",
+      "ticker": "INTU",
+      "company": "INTUIT INC.",
+      "form": "4",
+      "type": "insider",
+      "owner": "DALZELL RICHARD L",
+      "title": "",
+      "action": "SELL",
+      "shares": 284,
+      "value": 74498,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260624",
+      "ticker": "DIS",
+      "company": "Walt Disney Co",
+      "form": "4",
+      "type": "insider",
+      "owner": "Coleman Sonia L",
+      "title": "Sr. EVP & Chief People Officer",
+      "action": "BUY",
+      "shares": 518,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
     {
       "date": "20260623",
       "ticker": "NVDA",
@@ -1372,339 +1441,11 @@
         "F",
         "M"
       ]
-    },
-    {
-      "date": "20260616",
-      "ticker": "PANW",
-      "company": "Palo Alto Networks Inc",
-      "form": "4",
-      "type": "insider",
-      "owner": "GOETZ JAMES J",
-      "title": "",
-      "action": "SELL",
-      "shares": 20000,
-      "value": 5597910,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260616",
-      "ticker": "LOW",
-      "company": "LOWES COMPANIES INC",
-      "form": "4",
-      "type": "insider",
-      "owner": "PRYOR JULIETTE WILLIAMS",
-      "title": "EVP, CLO & Corp. Sec.",
-      "action": "SELL",
-      "shares": 9768,
-      "value": 2150815,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F"
-      ]
-    },
-    {
-      "date": "20260616",
-      "ticker": "BMY",
-      "company": "BRISTOL MYERS SQUIBB CO",
-      "form": "4",
-      "type": "insider",
-      "owner": "Haller Julia A",
-      "title": "",
-      "action": "BUY",
-      "shares": 20460,
-      "value": 1099929,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "M"
-      ]
-    },
-    {
-      "date": "20260616",
-      "ticker": "GILD",
-      "company": "GILEAD SCIENCES, INC.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Dickinson Andrew D",
-      "title": "Chief Financial Officer",
-      "action": "SELL",
-      "shares": 3000,
-      "value": 376200,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260616",
-      "ticker": "GILD",
-      "company": "GILEAD SCIENCES, INC.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Mercier Johanna",
-      "title": "Chief Comm & Corp Aff Officer",
-      "action": "SELL",
-      "shares": 3000,
-      "value": 371762,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260616",
-      "ticker": "ICE",
-      "company": "Intercontinental Exchange, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Hague William Jefferson",
-      "title": "",
-      "action": "SELL",
-      "shares": 1333,
-      "value": 185900,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260616",
-      "ticker": "CI",
-      "company": "Cigna Group",
-      "form": "4",
-      "type": "insider",
-      "owner": "Kates Jamie G",
-      "title": "Chief Accounting Officer",
-      "action": "BUY",
-      "shares": 0,
-      "value": 137452,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "M",
-        "S"
-      ]
-    },
-    {
-      "date": "20260616",
-      "ticker": "CSCO",
-      "company": "CISCO SYSTEMS, INC.",
-      "form": "4",
-      "type": "insider",
-      "owner": "JOHNSON KRISTINA M",
-      "title": "",
-      "action": "BUY",
-      "shares": 351,
-      "value": 42179,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260616",
-      "ticker": "CSCO",
-      "company": "CISCO SYSTEMS, INC.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Weil Kevin",
-      "title": "",
-      "action": "BUY",
-      "shares": 251,
-      "value": 30162,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260616",
-      "ticker": "CSCO",
-      "company": "CISCO SYSTEMS, INC.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Tessel Marianna",
-      "title": "",
-      "action": "BUY",
-      "shares": 251,
-      "value": 30162,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260616",
-      "ticker": "LLY",
-      "company": "ELI LILLY & Co",
-      "form": "4",
-      "type": "insider",
-      "owner": "LUCIANO JUAN R",
-      "title": "",
-      "action": "BUY",
-      "shares": 14,
-      "value": 15916,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260616",
-      "ticker": "LLY",
-      "company": "ELI LILLY & Co",
-      "form": "4",
-      "type": "insider",
-      "owner": "Alvarez Ralph",
-      "title": "",
-      "action": "BUY",
-      "shares": 10,
-      "value": 12416,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260616",
-      "ticker": "LLY",
-      "company": "ELI LILLY & Co",
-      "form": "4",
-      "type": "insider",
-      "owner": "Fyrwald J Erik",
-      "title": "",
-      "action": "BUY",
-      "shares": 8,
-      "value": 9916,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260616",
-      "ticker": "LLY",
-      "company": "ELI LILLY & Co",
-      "form": "4",
-      "type": "insider",
-      "owner": "Sulzberger Gabrielle",
-      "title": "",
-      "action": "BUY",
-      "shares": 4,
-      "value": 4958,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260616",
-      "ticker": "DIS",
-      "company": "Walt Disney Co",
-      "form": "4",
-      "type": "insider",
-      "owner": "WOODFORD BRENT",
-      "title": "EVP, Control, Fin Plan & Tax",
-      "action": "BUY",
-      "shares": 1727,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F",
-        "M"
-      ]
-    },
-    {
-      "date": "20260616",
-      "ticker": "DIS",
-      "company": "Walt Disney Co",
-      "form": "4",
-      "type": "insider",
-      "owner": "Roeder Paul M",
-      "title": "Sr EVP and Chief Comm Officer",
-      "action": "BUY",
-      "shares": 983,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F",
-        "M"
-      ]
-    },
-    {
-      "date": "20260616",
-      "ticker": "MSFT",
-      "company": "MICROSOFT CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Jolla Alice L.",
-      "title": "Chief Accounting Officer",
-      "action": "BUY",
-      "shares": 5004,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260616",
-      "ticker": "ADBE",
-      "company": "ADOBE INC.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Forusz Jillian",
-      "title": "SVP & CAO",
-      "action": "BUY",
-      "shares": 303,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F",
-        "M"
-      ]
-    },
-    {
-      "date": "20260616",
-      "ticker": "ADBE",
-      "company": "ADOBE INC.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Pentland Adele Louise",
-      "title": "Chief Legal Officer & EVP",
-      "action": "BUY",
-      "shares": 4124,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F",
-        "M"
-      ]
     }
   ],
   "meta": {
-    "total": 98,
-    "insider": 98,
+    "total": 83,
+    "insider": 83,
     "stake": 0,
     "companies": 97
   }
