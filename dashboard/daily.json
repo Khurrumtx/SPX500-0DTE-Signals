@@ -1,7 +1,60 @@
 {
-  "generated": "2026-06-26T22:54:20.167576+00:00",
+  "generated": "2026-06-29T22:50:06.468964+00:00",
   "lookback_days": 5,
   "activity": [
+    {
+      "date": "20260626",
+      "ticker": "AVGO",
+      "company": "Broadcom Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "SAMUELI HENRY",
+      "title": "",
+      "action": "SELL",
+      "shares": 987642,
+      "value": 250005851,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "G",
+        "S"
+      ]
+    },
+    {
+      "date": "20260626",
+      "ticker": "ORCL",
+      "company": "ORACLE CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "HENLEY JEFFREY",
+      "title": "Vice Chairman",
+      "action": "BUY",
+      "shares": 0,
+      "value": 16372000,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "M",
+        "S"
+      ]
+    },
+    {
+      "date": "20260626",
+      "ticker": "ADBE",
+      "company": "ADOBE INC.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Ricks David A",
+      "title": "",
+      "action": "BUY",
+      "shares": 10000,
+      "value": 1945130,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "P"
+      ]
+    },
     {
       "date": "20260625",
       "ticker": "COST",
@@ -722,530 +775,11 @@
       "codes": [
         "S"
       ]
-    },
-    {
-      "date": "20260618",
-      "ticker": "WMT",
-      "company": "Walmart Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Walton Family Holdings Trust",
-      "title": "",
-      "action": "SELL",
-      "shares": 5310704,
-      "value": 535788409,
-      "open_market": true,
-      "ten_pct": true,
-      "codes": [
-        "J",
-        "S"
-      ]
-    },
-    {
-      "date": "20260618",
-      "ticker": "BX",
-      "company": "Blackstone Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "SCHWARZMAN STEPHEN A",
-      "title": "",
-      "action": "SELL",
-      "shares": 7477500,
-      "value": 28228310,
-      "open_market": true,
-      "ten_pct": true,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260618",
-      "ticker": "AVGO",
-      "company": "Broadcom Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Brazeal Mark David",
-      "title": "Chief Legal & Corp Affairs Ofc",
-      "action": "SELL",
-      "shares": 8152,
-      "value": 3175919,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260618",
-      "ticker": "LOW",
-      "company": "LOWES COMPANIES INC",
-      "form": "4",
-      "type": "insider",
-      "owner": "PRYOR JULIETTE WILLIAMS",
-      "title": "EVP, CLO & Corp. Sec.",
-      "action": "SELL",
-      "shares": 10000,
-      "value": 2097430,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "G",
-        "S"
-      ]
-    },
-    {
-      "date": "20260618",
-      "ticker": "MA",
-      "company": "Mastercard Inc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Qureshi Rima",
-      "title": "",
-      "action": "SELL",
-      "shares": 1641,
-      "value": 813131,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F"
-      ]
-    },
-    {
-      "date": "20260618",
-      "ticker": "GOOG",
-      "company": "Alphabet Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Hennessy John L.",
-      "title": "",
-      "action": "SELL",
-      "shares": 1046,
-      "value": 387063,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "A",
-        "S"
-      ]
-    },
-    {
-      "date": "20260618",
-      "ticker": "NFLX",
-      "company": "NETFLIX INC",
-      "form": "4",
-      "type": "insider",
-      "owner": "SMITH BRADFORD L",
-      "title": "",
-      "action": "BUY",
-      "shares": 0,
-      "value": 374932,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "M",
-        "S"
-      ]
-    },
-    {
-      "date": "20260618",
-      "ticker": "ABT",
-      "company": "ABBOTT LABORATORIES",
-      "form": "4",
-      "type": "insider",
-      "owner": "Stratton John G",
-      "title": "",
-      "action": "BUY",
-      "shares": 2000,
-      "value": 173640,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "P"
-      ]
-    },
-    {
-      "date": "20260618",
-      "ticker": "NVDA",
-      "company": "NVIDIA CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "HUANG JEN HSUN",
-      "title": "President and CEO",
-      "action": "SELL",
-      "shares": 400000,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "G"
-      ]
-    },
-    {
-      "date": "20260618",
-      "ticker": "MA",
-      "company": "Mastercard Inc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Matsumoto Oki",
-      "title": "",
-      "action": "BUY",
-      "shares": 509,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260618",
-      "ticker": "MA",
-      "company": "Mastercard Inc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Sulzberger Gabrielle",
-      "title": "",
-      "action": "BUY",
-      "shares": 509,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260618",
-      "ticker": "MA",
-      "company": "Mastercard Inc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Moon Youngme E",
-      "title": "",
-      "action": "BUY",
-      "shares": 509,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260618",
-      "ticker": "MA",
-      "company": "Mastercard Inc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Uggla Lance Darrell Gordon",
-      "title": "",
-      "action": "BUY",
-      "shares": 509,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260618",
-      "ticker": "MA",
-      "company": "Mastercard Inc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Bracher Candido",
-      "title": "",
-      "action": "BUY",
-      "shares": 509,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260618",
-      "ticker": "MA",
-      "company": "Mastercard Inc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Janow Merit E",
-      "title": "",
-      "action": "BUY",
-      "shares": 684,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260618",
-      "ticker": "MA",
-      "company": "Mastercard Inc",
-      "form": "4",
-      "type": "insider",
-      "owner": "GENACHOWSKI JULIUS",
-      "title": "",
-      "action": "BUY",
-      "shares": 509,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260618",
-      "ticker": "MA",
-      "company": "Mastercard Inc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Goh Choon Phong",
-      "title": "",
-      "action": "BUY",
-      "shares": 509,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260618",
-      "ticker": "MA",
-      "company": "Mastercard Inc",
-      "form": "4",
-      "type": "insider",
-      "owner": "DAVIS RICHARD K",
-      "title": "",
-      "action": "BUY",
-      "shares": 509,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260618",
-      "ticker": "MA",
-      "company": "Mastercard Inc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Talwar Harit",
-      "title": "",
-      "action": "BUY",
-      "shares": 509,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260618",
-      "ticker": "UBER",
-      "company": "Uber Technologies, Inc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Ceremony Glen",
-      "title": "See Remarks",
-      "action": "BUY",
-      "shares": 1818,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F",
-        "M"
-      ]
-    },
-    {
-      "date": "20260618",
-      "ticker": "UBER",
-      "company": "Uber Technologies, Inc",
-      "form": "4",
-      "type": "insider",
-      "owner": "West Tony",
-      "title": "See Remarks",
-      "action": "BUY",
-      "shares": 3627,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F",
-        "M"
-      ]
-    },
-    {
-      "date": "20260618",
-      "ticker": "UBER",
-      "company": "Uber Technologies, Inc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Hazelbaker Jill",
-      "title": "See Remarks",
-      "action": "BUY",
-      "shares": 4531,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F",
-        "M"
-      ]
-    },
-    {
-      "date": "20260618",
-      "ticker": "UBER",
-      "company": "Uber Technologies, Inc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Macdonald Andrew",
-      "title": "See Remarks",
-      "action": "BUY",
-      "shares": 4483,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F",
-        "M"
-      ]
-    },
-    {
-      "date": "20260618",
-      "ticker": "UBER",
-      "company": "Uber Technologies, Inc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Krishnamurthy Balaji (A)",
-      "title": "Chief Financial Officer",
-      "action": "BUY",
-      "shares": 2142,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F",
-        "M"
-      ]
-    },
-    {
-      "date": "20260618",
-      "ticker": "GOOG",
-      "company": "Alphabet Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Schindler Philipp",
-      "title": "SVP, Chief Business Officer",
-      "action": "BUY",
-      "shares": 119,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260618",
-      "ticker": "GOOG",
-      "company": "Alphabet Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Ashkenazi Anat",
-      "title": "SVP, Chief Financial Officer",
-      "action": "BUY",
-      "shares": 93,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260618",
-      "ticker": "GOOG",
-      "company": "Alphabet Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "ARNOLD FRANCES",
-      "title": "",
-      "action": "BUY",
-      "shares": 2,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260618",
-      "ticker": "GOOG",
-      "company": "Alphabet Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Saraci Marsida",
-      "title": "VP, Chief Accounting Officer",
-      "action": "BUY",
-      "shares": 10,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260618",
-      "ticker": "GOOG",
-      "company": "Alphabet Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Porat Ruth",
-      "title": "President and CIO",
-      "action": "BUY",
-      "shares": 94,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260618",
-      "ticker": "GOOG",
-      "company": "Alphabet Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "WALKER JOHN KENT",
-      "title": "President, Global Affairs, CLO",
-      "action": "BUY",
-      "shares": 94,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
     }
   ],
   "meta": {
-    "total": 72,
-    "insider": 72,
+    "total": 45,
+    "insider": 45,
     "stake": 0,
     "companies": 97
   }
