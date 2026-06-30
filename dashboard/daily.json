@@ -1,7 +1,338 @@
 {
-  "generated": "2026-06-29T22:50:06.468964+00:00",
+  "generated": "2026-06-30T22:56:53.014378+00:00",
   "lookback_days": 5,
   "activity": [
+    {
+      "date": "20260629",
+      "ticker": "AVGO",
+      "company": "Broadcom Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Brazeal Mark David",
+      "title": "Chief Legal & Corp Affairs Ofc",
+      "action": "SELL",
+      "shares": 25000,
+      "value": 9675000,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260629",
+      "ticker": "GOOG",
+      "company": "Alphabet Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Schindler Philipp",
+      "title": "SVP, Chief Business Officer",
+      "action": "SELL",
+      "shares": 13557,
+      "value": 4677707,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "C",
+        "F"
+      ]
+    },
+    {
+      "date": "20260629",
+      "ticker": "GOOG",
+      "company": "Alphabet Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Porat Ruth",
+      "title": "President and CIO",
+      "action": "SELL",
+      "shares": 10723,
+      "value": 3699863,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "C",
+        "F"
+      ]
+    },
+    {
+      "date": "20260629",
+      "ticker": "GOOG",
+      "company": "Alphabet Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "WALKER JOHN KENT",
+      "title": "President, Global Affairs, CLO",
+      "action": "SELL",
+      "shares": 10723,
+      "value": 3699863,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "C",
+        "F"
+      ]
+    },
+    {
+      "date": "20260629",
+      "ticker": "GOOG",
+      "company": "Alphabet Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Ashkenazi Anat",
+      "title": "SVP, Chief Financial Officer",
+      "action": "SELL",
+      "shares": 10241,
+      "value": 3533554,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "C",
+        "F"
+      ]
+    },
+    {
+      "date": "20260629",
+      "ticker": "GOOG",
+      "company": "Alphabet Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Pichai Sundar",
+      "title": "Chief Executive Officer",
+      "action": "SELL",
+      "shares": 3702,
+      "value": 1277338,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "C",
+        "F"
+      ]
+    },
+    {
+      "date": "20260629",
+      "ticker": "GOOG",
+      "company": "Alphabet Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Saraci Marsida",
+      "title": "VP, Chief Accounting Officer",
+      "action": "SELL",
+      "shares": 1801,
+      "value": 309735,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "C",
+        "F",
+        "S"
+      ]
+    },
+    {
+      "date": "20260629",
+      "ticker": "ABT",
+      "company": "ABBOTT LABORATORIES",
+      "form": "4",
+      "type": "insider",
+      "owner": "Cushman Elizabeth C.",
+      "title": "EVP, GC AND SECRETARY",
+      "action": "SELL",
+      "shares": 560,
+      "value": 52707,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F"
+      ]
+    },
+    {
+      "date": "20260629",
+      "ticker": "NVDA",
+      "company": "NVIDIA CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "COXE TENCH",
+      "title": "",
+      "action": "BUY",
+      "shares": 1211,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260629",
+      "ticker": "NVDA",
+      "company": "NVIDIA CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "JONES HARVEY C",
+      "title": "",
+      "action": "BUY",
+      "shares": 1211,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260629",
+      "ticker": "NVDA",
+      "company": "NVIDIA CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "SEAWELL A BROOKE",
+      "title": "",
+      "action": "BUY",
+      "shares": 1211,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260629",
+      "ticker": "NVDA",
+      "company": "NVIDIA CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "STEVENS MARK A",
+      "title": "",
+      "action": "BUY",
+      "shares": 1211,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260629",
+      "ticker": "NVDA",
+      "company": "NVIDIA CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "HUDSON DAWN E",
+      "title": "",
+      "action": "BUY",
+      "shares": 1211,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260629",
+      "ticker": "NVDA",
+      "company": "NVIDIA CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "LORA MELISSA",
+      "title": "",
+      "action": "BUY",
+      "shares": 1211,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260629",
+      "ticker": "NVDA",
+      "company": "NVIDIA CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "Shah Aarti S.",
+      "title": "",
+      "action": "BUY",
+      "shares": 1211,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260629",
+      "ticker": "NVDA",
+      "company": "NVIDIA CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "Neal Stephen C",
+      "title": "",
+      "action": "BUY",
+      "shares": 1211,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260629",
+      "ticker": "NVDA",
+      "company": "NVIDIA CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "Dabiri John",
+      "title": "",
+      "action": "BUY",
+      "shares": 1211,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260629",
+      "ticker": "HON",
+      "company": "HONEYWELL INTERNATIONAL INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "HONEYWELL INTERNATIONAL INC",
+      "title": "",
+      "action": "SELL",
+      "shares": 316939750,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": true,
+      "codes": [
+        "J"
+      ]
+    },
+    {
+      "date": "20260629",
+      "ticker": "SO",
+      "company": "SOUTHERN CO",
+      "form": "4",
+      "type": "insider",
+      "owner": "Sena Peter P III",
+      "title": "Chairman,President & CEO, SNC",
+      "action": "BUY",
+      "shares": 396,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
     {
       "date": "20260626",
       "ticker": "AVGO",
@@ -690,96 +1021,11 @@
         "F",
         "M"
       ]
-    },
-    {
-      "date": "20260622",
-      "ticker": "AMAT",
-      "company": "APPLIED MATERIALS INC /DE",
-      "form": "4",
-      "type": "insider",
-      "owner": "Raja Prabu G.",
-      "title": "President, Semi. Products Grp.",
-      "action": "SELL",
-      "shares": 10000,
-      "value": 6335300,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260622",
-      "ticker": "JPM",
-      "company": "JPMORGAN CHASE & CO",
-      "form": "4",
-      "type": "insider",
-      "owner": "Friedman Stacey",
-      "title": "General Counsel",
-      "action": "SELL",
-      "shares": 5467,
-      "value": 1808121,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260622",
-      "ticker": "LOW",
-      "company": "LOWES COMPANIES INC",
-      "form": "4",
-      "type": "insider",
-      "owner": "Vagell Margrethe R",
-      "title": "EVP, Supply Chain",
-      "action": "SELL",
-      "shares": 2500,
-      "value": 559575,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260622",
-      "ticker": "WMT",
-      "company": "Walmart Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Nicholas Christopher James",
-      "title": "Executive Vice President",
-      "action": "SELL",
-      "shares": 2900,
-      "value": 342752,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260622",
-      "ticker": "PANW",
-      "company": "Palo Alto Networks Inc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Bawa Aparna",
-      "title": "",
-      "action": "SELL",
-      "shares": 345,
-      "value": 100108,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
     }
   ],
   "meta": {
-    "total": 45,
-    "insider": 45,
+    "total": 59,
+    "insider": 59,
     "stake": 0,
     "companies": 97
   }
