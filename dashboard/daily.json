@@ -1,7 +1,93 @@
 {
-  "generated": "2026-06-30T22:56:53.014378+00:00",
+  "generated": "2026-07-01T22:55:01.890544+00:00",
   "lookback_days": 5,
   "activity": [
+    {
+      "date": "20260630",
+      "ticker": "MU",
+      "company": "MICRON TECHNOLOGY INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "MEHROTRA SANJAY",
+      "title": "President and CEO",
+      "action": "SELL",
+      "shares": 28506,
+      "value": 32761315,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260630",
+      "ticker": "MU",
+      "company": "MICRON TECHNOLOGY INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "MEHROTRA SANJAY",
+      "title": "President and CEO",
+      "action": "SELL",
+      "shares": 11494,
+      "value": 13573976,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260630",
+      "ticker": "V",
+      "company": "VISA INC.",
+      "form": "4",
+      "type": "insider",
+      "owner": "MCINERNEY RYAN",
+      "title": "Chief Executive Officer",
+      "action": "BUY",
+      "shares": 0,
+      "value": 2302925,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "M",
+        "S"
+      ]
+    },
+    {
+      "date": "20260630",
+      "ticker": "VRTX",
+      "company": "VERTEX PHARMACEUTICALS INC / MA",
+      "form": "4",
+      "type": "insider",
+      "owner": "Bozic Carmen",
+      "title": "EVP and CMO",
+      "action": "SELL",
+      "shares": 596,
+      "value": 287570,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260630",
+      "ticker": "GOOG",
+      "company": "Alphabet Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "ARNOLD FRANCES",
+      "title": "",
+      "action": "SELL",
+      "shares": 112,
+      "value": 39343,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
     {
       "date": "20260629",
       "ticker": "AVGO",
@@ -795,237 +881,11 @@
         "F",
         "M"
       ]
-    },
-    {
-      "date": "20260623",
-      "ticker": "NVDA",
-      "company": "NVIDIA CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "STEVENS MARK A",
-      "title": "",
-      "action": "SELL",
-      "shares": 885000,
-      "value": 185999938,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260623",
-      "ticker": "NVDA",
-      "company": "NVIDIA CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "HUANG JEN HSUN",
-      "title": "President and CEO",
-      "action": "SELL",
-      "shares": 45723,
-      "value": 9483407,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F"
-      ]
-    },
-    {
-      "date": "20260623",
-      "ticker": "NVDA",
-      "company": "NVIDIA CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Kress Colette",
-      "title": "EVP & Chief Financial Officer",
-      "action": "SELL",
-      "shares": 40746,
-      "value": 8451127,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F"
-      ]
-    },
-    {
-      "date": "20260623",
-      "ticker": "NVDA",
-      "company": "NVIDIA CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Puri Ajay K",
-      "title": "EVP, Worldwide Field Ops",
-      "action": "SELL",
-      "shares": 36927,
-      "value": 7659029,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F"
-      ]
-    },
-    {
-      "date": "20260623",
-      "ticker": "NVDA",
-      "company": "NVIDIA CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Teter Timothy S.",
-      "title": "EVP, General Counsel and Sec",
-      "action": "SELL",
-      "shares": 35742,
-      "value": 7413248,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F"
-      ]
-    },
-    {
-      "date": "20260623",
-      "ticker": "NVDA",
-      "company": "NVIDIA CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Shoquist Debora",
-      "title": "EVP, Operations",
-      "action": "SELL",
-      "shares": 35012,
-      "value": 7261838,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F"
-      ]
-    },
-    {
-      "date": "20260623",
-      "ticker": "VRTX",
-      "company": "VERTEX PHARMACEUTICALS INC / MA",
-      "form": "4",
-      "type": "insider",
-      "owner": "Bozic Carmen",
-      "title": "EVP and CMO",
-      "action": "SELL",
-      "shares": 1020,
-      "value": 471413,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260623",
-      "ticker": "MA",
-      "company": "Mastercard Inc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Matsumoto Oki",
-      "title": "",
-      "action": "SELL",
-      "shares": 98,
-      "value": 48260,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F"
-      ]
-    },
-    {
-      "date": "20260623",
-      "ticker": "CRM",
-      "company": "Salesforce, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Milano Miguel",
-      "title": "President and CRO",
-      "action": "BUY",
-      "shares": 1540,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F",
-        "M"
-      ]
-    },
-    {
-      "date": "20260623",
-      "ticker": "CRM",
-      "company": "Salesforce, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Harris Parker",
-      "title": "Co-Founder and CTO, Slack",
-      "action": "BUY",
-      "shares": 1279,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F",
-        "M"
-      ]
-    },
-    {
-      "date": "20260623",
-      "ticker": "CRM",
-      "company": "Salesforce, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Washington Robin L",
-      "title": "President and COFO",
-      "action": "BUY",
-      "shares": 923,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F",
-        "M"
-      ]
-    },
-    {
-      "date": "20260623",
-      "ticker": "CRM",
-      "company": "Salesforce, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Niles Sabastian",
-      "title": "President and CLO",
-      "action": "BUY",
-      "shares": 908,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F",
-        "M"
-      ]
-    },
-    {
-      "date": "20260623",
-      "ticker": "CRM",
-      "company": "Salesforce, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Tallapragada Srinivas",
-      "title": "Chief Eng/Cust Success Officer",
-      "action": "BUY",
-      "shares": 1690,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F",
-        "M"
-      ]
     }
   ],
   "meta": {
-    "total": 59,
-    "insider": 59,
+    "total": 51,
+    "insider": 51,
     "stake": 0,
     "companies": 97
   }
