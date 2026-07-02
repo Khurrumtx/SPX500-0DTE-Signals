@@ -1,7 +1,213 @@
 {
-  "generated": "2026-07-01T22:55:01.890544+00:00",
+  "generated": "2026-07-02T22:52:23.522456+00:00",
   "lookback_days": 5,
   "activity": [
+    {
+      "date": "20260701",
+      "ticker": "AMAT",
+      "company": "APPLIED MATERIALS INC /DE",
+      "form": "4",
+      "type": "insider",
+      "owner": "DICKERSON GARY E",
+      "title": "President and CEO",
+      "action": "SELL",
+      "shares": 78321,
+      "value": 55550319,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260701",
+      "ticker": "GOOG",
+      "company": "Alphabet Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "WALKER JOHN KENT",
+      "title": "President, Global Affairs, CLO",
+      "action": "SELL",
+      "shares": 8998,
+      "value": 3142915,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "G",
+        "S"
+      ]
+    },
+    {
+      "date": "20260701",
+      "ticker": "PANW",
+      "company": "Palo Alto Networks Inc",
+      "form": "4",
+      "type": "insider",
+      "owner": "Paul Josh D.",
+      "title": "Chief Accounting Officer",
+      "action": "SELL",
+      "shares": 1992,
+      "value": 682893,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "S"
+      ]
+    },
+    {
+      "date": "20260701",
+      "ticker": "AVGO",
+      "company": "Broadcom Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "PAGE JUSTINE",
+      "title": "",
+      "action": "SELL",
+      "shares": 1602,
+      "value": 598915,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260701",
+      "ticker": "PANW",
+      "company": "Palo Alto Networks Inc",
+      "form": "4",
+      "type": "insider",
+      "owner": "Bawa Aparna",
+      "title": "",
+      "action": "SELL",
+      "shares": 922,
+      "value": 302531,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260701",
+      "ticker": "JPM",
+      "company": "JPMORGAN CHASE & CO",
+      "form": "4",
+      "type": "insider",
+      "owner": "BURKE STEPHEN B",
+      "title": "",
+      "action": "BUY",
+      "shares": 171,
+      "value": 56249,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260701",
+      "ticker": "JPM",
+      "company": "JPMORGAN CHASE & CO",
+      "form": "4",
+      "type": "insider",
+      "owner": "HOBSON MELLODY L",
+      "title": "",
+      "action": "BUY",
+      "shares": 137,
+      "value": 44999,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260701",
+      "ticker": "JPM",
+      "company": "JPMORGAN CHASE & CO",
+      "form": "4",
+      "type": "insider",
+      "owner": "NOVAKOVIC PHEBE N",
+      "title": "",
+      "action": "BUY",
+      "shares": 122,
+      "value": 39999,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260701",
+      "ticker": "JPM",
+      "company": "JPMORGAN CHASE & CO",
+      "form": "4",
+      "type": "insider",
+      "owner": "Rometty Virginia M",
+      "title": "",
+      "action": "BUY",
+      "shares": 122,
+      "value": 39999,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260701",
+      "ticker": "ABT",
+      "company": "ABBOTT LABORATORIES",
+      "form": "4",
+      "type": "insider",
+      "owner": "Morrone Louis H.",
+      "title": "EXECUTIVE VICE PRESIDENT",
+      "action": "SELL",
+      "shares": 269,
+      "value": 24938,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F"
+      ]
+    },
+    {
+      "date": "20260701",
+      "ticker": "QCOM",
+      "company": "QUALCOMM INC/DE",
+      "form": "4",
+      "type": "insider",
+      "owner": "MCLAUGHLIN MARK D",
+      "title": "",
+      "action": "BUY",
+      "shares": 392,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260701",
+      "ticker": "QCOM",
+      "company": "QUALCOMM INC/DE",
+      "form": "4",
+      "type": "insider",
+      "owner": "TRICOIRE JEAN-PASCAL",
+      "title": "",
+      "action": "BUY",
+      "shares": 182,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
     {
       "date": "20260630",
       "ticker": "MU",
@@ -812,80 +1018,11 @@
       "codes": [
         "A"
       ]
-    },
-    {
-      "date": "20260624",
-      "ticker": "BX",
-      "company": "Blackstone Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "SCHWARZMAN STEPHEN A",
-      "title": "",
-      "action": "BUY",
-      "shares": 765110,
-      "value": 19999999,
-      "open_market": true,
-      "ten_pct": true,
-      "codes": [
-        "P"
-      ]
-    },
-    {
-      "date": "20260624",
-      "ticker": "PANW",
-      "company": "Palo Alto Networks Inc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Golechha Dipak",
-      "title": "EVP, Chief Financial Officer",
-      "action": "SELL",
-      "shares": 5000,
-      "value": 1447824,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260624",
-      "ticker": "INTU",
-      "company": "INTUIT INC.",
-      "form": "4",
-      "type": "insider",
-      "owner": "DALZELL RICHARD L",
-      "title": "",
-      "action": "SELL",
-      "shares": 284,
-      "value": 74498,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260624",
-      "ticker": "DIS",
-      "company": "Walt Disney Co",
-      "form": "4",
-      "type": "insider",
-      "owner": "Coleman Sonia L",
-      "title": "Sr. EVP & Chief People Officer",
-      "action": "BUY",
-      "shares": 518,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F",
-        "M"
-      ]
     }
   ],
   "meta": {
-    "total": 51,
-    "insider": 51,
+    "total": 59,
+    "insider": 59,
     "stake": 0,
     "companies": 97
   }
