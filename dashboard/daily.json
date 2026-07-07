@@ -1,7 +1,680 @@
 {
-  "generated": "2026-07-06T22:53:38.583543+00:00",
+  "generated": "2026-07-07T22:52:13.796576+00:00",
   "lookback_days": 5,
   "activity": [
+    {
+      "date": "20260706",
+      "ticker": "MU",
+      "company": "MICRON TECHNOLOGY INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "ARNZEN APRIL S",
+      "title": "EVP and Chief People Officer",
+      "action": "SELL",
+      "shares": 40000,
+      "value": 43357473,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260706",
+      "ticker": "KLAC",
+      "company": "KLA CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "Higgins Bren D.",
+      "title": "EVP & Chief Financial Officer",
+      "action": "SELL",
+      "shares": 27701,
+      "value": 7359878,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260706",
+      "ticker": "ADI",
+      "company": "ANALOG DEVICES INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "ROCHE VINCENT",
+      "title": "Chair & CEO",
+      "action": "BUY",
+      "shares": 0,
+      "value": 1080800,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "M",
+        "S"
+      ]
+    },
+    {
+      "date": "20260706",
+      "ticker": "SCHW",
+      "company": "SCHWAB CHARLES CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "Beatty Jonathan S",
+      "title": "MD, Head of Advisor Services",
+      "action": "SELL",
+      "shares": 5036,
+      "value": 490137,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "S"
+      ]
+    },
+    {
+      "date": "20260706",
+      "ticker": "VRTX",
+      "company": "VERTEX PHARMACEUTICALS INC / MA",
+      "form": "4",
+      "type": "insider",
+      "owner": "Liu Joy",
+      "title": "EVP and Chief Legal Officer",
+      "action": "SELL",
+      "shares": 828,
+      "value": 416243,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260706",
+      "ticker": "META",
+      "company": "Meta Platforms, Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "KIMMITT ROBERT M",
+      "title": "",
+      "action": "SELL",
+      "shares": 500,
+      "value": 303875,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260706",
+      "ticker": "V",
+      "company": "VISA INC.",
+      "form": "4",
+      "type": "insider",
+      "owner": "ROTTENBERG JULIE B",
+      "title": "GENERAL COUNSEL",
+      "action": "BUY",
+      "shares": 0,
+      "value": 222605,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "M",
+        "S"
+      ]
+    },
+    {
+      "date": "20260706",
+      "ticker": "AMAT",
+      "company": "APPLIED MATERIALS INC /DE",
+      "form": "4",
+      "type": "insider",
+      "owner": "Sanders Adam",
+      "title": "Corp. Controller & CAO",
+      "action": "SELL",
+      "shares": 125,
+      "value": 81363,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F"
+      ]
+    },
+    {
+      "date": "20260706",
+      "ticker": "ACN",
+      "company": "Accenture plc",
+      "form": "4",
+      "type": "insider",
+      "owner": "Sweet Julie Spellman",
+      "title": "Chair and CEO",
+      "action": "BUY",
+      "shares": 285,
+      "value": 38737,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260706",
+      "ticker": "ACN",
+      "company": "Accenture plc",
+      "form": "4",
+      "type": "insider",
+      "owner": "Walsh John F",
+      "title": "CEO-The Americas",
+      "action": "BUY",
+      "shares": 203,
+      "value": 27591,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260706",
+      "ticker": "ACN",
+      "company": "Accenture plc",
+      "form": "4",
+      "type": "insider",
+      "owner": "Unruch Joel",
+      "title": "General Counsel/Corp Secretary",
+      "action": "BUY",
+      "shares": 202,
+      "value": 27455,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260706",
+      "ticker": "ACN",
+      "company": "Accenture plc",
+      "form": "4",
+      "type": "insider",
+      "owner": "Park Angie Y",
+      "title": "Chief Financial Officer",
+      "action": "BUY",
+      "shares": 202,
+      "value": 27455,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260706",
+      "ticker": "ACN",
+      "company": "Accenture plc",
+      "form": "4",
+      "type": "insider",
+      "owner": "Hogan Catherine Kiernan",
+      "title": "Chief Operating Officer",
+      "action": "BUY",
+      "shares": 157,
+      "value": 21339,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260706",
+      "ticker": "KLAC",
+      "company": "KLA CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "Kirloskar Virendra A",
+      "title": "SVP & Chief Accounting Officer",
+      "action": "BUY",
+      "shares": 0,
+      "value": 21250,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "J",
+        "S"
+      ]
+    },
+    {
+      "date": "20260706",
+      "ticker": "ACN",
+      "company": "Accenture plc",
+      "form": "4",
+      "type": "insider",
+      "owner": "Burgum Melissa A",
+      "title": "Chief Accounting Officer",
+      "action": "BUY",
+      "shares": 147,
+      "value": 19980,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260706",
+      "ticker": "ACN",
+      "company": "Accenture plc",
+      "form": "4",
+      "type": "insider",
+      "owner": "Sharma Manish",
+      "title": "Chief Strategy & Services Ofcr",
+      "action": "BUY",
+      "shares": 135,
+      "value": 18349,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260706",
+      "ticker": "ACN",
+      "company": "Accenture plc",
+      "form": "4",
+      "type": "insider",
+      "owner": "Clifford Katherine Lee",
+      "title": "Chief Leadership & HR Officer",
+      "action": "BUY",
+      "shares": 128,
+      "value": 17397,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260706",
+      "ticker": "NVDA",
+      "company": "NVIDIA CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "COXE TENCH",
+      "title": "",
+      "action": "SELL",
+      "shares": 500000,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "G"
+      ]
+    },
+    {
+      "date": "20260706",
+      "ticker": "GOOG",
+      "company": "Alphabet Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Hennessy John L.",
+      "title": "",
+      "action": "BUY",
+      "shares": 1400,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260706",
+      "ticker": "GOOG",
+      "company": "Alphabet Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "ARNOLD FRANCES",
+      "title": "",
+      "action": "BUY",
+      "shares": 980,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260706",
+      "ticker": "GOOG",
+      "company": "Alphabet Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "DOERR L JOHN",
+      "title": "",
+      "action": "BUY",
+      "shares": 980,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260706",
+      "ticker": "GOOG",
+      "company": "Alphabet Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Ferguson Roger W. Jr.",
+      "title": "",
+      "action": "BUY",
+      "shares": 980,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260706",
+      "ticker": "GOOG",
+      "company": "Alphabet Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Washington Robin L",
+      "title": "",
+      "action": "BUY",
+      "shares": 980,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260706",
+      "ticker": "GOOG",
+      "company": "Alphabet Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Shriram Kavitark Ram",
+      "title": "",
+      "action": "BUY",
+      "shares": 980,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260706",
+      "ticker": "GOOG",
+      "company": "Alphabet Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "CHAVEZ R. MARTIN",
+      "title": "",
+      "action": "BUY",
+      "shares": 980,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260706",
+      "ticker": "UNH",
+      "company": "UNITEDHEALTH GROUP INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "Baker Charles D.",
+      "title": "",
+      "action": "BUY",
+      "shares": 220,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260706",
+      "ticker": "UNH",
+      "company": "UNITEDHEALTH GROUP INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "FLYNN TIMOTHY PATRICK",
+      "title": "",
+      "action": "BUY",
+      "shares": 225,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260706",
+      "ticker": "UNH",
+      "company": "UNITEDHEALTH GROUP INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "GARCIA PAUL R",
+      "title": "",
+      "action": "BUY",
+      "shares": 220,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260706",
+      "ticker": "UNH",
+      "company": "UNITEDHEALTH GROUP INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "Gil Kristen",
+      "title": "",
+      "action": "BUY",
+      "shares": 206,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260706",
+      "ticker": "UNH",
+      "company": "UNITEDHEALTH GROUP INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "Gottlieb Scott",
+      "title": "",
+      "action": "BUY",
+      "shares": 210,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260706",
+      "ticker": "UNH",
+      "company": "UNITEDHEALTH GROUP INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "MCNABB FREDERICK WILLIAM III",
+      "title": "",
+      "action": "BUY",
+      "shares": 250,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260706",
+      "ticker": "UNH",
+      "company": "UNITEDHEALTH GROUP INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "MONTGOMERY RICE VALERIE MD",
+      "title": "",
+      "action": "BUY",
+      "shares": 220,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260706",
+      "ticker": "UNH",
+      "company": "UNITEDHEALTH GROUP INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "Noseworthy John H",
+      "title": "",
+      "action": "BUY",
+      "shares": 206,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260706",
+      "ticker": "INTU",
+      "company": "INTUIT INC.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Aujla Sandeep",
+      "title": "EVP and CFO",
+      "action": "BUY",
+      "shares": 903,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260706",
+      "ticker": "INTU",
+      "company": "INTUIT INC.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Hanebrink Anton",
+      "title": "EVP, Corp Strategy and Dev",
+      "action": "BUY",
+      "shares": 795,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260706",
+      "ticker": "INTU",
+      "company": "INTUIT INC.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Hilliard Caryl Lyn",
+      "title": "EVP, People and Places",
+      "action": "BUY",
+      "shares": 261,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260706",
+      "ticker": "INTU",
+      "company": "INTUIT INC.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Hotz Lauren D",
+      "title": "SVP, Chief Accounting Officer",
+      "action": "BUY",
+      "shares": 304,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260706",
+      "ticker": "INTU",
+      "company": "INTUIT INC.",
+      "form": "4",
+      "type": "insider",
+      "owner": "McLean Kerry J",
+      "title": "EVP, Gen. Counsel & Corp. Sec.",
+      "action": "BUY",
+      "shares": 555,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260706",
+      "ticker": "INTU",
+      "company": "INTUIT INC.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Goodarzi Sasan K",
+      "title": "Chairman and CEO",
+      "action": "BUY",
+      "shares": 1631,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
     {
       "date": "20260702",
       "ticker": "UBER",
@@ -1844,64 +2517,11 @@
         "F",
         "M"
       ]
-    },
-    {
-      "date": "20260626",
-      "ticker": "AVGO",
-      "company": "Broadcom Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "SAMUELI HENRY",
-      "title": "",
-      "action": "SELL",
-      "shares": 987642,
-      "value": 250005851,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "G",
-        "S"
-      ]
-    },
-    {
-      "date": "20260626",
-      "ticker": "ORCL",
-      "company": "ORACLE CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "HENLEY JEFFREY",
-      "title": "Vice Chairman",
-      "action": "BUY",
-      "shares": 0,
-      "value": 16372000,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "M",
-        "S"
-      ]
-    },
-    {
-      "date": "20260626",
-      "ticker": "ADBE",
-      "company": "ADOBE INC.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Ricks David A",
-      "title": "",
-      "action": "BUY",
-      "shares": 10000,
-      "value": 1945130,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "P"
-      ]
     }
   ],
   "meta": {
-    "total": 110,
-    "insider": 110,
+    "total": 146,
+    "insider": 146,
     "stake": 0,
     "companies": 97
   }
