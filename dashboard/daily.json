@@ -1,7 +1,58 @@
 {
-  "generated": "2026-07-07T22:52:13.796576+00:00",
+  "generated": "2026-07-08T22:52:36.091985+00:00",
   "lookback_days": 5,
   "activity": [
+    {
+      "date": "20260707",
+      "ticker": "VRTX",
+      "company": "VERTEX PHARMACEUTICALS INC / MA",
+      "form": "4",
+      "type": "insider",
+      "owner": "McKechnie Duncan",
+      "title": "EVP, Chief Commercial Officer",
+      "action": "SELL",
+      "shares": 1541,
+      "value": 799779,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260707",
+      "ticker": "VRTX",
+      "company": "VERTEX PHARMACEUTICALS INC / MA",
+      "form": "4",
+      "type": "insider",
+      "owner": "Tatsis Ourania",
+      "title": "EVP, Chief Reg. & Quality Off.",
+      "action": "SELL",
+      "shares": 1500,
+      "value": 787485,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260707",
+      "ticker": "REGN",
+      "company": "REGENERON PHARMACEUTICALS, INC.",
+      "form": "4",
+      "type": "insider",
+      "owner": "RYAN ARTHUR F",
+      "title": "",
+      "action": "SELL",
+      "shares": 200,
+      "value": 130030,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
     {
       "date": "20260706",
       "ticker": "MU",
@@ -2186,342 +2237,11 @@
       "codes": [
         "S"
       ]
-    },
-    {
-      "date": "20260629",
-      "ticker": "AVGO",
-      "company": "Broadcom Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Brazeal Mark David",
-      "title": "Chief Legal & Corp Affairs Ofc",
-      "action": "SELL",
-      "shares": 25000,
-      "value": 9675000,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260629",
-      "ticker": "GOOG",
-      "company": "Alphabet Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Schindler Philipp",
-      "title": "SVP, Chief Business Officer",
-      "action": "SELL",
-      "shares": 13557,
-      "value": 4677707,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "C",
-        "F"
-      ]
-    },
-    {
-      "date": "20260629",
-      "ticker": "GOOG",
-      "company": "Alphabet Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Porat Ruth",
-      "title": "President and CIO",
-      "action": "SELL",
-      "shares": 10723,
-      "value": 3699863,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "C",
-        "F"
-      ]
-    },
-    {
-      "date": "20260629",
-      "ticker": "GOOG",
-      "company": "Alphabet Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "WALKER JOHN KENT",
-      "title": "President, Global Affairs, CLO",
-      "action": "SELL",
-      "shares": 10723,
-      "value": 3699863,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "C",
-        "F"
-      ]
-    },
-    {
-      "date": "20260629",
-      "ticker": "GOOG",
-      "company": "Alphabet Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Ashkenazi Anat",
-      "title": "SVP, Chief Financial Officer",
-      "action": "SELL",
-      "shares": 10241,
-      "value": 3533554,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "C",
-        "F"
-      ]
-    },
-    {
-      "date": "20260629",
-      "ticker": "GOOG",
-      "company": "Alphabet Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Pichai Sundar",
-      "title": "Chief Executive Officer",
-      "action": "SELL",
-      "shares": 3702,
-      "value": 1277338,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "C",
-        "F"
-      ]
-    },
-    {
-      "date": "20260629",
-      "ticker": "GOOG",
-      "company": "Alphabet Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Saraci Marsida",
-      "title": "VP, Chief Accounting Officer",
-      "action": "SELL",
-      "shares": 1801,
-      "value": 309735,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "C",
-        "F",
-        "S"
-      ]
-    },
-    {
-      "date": "20260629",
-      "ticker": "ABT",
-      "company": "ABBOTT LABORATORIES",
-      "form": "4",
-      "type": "insider",
-      "owner": "Cushman Elizabeth C.",
-      "title": "EVP, GC AND SECRETARY",
-      "action": "SELL",
-      "shares": 560,
-      "value": 52707,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F"
-      ]
-    },
-    {
-      "date": "20260629",
-      "ticker": "NVDA",
-      "company": "NVIDIA CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "COXE TENCH",
-      "title": "",
-      "action": "BUY",
-      "shares": 1211,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260629",
-      "ticker": "NVDA",
-      "company": "NVIDIA CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "JONES HARVEY C",
-      "title": "",
-      "action": "BUY",
-      "shares": 1211,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260629",
-      "ticker": "NVDA",
-      "company": "NVIDIA CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "SEAWELL A BROOKE",
-      "title": "",
-      "action": "BUY",
-      "shares": 1211,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260629",
-      "ticker": "NVDA",
-      "company": "NVIDIA CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "STEVENS MARK A",
-      "title": "",
-      "action": "BUY",
-      "shares": 1211,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260629",
-      "ticker": "NVDA",
-      "company": "NVIDIA CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "HUDSON DAWN E",
-      "title": "",
-      "action": "BUY",
-      "shares": 1211,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260629",
-      "ticker": "NVDA",
-      "company": "NVIDIA CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "LORA MELISSA",
-      "title": "",
-      "action": "BUY",
-      "shares": 1211,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260629",
-      "ticker": "NVDA",
-      "company": "NVIDIA CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Shah Aarti S.",
-      "title": "",
-      "action": "BUY",
-      "shares": 1211,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260629",
-      "ticker": "NVDA",
-      "company": "NVIDIA CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Neal Stephen C",
-      "title": "",
-      "action": "BUY",
-      "shares": 1211,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260629",
-      "ticker": "NVDA",
-      "company": "NVIDIA CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Dabiri John",
-      "title": "",
-      "action": "BUY",
-      "shares": 1211,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260629",
-      "ticker": "HON",
-      "company": "HONEYWELL INTERNATIONAL INC",
-      "form": "4",
-      "type": "insider",
-      "owner": "HONEYWELL INTERNATIONAL INC",
-      "title": "",
-      "action": "SELL",
-      "shares": 316939750,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": true,
-      "codes": [
-        "J"
-      ]
-    },
-    {
-      "date": "20260629",
-      "ticker": "SO",
-      "company": "SOUTHERN CO",
-      "form": "4",
-      "type": "insider",
-      "owner": "Sena Peter P III",
-      "title": "Chairman,President & CEO, SNC",
-      "action": "BUY",
-      "shares": 396,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F",
-        "M"
-      ]
     }
   ],
   "meta": {
-    "total": 146,
-    "insider": 146,
+    "total": 130,
+    "insider": 130,
     "stake": 0,
     "companies": 97
   }
