@@ -1,0 +1,155 @@
+{
+  "ticker": "NVDA",
+  "window": 50,
+  "features": [
+    "ret_1",
+    "ret_2",
+    "ret_3",
+    "ret_5",
+    "ret_10",
+    "sma_ratio",
+    "ema_ratio",
+    "macd_hist",
+    "rsi_14",
+    "bb_pctb",
+    "atr_norm",
+    "roc_10",
+    "vol_z",
+    "hl_range",
+    "close_z20"
+  ],
+  "train_start": "2005-04-12",
+  "train_end": "2026-07-08",
+  "n_samples": 5343,
+  "walk_forward": {
+    "lstm": {
+      "classification": {
+        "accuracy": 0.522,
+        "precision": 0.5426,
+        "recall": 0.7721,
+        "f1": 0.6373,
+        "base_rate_up": 0.544,
+        "n": 1000,
+        "roc_auc": 0.5025
+      },
+      "backtest": {
+        "strategy": {
+          "total_return": 3.1408,
+          "cagr": 0.4306,
+          "annual_vol": 0.4301,
+          "sharpe": 1.046,
+          "max_drawdown": -0.4395
+        },
+        "buy_hold": {
+          "total_return": 12.394,
+          "cagr": 0.923,
+          "annual_vol": 0.5001,
+          "sharpe": 1.556,
+          "max_drawdown": -0.4155
+        },
+        "exposure": 0.774,
+        "n_trades": 27,
+        "threshold": 0.5,
+        "cost_bps": 5.0
+      }
+    },
+    "logistic": {
+      "classification": {
+        "accuracy": 0.528,
+        "precision": 0.5429,
+        "recall": 0.8382,
+        "f1": 0.659,
+        "base_rate_up": 0.544,
+        "n": 1000,
+        "roc_auc": 0.477
+      },
+      "backtest": {
+        "strategy": {
+          "total_return": 7.3316,
+          "cagr": 0.7062,
+          "annual_vol": 0.4388,
+          "sharpe": 1.436,
+          "max_drawdown": -0.4436
+        },
+        "buy_hold": {
+          "total_return": 12.394,
+          "cagr": 0.923,
+          "annual_vol": 0.5001,
+          "sharpe": 1.556,
+          "max_drawdown": -0.4155
+        },
+        "exposure": 0.84,
+        "n_trades": 207,
+        "threshold": 0.5,
+        "cost_bps": 5.0
+      }
+    },
+    "random_forest": {
+      "classification": {
+        "accuracy": 0.514,
+        "precision": 0.5359,
+        "recall": 0.796,
+        "f1": 0.6405,
+        "base_rate_up": 0.544,
+        "n": 1000,
+        "roc_auc": 0.4854
+      },
+      "backtest": {
+        "strategy": {
+          "total_return": 3.5881,
+          "cagr": 0.468,
+          "annual_vol": 0.4253,
+          "sharpe": 1.115,
+          "max_drawdown": -0.4316
+        },
+        "buy_hold": {
+          "total_return": 12.394,
+          "cagr": 0.923,
+          "annual_vol": 0.5001,
+          "sharpe": 1.556,
+          "max_drawdown": -0.4155
+        },
+        "exposure": 0.808,
+        "n_trades": 145,
+        "threshold": 0.5,
+        "cost_bps": 5.0
+      }
+    },
+    "gradient_boosting": {
+      "classification": {
+        "accuracy": 0.516,
+        "precision": 0.5445,
+        "recall": 0.6746,
+        "f1": 0.6026,
+        "base_rate_up": 0.544,
+        "n": 1000,
+        "roc_auc": 0.5019
+      },
+      "backtest": {
+        "strategy": {
+          "total_return": 4.1925,
+          "cagr": 0.5145,
+          "annual_vol": 0.389,
+          "sharpe": 1.261,
+          "max_drawdown": -0.3364
+        },
+        "buy_hold": {
+          "total_return": 12.394,
+          "cagr": 0.923,
+          "annual_vol": 0.5001,
+          "sharpe": 1.556,
+          "max_drawdown": -0.4155
+        },
+        "exposure": 0.674,
+        "n_trades": 319,
+        "threshold": 0.5,
+        "cost_bps": 5.0
+      }
+    }
+  },
+  "evaluated": {
+    "data_start": "2005-04-12",
+    "data_end": "2026-07-08",
+    "n_samples": 5343
+  }
+}
