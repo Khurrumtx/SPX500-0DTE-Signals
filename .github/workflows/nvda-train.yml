@@ -7,6 +7,14 @@ name: NVDA predictor — fetch, evaluate, train
 
 on:
   workflow_dispatch: {}
+  push:
+    # workflow_dispatch only works once the file is on the default branch, so
+    # branch pushes trigger training while this is still under development.
+    branches:
+      - "claude/nvda-price-prediction-research-ckp95q"
+    paths:
+      - "nvda-predictor/**"
+      - ".github/workflows/nvda-train.yml"
   schedule:
     # Weekly retrain, Saturday 12:00 UTC (after Friday close)
     - cron: "0 12 * * 6"
@@ -20,6 +28,7 @@ concurrency:
 
 jobs:
   train:
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     timeout-minutes: 90
     steps:
