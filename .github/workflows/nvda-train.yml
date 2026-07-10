@@ -1,0 +1,59 @@
+name: NVDA predictor — fetch, evaluate, train
+
+# Market-data hosts aren't reachable from the web-session sandbox (same reason
+# collect.yml exists), so data download + model training run here. The job
+# commits the refreshed data snapshot, walk-forward evaluation results and
+# trained model artifacts back to the branch it ran on.
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    # Weekly retrain, Saturday 12:00 UTC (after Friday close)
+    - cron: "0 12 * * 6"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nvda-train-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  train:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: nvda-predictor/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r nvda-predictor/requirements.txt
+
+      - name: Fetch NVDA history
+        working-directory: nvda-predictor
+        run: python cli.py fetch
+
+      - name: Walk-forward evaluation + final training
+        working-directory: nvda-predictor
+        run: python cli.py evaluate
+
+      - name: Show latest prediction
+        working-directory: nvda-predictor
+        run: python cli.py predict || true
+
+      - name: Commit data snapshot and artifacts
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add nvda-predictor/data/NVDA.csv nvda-predictor/artifacts/
+          if ! git diff --cached --quiet; then
+            git commit -m "Update NVDA data snapshot and trained artifacts"
+            git push
+          else
+            echo "Nothing to commit"
+          fi
