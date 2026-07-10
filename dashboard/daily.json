@@ -1,7 +1,59 @@
 {
-  "generated": "2026-07-09T22:57:33.389802+00:00",
+  "generated": "2026-07-10T22:51:41.293772+00:00",
   "lookback_days": 5,
   "activity": [
+    {
+      "date": "20260709",
+      "ticker": "ADI",
+      "company": "ANALOG DEVICES INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "STATA RAY",
+      "title": "",
+      "action": "SELL",
+      "shares": 2832,
+      "value": 1078610,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260709",
+      "ticker": "SCHW",
+      "company": "SCHWAB CHARLES CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "Craig Jonathan M.",
+      "title": "MD, Head of Retail Investing",
+      "action": "BUY",
+      "shares": 0,
+      "value": 1018117,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "M",
+        "S"
+      ]
+    },
+    {
+      "date": "20260709",
+      "ticker": "MDT",
+      "company": "Medtronic plc",
+      "form": "4",
+      "type": "insider",
+      "owner": "Walter Matthew R.",
+      "title": "SVP, Chief HR Officer",
+      "action": "SELL",
+      "shares": 3102,
+      "value": 257931,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
     {
       "date": "20260708",
       "ticker": "META",
@@ -2098,217 +2150,11 @@
         "F",
         "M"
       ]
-    },
-    {
-      "date": "20260701",
-      "ticker": "AMAT",
-      "company": "APPLIED MATERIALS INC /DE",
-      "form": "4",
-      "type": "insider",
-      "owner": "DICKERSON GARY E",
-      "title": "President and CEO",
-      "action": "SELL",
-      "shares": 78321,
-      "value": 55550319,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260701",
-      "ticker": "GOOG",
-      "company": "Alphabet Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "WALKER JOHN KENT",
-      "title": "President, Global Affairs, CLO",
-      "action": "SELL",
-      "shares": 8998,
-      "value": 3142915,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "G",
-        "S"
-      ]
-    },
-    {
-      "date": "20260701",
-      "ticker": "PANW",
-      "company": "Palo Alto Networks Inc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Paul Josh D.",
-      "title": "Chief Accounting Officer",
-      "action": "SELL",
-      "shares": 1992,
-      "value": 682893,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "F",
-        "S"
-      ]
-    },
-    {
-      "date": "20260701",
-      "ticker": "AVGO",
-      "company": "Broadcom Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "PAGE JUSTINE",
-      "title": "",
-      "action": "SELL",
-      "shares": 1602,
-      "value": 598915,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260701",
-      "ticker": "PANW",
-      "company": "Palo Alto Networks Inc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Bawa Aparna",
-      "title": "",
-      "action": "SELL",
-      "shares": 922,
-      "value": 302531,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260701",
-      "ticker": "JPM",
-      "company": "JPMORGAN CHASE & CO",
-      "form": "4",
-      "type": "insider",
-      "owner": "BURKE STEPHEN B",
-      "title": "",
-      "action": "BUY",
-      "shares": 171,
-      "value": 56249,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260701",
-      "ticker": "JPM",
-      "company": "JPMORGAN CHASE & CO",
-      "form": "4",
-      "type": "insider",
-      "owner": "HOBSON MELLODY L",
-      "title": "",
-      "action": "BUY",
-      "shares": 137,
-      "value": 44999,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260701",
-      "ticker": "JPM",
-      "company": "JPMORGAN CHASE & CO",
-      "form": "4",
-      "type": "insider",
-      "owner": "NOVAKOVIC PHEBE N",
-      "title": "",
-      "action": "BUY",
-      "shares": 122,
-      "value": 39999,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260701",
-      "ticker": "JPM",
-      "company": "JPMORGAN CHASE & CO",
-      "form": "4",
-      "type": "insider",
-      "owner": "Rometty Virginia M",
-      "title": "",
-      "action": "BUY",
-      "shares": 122,
-      "value": 39999,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260701",
-      "ticker": "ABT",
-      "company": "ABBOTT LABORATORIES",
-      "form": "4",
-      "type": "insider",
-      "owner": "Morrone Louis H.",
-      "title": "EXECUTIVE VICE PRESIDENT",
-      "action": "SELL",
-      "shares": 269,
-      "value": 24938,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F"
-      ]
-    },
-    {
-      "date": "20260701",
-      "ticker": "QCOM",
-      "company": "QUALCOMM INC/DE",
-      "form": "4",
-      "type": "insider",
-      "owner": "MCLAUGHLIN MARK D",
-      "title": "",
-      "action": "BUY",
-      "shares": 392,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260701",
-      "ticker": "QCOM",
-      "company": "QUALCOMM INC/DE",
-      "form": "4",
-      "type": "insider",
-      "owner": "TRICOIRE JEAN-PASCAL",
-      "title": "",
-      "action": "BUY",
-      "shares": 182,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
     }
   ],
   "meta": {
-    "total": 134,
-    "insider": 134,
+    "total": 125,
+    "insider": 125,
     "stake": 0,
     "companies": 97
   }
