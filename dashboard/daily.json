@@ -1,7 +1,92 @@
 {
-  "generated": "2026-07-14T22:50:02.702281+00:00",
+  "generated": "2026-07-15T22:50:06.621617+00:00",
   "lookback_days": 5,
   "activity": [
+    {
+      "date": "20260714",
+      "ticker": "AVGO",
+      "company": "Broadcom Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Brazeal Mark David",
+      "title": "Chief Legal & Corp Affairs Ofc",
+      "action": "SELL",
+      "shares": 25000,
+      "value": 10033225,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260714",
+      "ticker": "QCOM",
+      "company": "QUALCOMM INC/DE",
+      "form": "4",
+      "type": "insider",
+      "owner": "Palkhiwala Akash J.",
+      "title": "EVP, CFO & COO",
+      "action": "SELL",
+      "shares": 2500,
+      "value": 452029,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260714",
+      "ticker": "ADI",
+      "company": "ANALOG DEVICES INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "Golz Karen",
+      "title": "",
+      "action": "SELL",
+      "shares": 1000,
+      "value": 389830,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260714",
+      "ticker": "AVGO",
+      "company": "Broadcom Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "DELLY GAYLA J",
+      "title": "",
+      "action": "SELL",
+      "shares": 500,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "G"
+      ]
+    },
+    {
+      "date": "20260714",
+      "ticker": "COST",
+      "company": "COSTCO WHOLESALE CORP /NEW",
+      "form": "4",
+      "type": "insider",
+      "owner": "RAIKES JEFFREY S",
+      "title": "",
+      "action": "SELL",
+      "shares": 5249,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "G"
+      ]
+    },
     {
       "date": "20260713",
       "ticker": "CSCO",
@@ -360,62 +445,11 @@
       "codes": [
         "A"
       ]
-    },
-    {
-      "date": "20260707",
-      "ticker": "VRTX",
-      "company": "VERTEX PHARMACEUTICALS INC / MA",
-      "form": "4",
-      "type": "insider",
-      "owner": "McKechnie Duncan",
-      "title": "EVP, Chief Commercial Officer",
-      "action": "SELL",
-      "shares": 1541,
-      "value": 799779,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260707",
-      "ticker": "VRTX",
-      "company": "VERTEX PHARMACEUTICALS INC / MA",
-      "form": "4",
-      "type": "insider",
-      "owner": "Tatsis Ourania",
-      "title": "EVP, Chief Reg. & Quality Off.",
-      "action": "SELL",
-      "shares": 1500,
-      "value": 787485,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260707",
-      "ticker": "REGN",
-      "company": "REGENERON PHARMACEUTICALS, INC.",
-      "form": "4",
-      "type": "insider",
-      "owner": "RYAN ARTHUR F",
-      "title": "",
-      "action": "SELL",
-      "shares": 200,
-      "value": 130030,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
     }
   ],
   "meta": {
-    "total": 24,
-    "insider": 24,
+    "total": 26,
+    "insider": 26,
     "stake": 0,
     "companies": 97
   }
