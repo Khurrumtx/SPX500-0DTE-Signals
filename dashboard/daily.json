@@ -1,7 +1,94 @@
 {
-  "generated": "2026-07-15T22:50:06.621617+00:00",
+  "generated": "2026-07-16T22:49:57.360380+00:00",
   "lookback_days": 5,
   "activity": [
+    {
+      "date": "20260715",
+      "ticker": "MA",
+      "company": "Mastercard Inc",
+      "form": "4",
+      "type": "insider",
+      "owner": "McLaughlin Edward Grunde",
+      "title": "President & CTO, MA Tech",
+      "action": "BUY",
+      "shares": 0,
+      "value": 4499550,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "M",
+        "S"
+      ]
+    },
+    {
+      "date": "20260715",
+      "ticker": "META",
+      "company": "Meta Platforms, Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Olivan Javier",
+      "title": "Chief Operating Officer",
+      "action": "SELL",
+      "shares": 2163,
+      "value": 1429787,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260715",
+      "ticker": "MA",
+      "company": "Mastercard Inc",
+      "form": "4",
+      "type": "insider",
+      "owner": "Arkell Sandra A",
+      "title": "Controller",
+      "action": "SELL",
+      "shares": 344,
+      "value": 185760,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260715",
+      "ticker": "MSFT",
+      "company": "MICROSOFT CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "Coleman Amy",
+      "title": "EVP, Chief Human Resources Off",
+      "action": "SELL",
+      "shares": 32,
+      "value": 12450,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F"
+      ]
+    },
+    {
+      "date": "20260715",
+      "ticker": "BRK-B",
+      "company": "BERKSHIRE HATHAWAY INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "BUFFETT WARREN E",
+      "title": "",
+      "action": "BUY",
+      "shares": 0,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": true,
+      "codes": [
+        "C",
+        "G"
+      ]
+    },
     {
       "date": "20260714",
       "ticker": "AVGO",
@@ -292,164 +379,11 @@
       "codes": [
         "S"
       ]
-    },
-    {
-      "date": "20260708",
-      "ticker": "META",
-      "company": "Meta Platforms, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Olivan Javier",
-      "title": "Chief Operating Officer",
-      "action": "SELL",
-      "shares": 5235,
-      "value": 3145421,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260708",
-      "ticker": "PANW",
-      "company": "Palo Alto Networks Inc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Thorning-Schmidt Helle",
-      "title": "",
-      "action": "SELL",
-      "shares": 700,
-      "value": 242795,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260708",
-      "ticker": "SBUX",
-      "company": "STARBUCKS CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "BREWER BRADY",
-      "title": "ceo, International",
-      "action": "SELL",
-      "shares": 2229,
-      "value": 231816,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260708",
-      "ticker": "MA",
-      "company": "Mastercard Inc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Arkell Sandra A",
-      "title": "Controller",
-      "action": "SELL",
-      "shares": 400,
-      "value": 216000,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260708",
-      "ticker": "SCHW",
-      "company": "SCHWAB CHARLES CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Beatty Jonathan S",
-      "title": "MD, Head of Advisor Services",
-      "action": "SELL",
-      "shares": 2000,
-      "value": 204017,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260708",
-      "ticker": "SHW",
-      "company": "SHERWIN WILLIAMS CO",
-      "form": "4",
-      "type": "insider",
-      "owner": "THAMAN MICHAEL H",
-      "title": "",
-      "action": "BUY",
-      "shares": 96,
-      "value": 33750,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260708",
-      "ticker": "SHW",
-      "company": "SHERWIN WILLIAMS CO",
-      "form": "4",
-      "type": "insider",
-      "owner": "Williams Thomas",
-      "title": "",
-      "action": "BUY",
-      "shares": 96,
-      "value": 33750,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260708",
-      "ticker": "SHW",
-      "company": "SHERWIN WILLIAMS CO",
-      "form": "4",
-      "type": "insider",
-      "owner": "Gamgort Robert James",
-      "title": "",
-      "action": "BUY",
-      "shares": 96,
-      "value": 33750,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260708",
-      "ticker": "SHW",
-      "company": "SHERWIN WILLIAMS CO",
-      "form": "4",
-      "type": "insider",
-      "owner": "ANDERSON KERRII B",
-      "title": "",
-      "action": "BUY",
-      "shares": 28,
-      "value": 10000,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
     }
   ],
   "meta": {
-    "total": 26,
-    "insider": 26,
+    "total": 22,
+    "insider": 22,
     "stake": 0,
     "companies": 97
   }
