@@ -1,7 +1,198 @@
 {
-  "generated": "2026-07-16T22:49:57.360380+00:00",
+  "generated": "2026-07-17T22:48:37.684799+00:00",
   "lookback_days": 5,
   "activity": [
+    {
+      "date": "20260716",
+      "ticker": "GILD",
+      "company": "GILEAD SCIENCES, INC.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Dickinson Andrew D",
+      "title": "Chief Financial Officer",
+      "action": "SELL",
+      "shares": 3000,
+      "value": 389776,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260716",
+      "ticker": "GILD",
+      "company": "GILEAD SCIENCES, INC.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Mercier Johanna",
+      "title": "Chief Comm & Corp Aff Officer",
+      "action": "SELL",
+      "shares": 3000,
+      "value": 389757,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260716",
+      "ticker": "DHR",
+      "company": "DANAHER CORP /DE/",
+      "form": "4",
+      "type": "insider",
+      "owner": "Zerhouni Elias A.",
+      "title": "",
+      "action": "BUY",
+      "shares": 2117,
+      "value": 237060,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260716",
+      "ticker": "DHR",
+      "company": "DANAHER CORP /DE/",
+      "form": "4",
+      "type": "insider",
+      "owner": "FILLER LINDA",
+      "title": "",
+      "action": "BUY",
+      "shares": 2117,
+      "value": 237060,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260716",
+      "ticker": "WMT",
+      "company": "Walmart Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Dallaire Seth",
+      "title": "Executive Vice President",
+      "action": "SELL",
+      "shares": 386,
+      "value": 44376,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F"
+      ]
+    },
+    {
+      "date": "20260716",
+      "ticker": "WMT",
+      "company": "Walmart Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Watkins Latriece",
+      "title": "Executive Vice President",
+      "action": "SELL",
+      "shares": 227,
+      "value": 26068,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F"
+      ]
+    },
+    {
+      "date": "20260716",
+      "ticker": "WMT",
+      "company": "Walmart Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Milum Dwayne M",
+      "title": "SVP & Controller",
+      "action": "SELL",
+      "shares": 121,
+      "value": 13908,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F"
+      ]
+    },
+    {
+      "date": "20260716",
+      "ticker": "WMT",
+      "company": "Walmart Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Guggina David W",
+      "title": "Executive Vice President",
+      "action": "SELL",
+      "shares": 117,
+      "value": 13512,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F"
+      ]
+    },
+    {
+      "date": "20260716",
+      "ticker": "DHR",
+      "company": "DANAHER CORP /DE/",
+      "form": "4",
+      "type": "insider",
+      "owner": "Bouda Christopher",
+      "title": "VP, Chief Accounting Officer",
+      "action": "SELL",
+      "shares": 60,
+      "value": 12047,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F"
+      ]
+    },
+    {
+      "date": "20260716",
+      "ticker": "DIS",
+      "company": "Walt Disney Co",
+      "form": "4",
+      "type": "insider",
+      "owner": "Roeder Paul M",
+      "title": "Sr EVP and Chief Comm Officer",
+      "action": "BUY",
+      "shares": 1996,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260716",
+      "ticker": "DIS",
+      "company": "Walt Disney Co",
+      "form": "4",
+      "type": "insider",
+      "owner": "WOODFORD BRENT",
+      "title": "EVP, Control, Fin Plan & Tax",
+      "action": "BUY",
+      "shares": 2894,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
     {
       "date": "20260715",
       "ticker": "MA",
@@ -327,63 +518,11 @@
       "codes": [
         "S"
       ]
-    },
-    {
-      "date": "20260709",
-      "ticker": "ADI",
-      "company": "ANALOG DEVICES INC",
-      "form": "4",
-      "type": "insider",
-      "owner": "STATA RAY",
-      "title": "",
-      "action": "SELL",
-      "shares": 2832,
-      "value": 1078610,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260709",
-      "ticker": "SCHW",
-      "company": "SCHWAB CHARLES CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Craig Jonathan M.",
-      "title": "MD, Head of Retail Investing",
-      "action": "BUY",
-      "shares": 0,
-      "value": 1018117,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "M",
-        "S"
-      ]
-    },
-    {
-      "date": "20260709",
-      "ticker": "MDT",
-      "company": "Medtronic plc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Walter Matthew R.",
-      "title": "SVP, Chief HR Officer",
-      "action": "SELL",
-      "shares": 3102,
-      "value": 257931,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
     }
   ],
   "meta": {
-    "total": 22,
-    "insider": 22,
+    "total": 30,
+    "insider": 30,
     "stake": 0,
     "companies": 97
   }
