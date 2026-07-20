@@ -1,7 +1,393 @@
 {
-  "generated": "2026-07-17T22:48:37.684799+00:00",
+  "generated": "2026-07-20T22:50:08.172948+00:00",
   "lookback_days": 5,
   "activity": [
+    {
+      "date": "20260717",
+      "ticker": "BLK",
+      "company": "BlackRock, Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Meade Christopher J.",
+      "title": "General Counsel and CLO",
+      "action": "BUY",
+      "shares": 0,
+      "value": 9291782,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "M",
+        "S"
+      ]
+    },
+    {
+      "date": "20260717",
+      "ticker": "MS",
+      "company": "MORGAN STANLEY",
+      "form": "4",
+      "type": "insider",
+      "owner": "Pizzi Michael A.",
+      "title": "Head Technology & Operations",
+      "action": "SELL",
+      "shares": 24165,
+      "value": 5208824,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260717",
+      "ticker": "MS",
+      "company": "MORGAN STANLEY",
+      "form": "4",
+      "type": "insider",
+      "owner": "YESHAYA SHARON",
+      "title": "Chief Financial Officer",
+      "action": "SELL",
+      "shares": 15554,
+      "value": 3460920,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260717",
+      "ticker": "BLK",
+      "company": "BlackRock, Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "FINK LAURENCE",
+      "title": "Chairman and CEO",
+      "action": "SELL",
+      "shares": 1905,
+      "value": 2058485,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260717",
+      "ticker": "GOOG",
+      "company": "Alphabet Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Alphabet Inc.",
+      "title": "",
+      "action": "SELL",
+      "shares": 188174,
+      "value": 1831693,
+      "open_market": true,
+      "ten_pct": true,
+      "codes": [
+        "J",
+        "S"
+      ]
+    },
+    {
+      "date": "20260717",
+      "ticker": "ELV",
+      "company": "Elevance Health, Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "BOUDREAUX GAIL",
+      "title": "President and CEO",
+      "action": "BUY",
+      "shares": 2725,
+      "value": 1002230,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "P"
+      ]
+    },
+    {
+      "date": "20260717",
+      "ticker": "MU",
+      "company": "MICRON TECHNOLOGY INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "ALLEN SCOTT R.",
+      "title": "CVP, Chief Accounting Officer",
+      "action": "SELL",
+      "shares": 912,
+      "value": 896605,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F"
+      ]
+    },
+    {
+      "date": "20260717",
+      "ticker": "AMD",
+      "company": "ADVANCED MICRO DEVICES INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "Papermaster Mark D",
+      "title": "Chief Technology Officer & EVP",
+      "action": "BUY",
+      "shares": 0,
+      "value": 509099,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "M",
+        "S"
+      ]
+    },
+    {
+      "date": "20260717",
+      "ticker": "ELV",
+      "company": "Elevance Health, Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "PERU RAMIRO G",
+      "title": "",
+      "action": "BUY",
+      "shares": 1000,
+      "value": 366050,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "P"
+      ]
+    },
+    {
+      "date": "20260717",
+      "ticker": "WMT",
+      "company": "Walmart Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Nicholas Christopher James",
+      "title": "Executive Vice President",
+      "action": "SELL",
+      "shares": 2900,
+      "value": 330997,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260717",
+      "ticker": "GS",
+      "company": "GOLDMAN SACHS GROUP INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "LESLIE ERICKA T",
+      "title": "Chief Administrative Officer",
+      "action": "SELL",
+      "shares": 250,
+      "value": 287950,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260717",
+      "ticker": "BAC",
+      "company": "BANK OF AMERICA CORP /DE/",
+      "form": "4",
+      "type": "insider",
+      "owner": "MOYNIHAN BRIAN T",
+      "title": "Chair and CEO",
+      "action": "BUY",
+      "shares": 0,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "D",
+        "M"
+      ]
+    },
+    {
+      "date": "20260717",
+      "ticker": "WFC",
+      "company": "WELLS FARGO & COMPANY/MN",
+      "form": "4",
+      "type": "insider",
+      "owner": "Flowers Derek A.",
+      "title": "Sr. EVP and Chief Risk Officer",
+      "action": "BUY",
+      "shares": 0,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "G"
+      ]
+    },
+    {
+      "date": "20260717",
+      "ticker": "ADBE",
+      "company": "ADOBE INC.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Chakravarthy Anil",
+      "title": "President, CXO",
+      "action": "BUY",
+      "shares": 1526,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260717",
+      "ticker": "ADBE",
+      "company": "ADOBE INC.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Forusz Jillian",
+      "title": "SVP & CAO",
+      "action": "BUY",
+      "shares": 416,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260717",
+      "ticker": "ADBE",
+      "company": "ADOBE INC.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Wadhwani David",
+      "title": "President, C&P",
+      "action": "BUY",
+      "shares": 1526,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260717",
+      "ticker": "ADBE",
+      "company": "ADOBE INC.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Chen Gloria",
+      "title": "EVP, Chief People Officer",
+      "action": "BUY",
+      "shares": 1638,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260717",
+      "ticker": "ADBE",
+      "company": "ADOBE INC.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Pentland Adele Louise",
+      "title": "Chief Legal Officer & EVP",
+      "action": "BUY",
+      "shares": 660,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260717",
+      "ticker": "ADBE",
+      "company": "ADOBE INC.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Balazs Lara",
+      "title": "Chief Marketing Officer & EVP",
+      "action": "BUY",
+      "shares": 1281,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260717",
+      "ticker": "ADBE",
+      "company": "ADOBE INC.",
+      "form": "4",
+      "type": "insider",
+      "owner": "NARAYEN SHANTANU",
+      "title": "Chair and CEO",
+      "action": "BUY",
+      "shares": 4186,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260717",
+      "ticker": "ADBE",
+      "company": "ADOBE INC.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Day Steven",
+      "title": "Interim CFO and SVP",
+      "action": "BUY",
+      "shares": 350,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260717",
+      "ticker": "GS",
+      "company": "GOLDMAN SACHS GROUP INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "VINIAR DAVID A",
+      "title": "",
+      "action": "SELL",
+      "shares": 2000,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "G"
+      ]
+    },
     {
       "date": "20260716",
       "ticker": "GILD",
@@ -484,45 +870,11 @@
         "F",
         "M"
       ]
-    },
-    {
-      "date": "20260710",
-      "ticker": "AVGO",
-      "company": "Broadcom Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Brazeal Mark David",
-      "title": "Chief Legal & Corp Affairs Ofc",
-      "action": "SELL",
-      "shares": 25000,
-      "value": 9479700,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260710",
-      "ticker": "AVGO",
-      "company": "Broadcom Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "DELLY GAYLA J",
-      "title": "",
-      "action": "SELL",
-      "shares": 1890,
-      "value": 728368,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
     }
   ],
   "meta": {
-    "total": 30,
-    "insider": 30,
+    "total": 50,
+    "insider": 50,
     "stake": 0,
     "companies": 97
   }
