@@ -1,7 +1,329 @@
 {
-  "generated": "2026-07-20T22:50:08.172948+00:00",
+  "generated": "2026-07-21T22:49:45.324931+00:00",
   "lookback_days": 5,
   "activity": [
+    {
+      "date": "20260720",
+      "ticker": "PLD",
+      "company": "Prologis, Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Moghadam Hamid",
+      "title": "",
+      "action": "SELL",
+      "shares": 50000,
+      "value": 7495500,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260720",
+      "ticker": "ICE",
+      "company": "Intercontinental Exchange, Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Martin Lynn C",
+      "title": "President, NYSE Group",
+      "action": "BUY",
+      "shares": 0,
+      "value": 910197,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "M",
+        "S"
+      ]
+    },
+    {
+      "date": "20260720",
+      "ticker": "BAC",
+      "company": "BANK OF AMERICA CORP /DE/",
+      "form": "4",
+      "type": "insider",
+      "owner": "MERRILL LYNCH, PIERCE, FENNER & SMITH INC.",
+      "title": "",
+      "action": "BUY",
+      "shares": 0,
+      "value": 2857,
+      "open_market": true,
+      "ten_pct": true,
+      "codes": [
+        "P",
+        "S"
+      ]
+    },
+    {
+      "date": "20260720",
+      "ticker": "UBER",
+      "company": "Uber Technologies, Inc",
+      "form": "4",
+      "type": "insider",
+      "owner": "THAIN JOHN A",
+      "title": "",
+      "action": "BUY",
+      "shares": 349,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "M"
+      ]
+    },
+    {
+      "date": "20260720",
+      "ticker": "UBER",
+      "company": "Uber Technologies, Inc",
+      "form": "4",
+      "type": "insider",
+      "owner": "Ceremony Glen",
+      "title": "See Remarks",
+      "action": "BUY",
+      "shares": 1818,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260720",
+      "ticker": "UBER",
+      "company": "Uber Technologies, Inc",
+      "form": "4",
+      "type": "insider",
+      "owner": "West Tony",
+      "title": "See Remarks",
+      "action": "BUY",
+      "shares": 3626,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260720",
+      "ticker": "UBER",
+      "company": "Uber Technologies, Inc",
+      "form": "4",
+      "type": "insider",
+      "owner": "Hazelbaker Jill",
+      "title": "See Remarks",
+      "action": "BUY",
+      "shares": 4532,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260720",
+      "ticker": "UBER",
+      "company": "Uber Technologies, Inc",
+      "form": "4",
+      "type": "insider",
+      "owner": "Macdonald Andrew",
+      "title": "See Remarks",
+      "action": "BUY",
+      "shares": 4484,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260720",
+      "ticker": "UBER",
+      "company": "Uber Technologies, Inc",
+      "form": "4",
+      "type": "insider",
+      "owner": "Krishnamurthy Balaji (A)",
+      "title": "Chief Financial Officer",
+      "action": "BUY",
+      "shares": 2143,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260720",
+      "ticker": "DIS",
+      "company": "Walt Disney Co",
+      "form": "4",
+      "type": "insider",
+      "owner": "Coleman Sonia L",
+      "title": "Sr. EVP & Chief People Officer",
+      "action": "BUY",
+      "shares": 622,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260720",
+      "ticker": "DIS",
+      "company": "Walt Disney Co",
+      "form": "4",
+      "type": "insider",
+      "owner": "Roeder Paul M",
+      "title": "Sr EVP and Chief Comm Officer",
+      "action": "BUY",
+      "shares": 612,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260720",
+      "ticker": "DIS",
+      "company": "Walt Disney Co",
+      "form": "4",
+      "type": "insider",
+      "owner": "WOODFORD BRENT",
+      "title": "EVP, Control, Fin Plan & Tax",
+      "action": "BUY",
+      "shares": 800,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260720",
+      "ticker": "HON",
+      "company": "HONEYWELL INTERNATIONAL INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "Kapur Vimal",
+      "title": "Chief Executive Officer",
+      "action": "BUY",
+      "shares": 1747,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260720",
+      "ticker": "HON",
+      "company": "HONEYWELL INTERNATIONAL INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "Lu Su Ping",
+      "title": "SrVP, General Counsel, CorpSec",
+      "action": "BUY",
+      "shares": 1104,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260720",
+      "ticker": "HON",
+      "company": "HONEYWELL INTERNATIONAL INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "Hammoud Billal",
+      "title": "Pres/CEO Building Automation",
+      "action": "BUY",
+      "shares": 565,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260720",
+      "ticker": "HON",
+      "company": "HONEYWELL INTERNATIONAL INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "West Kenneth J",
+      "title": "Pres/CEO Process Technologies",
+      "action": "BUY",
+      "shares": 481,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260720",
+      "ticker": "HON",
+      "company": "HONEYWELL INTERNATIONAL INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "Stepniak Michal",
+      "title": "SrVP & Chief Financial Officer",
+      "action": "BUY",
+      "shares": 1451,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260720",
+      "ticker": "HON",
+      "company": "HONEYWELL INTERNATIONAL INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "Masso James",
+      "title": "Pres/CEO, Process Automation",
+      "action": "BUY",
+      "shares": 1259,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
     {
       "date": "20260717",
       "ticker": "BLK",
@@ -750,131 +1072,11 @@
       "codes": [
         "G"
       ]
-    },
-    {
-      "date": "20260713",
-      "ticker": "CSCO",
-      "company": "CISCO SYSTEMS, INC.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Tuszik Oliver",
-      "title": "EVP, Global Sales",
-      "action": "SELL",
-      "shares": 2259,
-      "value": 267271,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F"
-      ]
-    },
-    {
-      "date": "20260713",
-      "ticker": "UNP",
-      "company": "UNION PACIFIC CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Jalali Rahul",
-      "title": "EVP & CHIEF INFORMATION OFFICE",
-      "action": "BUY",
-      "shares": 8,
-      "value": 2400,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260713",
-      "ticker": "UNP",
-      "company": "UNION PACIFIC CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Hamann Jennifer L",
-      "title": "EVP & CHIEF FINANCIAL OFFICER",
-      "action": "BUY",
-      "shares": 8,
-      "value": 2324,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260713",
-      "ticker": "UNP",
-      "company": "UNION PACIFIC CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Rocker Kenyatta G",
-      "title": "EVP MARKETING & SALES",
-      "action": "BUY",
-      "shares": 7,
-      "value": 2143,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260713",
-      "ticker": "UNP",
-      "company": "UNION PACIFIC CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Powers Carrie J",
-      "title": "VP & CONTROLLER",
-      "action": "BUY",
-      "shares": 5,
-      "value": 1580,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260713",
-      "ticker": "UNP",
-      "company": "UNION PACIFIC CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Conlin Christina B",
-      "title": "EVP CHIEF LEGAL OFFICER & CORP",
-      "action": "BUY",
-      "shares": 2,
-      "value": 635,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260713",
-      "ticker": "ISRG",
-      "company": "INTUITIVE SURGICAL INC",
-      "form": "4",
-      "type": "insider",
-      "owner": "Rosa David J.",
-      "title": "Chief Executive Officer (CEO)",
-      "action": "BUY",
-      "shares": 963,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F",
-        "M"
-      ]
     }
   ],
   "meta": {
-    "total": 50,
-    "insider": 50,
+    "total": 61,
+    "insider": 61,
     "stake": 0,
     "companies": 97
   }
