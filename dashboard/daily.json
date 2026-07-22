@@ -1,7 +1,128 @@
 {
-  "generated": "2026-07-21T22:49:45.324931+00:00",
+  "generated": "2026-07-22T22:50:55.567870+00:00",
   "lookback_days": 5,
   "activity": [
+    {
+      "date": "20260721",
+      "ticker": "JNJ",
+      "company": "JOHNSON & JOHNSON",
+      "form": "4",
+      "type": "insider",
+      "owner": "Broadhurst Vanessa",
+      "title": "EVP, Global Corp Affairs",
+      "action": "BUY",
+      "shares": 0,
+      "value": 3014701,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "M",
+        "S"
+      ]
+    },
+    {
+      "date": "20260721",
+      "ticker": "GOOG",
+      "company": "Alphabet Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Alphabet Inc.",
+      "title": "",
+      "action": "SELL",
+      "shares": 77840,
+      "value": 730473,
+      "open_market": true,
+      "ten_pct": true,
+      "codes": [
+        "J",
+        "S"
+      ]
+    },
+    {
+      "date": "20260721",
+      "ticker": "SCHW",
+      "company": "SCHWAB CHARLES CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "Beatty Jonathan S",
+      "title": "MD, Head of Advisor Services",
+      "action": "SELL",
+      "shares": 2000,
+      "value": 208411,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260721",
+      "ticker": "LLY",
+      "company": "ELI LILLY & Co",
+      "form": "4",
+      "type": "insider",
+      "owner": "LUCIANO JUAN R",
+      "title": "",
+      "action": "BUY",
+      "shares": 13,
+      "value": 15916,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260721",
+      "ticker": "LLY",
+      "company": "ELI LILLY & Co",
+      "form": "4",
+      "type": "insider",
+      "owner": "Alvarez Ralph",
+      "title": "",
+      "action": "BUY",
+      "shares": 10,
+      "value": 12416,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260721",
+      "ticker": "LLY",
+      "company": "ELI LILLY & Co",
+      "form": "4",
+      "type": "insider",
+      "owner": "Fyrwald J Erik",
+      "title": "",
+      "action": "BUY",
+      "shares": 8,
+      "value": 9916,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260721",
+      "ticker": "LLY",
+      "company": "ELI LILLY & Co",
+      "form": "4",
+      "type": "insider",
+      "owner": "Sulzberger Gabrielle",
+      "title": "",
+      "action": "BUY",
+      "shares": 4,
+      "value": 4958,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
     {
       "date": "20260720",
       "ticker": "PLD",
@@ -987,96 +1108,11 @@
         "C",
         "G"
       ]
-    },
-    {
-      "date": "20260714",
-      "ticker": "AVGO",
-      "company": "Broadcom Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Brazeal Mark David",
-      "title": "Chief Legal & Corp Affairs Ofc",
-      "action": "SELL",
-      "shares": 25000,
-      "value": 10033225,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260714",
-      "ticker": "QCOM",
-      "company": "QUALCOMM INC/DE",
-      "form": "4",
-      "type": "insider",
-      "owner": "Palkhiwala Akash J.",
-      "title": "EVP, CFO & COO",
-      "action": "SELL",
-      "shares": 2500,
-      "value": 452029,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260714",
-      "ticker": "ADI",
-      "company": "ANALOG DEVICES INC",
-      "form": "4",
-      "type": "insider",
-      "owner": "Golz Karen",
-      "title": "",
-      "action": "SELL",
-      "shares": 1000,
-      "value": 389830,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260714",
-      "ticker": "AVGO",
-      "company": "Broadcom Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "DELLY GAYLA J",
-      "title": "",
-      "action": "SELL",
-      "shares": 500,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "G"
-      ]
-    },
-    {
-      "date": "20260714",
-      "ticker": "COST",
-      "company": "COSTCO WHOLESALE CORP /NEW",
-      "form": "4",
-      "type": "insider",
-      "owner": "RAIKES JEFFREY S",
-      "title": "",
-      "action": "SELL",
-      "shares": 5249,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "G"
-      ]
     }
   ],
   "meta": {
-    "total": 61,
-    "insider": 61,
+    "total": 63,
+    "insider": 63,
     "stake": 0,
     "companies": 97
   }
