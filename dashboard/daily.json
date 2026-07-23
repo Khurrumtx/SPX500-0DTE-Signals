@@ -1,7 +1,41 @@
 {
-  "generated": "2026-07-22T22:50:55.567870+00:00",
+  "generated": "2026-07-23T22:50:14.263478+00:00",
   "lookback_days": 5,
   "activity": [
+    {
+      "date": "20260722",
+      "ticker": "META",
+      "company": "Meta Platforms, Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Olivan Javier",
+      "title": "Chief Operating Officer",
+      "action": "SELL",
+      "shares": 1466,
+      "value": 946816,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260722",
+      "ticker": "BLK",
+      "company": "BlackRock, Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "FINK LAURENCE",
+      "title": "Chairman and CEO",
+      "action": "SELL",
+      "shares": 7852,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "G"
+      ]
+    },
     {
       "date": "20260721",
       "ticker": "JNJ",
@@ -1021,98 +1055,11 @@
         "F",
         "M"
       ]
-    },
-    {
-      "date": "20260715",
-      "ticker": "MA",
-      "company": "Mastercard Inc",
-      "form": "4",
-      "type": "insider",
-      "owner": "McLaughlin Edward Grunde",
-      "title": "President & CTO, MA Tech",
-      "action": "BUY",
-      "shares": 0,
-      "value": 4499550,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "M",
-        "S"
-      ]
-    },
-    {
-      "date": "20260715",
-      "ticker": "META",
-      "company": "Meta Platforms, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Olivan Javier",
-      "title": "Chief Operating Officer",
-      "action": "SELL",
-      "shares": 2163,
-      "value": 1429787,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260715",
-      "ticker": "MA",
-      "company": "Mastercard Inc",
-      "form": "4",
-      "type": "insider",
-      "owner": "Arkell Sandra A",
-      "title": "Controller",
-      "action": "SELL",
-      "shares": 344,
-      "value": 185760,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260715",
-      "ticker": "MSFT",
-      "company": "MICROSOFT CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Coleman Amy",
-      "title": "EVP, Chief Human Resources Off",
-      "action": "SELL",
-      "shares": 32,
-      "value": 12450,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F"
-      ]
-    },
-    {
-      "date": "20260715",
-      "ticker": "BRK-B",
-      "company": "BERKSHIRE HATHAWAY INC",
-      "form": "4",
-      "type": "insider",
-      "owner": "BUFFETT WARREN E",
-      "title": "",
-      "action": "BUY",
-      "shares": 0,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": true,
-      "codes": [
-        "C",
-        "G"
-      ]
     }
   ],
   "meta": {
-    "total": 63,
-    "insider": 63,
+    "total": 60,
+    "insider": 60,
     "stake": 0,
     "companies": 97
   }
