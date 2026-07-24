@@ -1,7 +1,113 @@
 {
-  "generated": "2026-07-23T22:50:14.263478+00:00",
+  "generated": "2026-07-24T22:50:43.853366+00:00",
   "lookback_days": 5,
   "activity": [
+    {
+      "date": "20260723",
+      "ticker": "GOOG",
+      "company": "Alphabet Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Alphabet Inc.",
+      "title": "",
+      "action": "SELL",
+      "shares": 144964,
+      "value": 1389834,
+      "open_market": true,
+      "ten_pct": true,
+      "codes": [
+        "J",
+        "S"
+      ]
+    },
+    {
+      "date": "20260723",
+      "ticker": "SCHW",
+      "company": "SCHWAB CHARLES CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "Murtagh Nigel J",
+      "title": "Chief Risk Officer",
+      "action": "BUY",
+      "shares": 0,
+      "value": 189720,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "M",
+        "S"
+      ]
+    },
+    {
+      "date": "20260723",
+      "ticker": "CRM",
+      "company": "Salesforce, Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Harris Parker",
+      "title": "Co-Founder and CTO, Slack",
+      "action": "BUY",
+      "shares": 900,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260723",
+      "ticker": "CRM",
+      "company": "Salesforce, Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Tallapragada Srinivas",
+      "title": "Chief Eng/Cust Success Officer",
+      "action": "BUY",
+      "shares": 900,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260723",
+      "ticker": "VRTX",
+      "company": "VERTEX PHARMACEUTICALS INC / MA",
+      "form": "4",
+      "type": "insider",
+      "owner": "Sachdev Amit",
+      "title": "EVP Chief Patient & Ext Af Off",
+      "action": "BUY",
+      "shares": 8251,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
+    {
+      "date": "20260723",
+      "ticker": "VRTX",
+      "company": "VERTEX PHARMACEUTICALS INC / MA",
+      "form": "4",
+      "type": "insider",
+      "owner": "Tatsis Ourania",
+      "title": "EVP, Chief Reg. & Quality Off.",
+      "action": "BUY",
+      "shares": 8251,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A"
+      ]
+    },
     {
       "date": "20260722",
       "ticker": "META",
@@ -864,202 +970,11 @@
       "codes": [
         "G"
       ]
-    },
-    {
-      "date": "20260716",
-      "ticker": "GILD",
-      "company": "GILEAD SCIENCES, INC.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Dickinson Andrew D",
-      "title": "Chief Financial Officer",
-      "action": "SELL",
-      "shares": 3000,
-      "value": 389776,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260716",
-      "ticker": "GILD",
-      "company": "GILEAD SCIENCES, INC.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Mercier Johanna",
-      "title": "Chief Comm & Corp Aff Officer",
-      "action": "SELL",
-      "shares": 3000,
-      "value": 389757,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260716",
-      "ticker": "DHR",
-      "company": "DANAHER CORP /DE/",
-      "form": "4",
-      "type": "insider",
-      "owner": "Zerhouni Elias A.",
-      "title": "",
-      "action": "BUY",
-      "shares": 2117,
-      "value": 237060,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F",
-        "M"
-      ]
-    },
-    {
-      "date": "20260716",
-      "ticker": "DHR",
-      "company": "DANAHER CORP /DE/",
-      "form": "4",
-      "type": "insider",
-      "owner": "FILLER LINDA",
-      "title": "",
-      "action": "BUY",
-      "shares": 2117,
-      "value": 237060,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F",
-        "M"
-      ]
-    },
-    {
-      "date": "20260716",
-      "ticker": "WMT",
-      "company": "Walmart Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Dallaire Seth",
-      "title": "Executive Vice President",
-      "action": "SELL",
-      "shares": 386,
-      "value": 44376,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F"
-      ]
-    },
-    {
-      "date": "20260716",
-      "ticker": "WMT",
-      "company": "Walmart Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Watkins Latriece",
-      "title": "Executive Vice President",
-      "action": "SELL",
-      "shares": 227,
-      "value": 26068,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F"
-      ]
-    },
-    {
-      "date": "20260716",
-      "ticker": "WMT",
-      "company": "Walmart Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Milum Dwayne M",
-      "title": "SVP & Controller",
-      "action": "SELL",
-      "shares": 121,
-      "value": 13908,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F"
-      ]
-    },
-    {
-      "date": "20260716",
-      "ticker": "WMT",
-      "company": "Walmart Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Guggina David W",
-      "title": "Executive Vice President",
-      "action": "SELL",
-      "shares": 117,
-      "value": 13512,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F"
-      ]
-    },
-    {
-      "date": "20260716",
-      "ticker": "DHR",
-      "company": "DANAHER CORP /DE/",
-      "form": "4",
-      "type": "insider",
-      "owner": "Bouda Christopher",
-      "title": "VP, Chief Accounting Officer",
-      "action": "SELL",
-      "shares": 60,
-      "value": 12047,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F"
-      ]
-    },
-    {
-      "date": "20260716",
-      "ticker": "DIS",
-      "company": "Walt Disney Co",
-      "form": "4",
-      "type": "insider",
-      "owner": "Roeder Paul M",
-      "title": "Sr EVP and Chief Comm Officer",
-      "action": "BUY",
-      "shares": 1996,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F",
-        "M"
-      ]
-    },
-    {
-      "date": "20260716",
-      "ticker": "DIS",
-      "company": "Walt Disney Co",
-      "form": "4",
-      "type": "insider",
-      "owner": "WOODFORD BRENT",
-      "title": "EVP, Control, Fin Plan & Tax",
-      "action": "BUY",
-      "shares": 2894,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F",
-        "M"
-      ]
     }
   ],
   "meta": {
-    "total": 60,
-    "insider": 60,
+    "total": 55,
+    "insider": 55,
     "stake": 0,
     "companies": 97
   }
