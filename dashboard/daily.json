@@ -1,7 +1,324 @@
 {
-  "generated": "2026-07-28T22:50:20.652994+00:00",
+  "generated": "2026-07-29T22:50:23.399013+00:00",
   "lookback_days": 5,
   "activity": [
+    {
+      "date": "20260728",
+      "ticker": "MU",
+      "company": "MICRON TECHNOLOGY INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "MEHROTRA SANJAY",
+      "title": "President and CEO",
+      "action": "SELL",
+      "shares": 31285,
+      "value": 28995816,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260728",
+      "ticker": "MU",
+      "company": "MICRON TECHNOLOGY INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "MEHROTRA SANJAY",
+      "title": "President and CEO",
+      "action": "SELL",
+      "shares": 8715,
+      "value": 8294274,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260728",
+      "ticker": "SCHW",
+      "company": "SCHWAB CHARLES CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "Schwab Charles R.",
+      "title": "Co-Chairman",
+      "action": "SELL",
+      "shares": 45500,
+      "value": 4628191,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260728",
+      "ticker": "RTX",
+      "company": "RTX Corp",
+      "form": "4",
+      "type": "insider",
+      "owner": "Brunk Troy D",
+      "title": "President, Collins Aerospace",
+      "action": "SELL",
+      "shares": 1811,
+      "value": 3029822,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "D",
+        "M",
+        "S"
+      ]
+    },
+    {
+      "date": "20260728",
+      "ticker": "RTX",
+      "company": "RTX Corp",
+      "form": "4",
+      "type": "insider",
+      "owner": "DaSilva Kevin G",
+      "title": "Senior VP and Treasurer",
+      "action": "SELL",
+      "shares": 7010,
+      "value": 1504928,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260728",
+      "ticker": "GOOG",
+      "company": "Alphabet Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Pichai Sundar",
+      "title": "Chief Executive Officer",
+      "action": "SELL",
+      "shares": 3702,
+      "value": 1181271,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "C",
+        "F"
+      ]
+    },
+    {
+      "date": "20260728",
+      "ticker": "GOOG",
+      "company": "Alphabet Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Schindler Philipp",
+      "title": "SVP, Chief Business Officer",
+      "action": "SELL",
+      "shares": 2014,
+      "value": 642647,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "C",
+        "F"
+      ]
+    },
+    {
+      "date": "20260728",
+      "ticker": "GE",
+      "company": "GENERAL ELECTRIC CO",
+      "form": "4",
+      "type": "insider",
+      "owner": "Ali Mohamed",
+      "title": "Senior Vice President",
+      "action": "BUY",
+      "shares": 0,
+      "value": 625172,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "M",
+        "S"
+      ]
+    },
+    {
+      "date": "20260728",
+      "ticker": "GOOG",
+      "company": "Alphabet Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Ashkenazi Anat",
+      "title": "SVP, Chief Financial Officer",
+      "action": "SELL",
+      "shares": 1781,
+      "value": 568299,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "C",
+        "F"
+      ]
+    },
+    {
+      "date": "20260728",
+      "ticker": "GOOG",
+      "company": "Alphabet Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "WALKER JOHN KENT",
+      "title": "President, Global Affairs, CLO",
+      "action": "SELL",
+      "shares": 1640,
+      "value": 523307,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "C",
+        "F"
+      ]
+    },
+    {
+      "date": "20260728",
+      "ticker": "RTX",
+      "company": "RTX Corp",
+      "form": "4",
+      "type": "insider",
+      "owner": "Atkinson Tracy A",
+      "title": "",
+      "action": "SELL",
+      "shares": 2295,
+      "value": 500424,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260728",
+      "ticker": "TMO",
+      "company": "THERMO FISHER SCIENTIFIC INC.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Pettiti Gianluca",
+      "title": "President & COO",
+      "action": "SELL",
+      "shares": 400,
+      "value": 226000,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260728",
+      "ticker": "INTU",
+      "company": "INTUIT INC.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Burton Eve B",
+      "title": "",
+      "action": "BUY",
+      "shares": 105,
+      "value": 29568,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "M"
+      ]
+    },
+    {
+      "date": "20260728",
+      "ticker": "BAC",
+      "company": "BANK OF AMERICA CORP /DE/",
+      "form": "4",
+      "type": "insider",
+      "owner": "MERRILL LYNCH, PIERCE, FENNER & SMITH INC.",
+      "title": "",
+      "action": "BUY",
+      "shares": 0,
+      "value": 92,
+      "open_market": true,
+      "ten_pct": true,
+      "codes": [
+        "P",
+        "S"
+      ]
+    },
+    {
+      "date": "20260728",
+      "ticker": "GOOG",
+      "company": "Alphabet Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Porat Ruth",
+      "title": "President and CIO",
+      "action": "SELL",
+      "shares": 1640,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "C",
+        "F"
+      ]
+    },
+    {
+      "date": "20260728",
+      "ticker": "GOOG",
+      "company": "Alphabet Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Saraci Marsida",
+      "title": "VP, Chief Accounting Officer",
+      "action": "BUY",
+      "shares": 1523,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "A",
+        "C",
+        "F"
+      ]
+    },
+    {
+      "date": "20260728",
+      "ticker": "JPM",
+      "company": "JPMORGAN CHASE & CO",
+      "form": "4",
+      "type": "insider",
+      "owner": "Petno Douglas B",
+      "title": "Co-President; CEO CIB",
+      "action": "SELL",
+      "shares": 864,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "G"
+      ]
+    },
+    {
+      "date": "20260728",
+      "ticker": "JPM",
+      "company": "JPMORGAN CHASE & CO",
+      "form": "4",
+      "type": "insider",
+      "owner": "Friedman Stacey",
+      "title": "General Counsel",
+      "action": "SELL",
+      "shares": 166,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "G"
+      ]
+    },
     {
       "date": "20260727",
       "ticker": "GOOG",
@@ -228,132 +545,11 @@
       "codes": [
         "G"
       ]
-    },
-    {
-      "date": "20260721",
-      "ticker": "JNJ",
-      "company": "JOHNSON & JOHNSON",
-      "form": "4",
-      "type": "insider",
-      "owner": "Broadhurst Vanessa",
-      "title": "EVP, Global Corp Affairs",
-      "action": "BUY",
-      "shares": 0,
-      "value": 3014701,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "M",
-        "S"
-      ]
-    },
-    {
-      "date": "20260721",
-      "ticker": "GOOG",
-      "company": "Alphabet Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Alphabet Inc.",
-      "title": "",
-      "action": "SELL",
-      "shares": 77840,
-      "value": 730473,
-      "open_market": true,
-      "ten_pct": true,
-      "codes": [
-        "J",
-        "S"
-      ]
-    },
-    {
-      "date": "20260721",
-      "ticker": "SCHW",
-      "company": "SCHWAB CHARLES CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Beatty Jonathan S",
-      "title": "MD, Head of Advisor Services",
-      "action": "SELL",
-      "shares": 2000,
-      "value": 208411,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260721",
-      "ticker": "LLY",
-      "company": "ELI LILLY & Co",
-      "form": "4",
-      "type": "insider",
-      "owner": "LUCIANO JUAN R",
-      "title": "",
-      "action": "BUY",
-      "shares": 13,
-      "value": 15916,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260721",
-      "ticker": "LLY",
-      "company": "ELI LILLY & Co",
-      "form": "4",
-      "type": "insider",
-      "owner": "Alvarez Ralph",
-      "title": "",
-      "action": "BUY",
-      "shares": 10,
-      "value": 12416,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260721",
-      "ticker": "LLY",
-      "company": "ELI LILLY & Co",
-      "form": "4",
-      "type": "insider",
-      "owner": "Fyrwald J Erik",
-      "title": "",
-      "action": "BUY",
-      "shares": 8,
-      "value": 9916,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260721",
-      "ticker": "LLY",
-      "company": "ELI LILLY & Co",
-      "form": "4",
-      "type": "insider",
-      "owner": "Sulzberger Gabrielle",
-      "title": "",
-      "action": "BUY",
-      "shares": 4,
-      "value": 4958,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
     }
   ],
   "meta": {
-    "total": 20,
-    "insider": 20,
+    "total": 31,
+    "insider": 31,
     "stake": 0,
     "companies": 97
   }
