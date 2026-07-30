@@ -1,7 +1,234 @@
 {
-  "generated": "2026-07-29T22:50:23.399013+00:00",
+  "generated": "2026-07-30T22:52:00.466780+00:00",
   "lookback_days": 5,
   "activity": [
+    {
+      "date": "20260729",
+      "ticker": "SCHW",
+      "company": "SCHWAB CHARLES CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "Bettinger Walter W",
+      "title": "Co-Chairman",
+      "action": "BUY",
+      "shares": 0,
+      "value": 14880886,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "M",
+        "S"
+      ]
+    },
+    {
+      "date": "20260729",
+      "ticker": "GOOG",
+      "company": "Alphabet Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Alphabet Inc.",
+      "title": "",
+      "action": "SELL",
+      "shares": 630138,
+      "value": 6065609,
+      "open_market": true,
+      "ten_pct": true,
+      "codes": [
+        "J",
+        "S"
+      ]
+    },
+    {
+      "date": "20260729",
+      "ticker": "KO",
+      "company": "COCA COLA CO",
+      "form": "4",
+      "type": "insider",
+      "owner": "Pietracci Bruno",
+      "title": "",
+      "action": "BUY",
+      "shares": 0,
+      "value": 4139730,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "M",
+        "S"
+      ]
+    },
+    {
+      "date": "20260729",
+      "ticker": "HON",
+      "company": "HONEYWELL INTERNATIONAL INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "West Kenneth J",
+      "title": "Pres/CEO Process Technologies",
+      "action": "BUY",
+      "shares": 0,
+      "value": 3305214,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "M",
+        "S"
+      ]
+    },
+    {
+      "date": "20260729",
+      "ticker": "CB",
+      "company": "Chubb Ltd",
+      "form": "4",
+      "type": "insider",
+      "owner": "Wayland Joseph F",
+      "title": "Executive Vice President and*",
+      "action": "SELL",
+      "shares": 8502,
+      "value": 3099319,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260729",
+      "ticker": "SCHW",
+      "company": "SCHWAB CHARLES CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "Murtagh Nigel J",
+      "title": "Chief Risk Officer",
+      "action": "BUY",
+      "shares": 0,
+      "value": 1542249,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "M",
+        "S"
+      ]
+    },
+    {
+      "date": "20260729",
+      "ticker": "META",
+      "company": "Meta Platforms, Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Olivan Javier",
+      "title": "Chief Operating Officer",
+      "action": "SELL",
+      "shares": 1466,
+      "value": 891108,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260729",
+      "ticker": "PEP",
+      "company": "PEPSICO INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "Flavell David",
+      "title": "EVP, Gen Counsel & Corp Sec",
+      "action": "SELL",
+      "shares": 2900,
+      "value": 404673,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260729",
+      "ticker": "BKNG",
+      "company": "Booking Holdings Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "WITTMAN VANESSA AMES",
+      "title": "",
+      "action": "SELL",
+      "shares": 1125,
+      "value": 216000,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260729",
+      "ticker": "MS",
+      "company": "MORGAN STANLEY",
+      "form": "4",
+      "type": "insider",
+      "owner": "SCHAPIRO MARY L",
+      "title": "",
+      "action": "SELL",
+      "shares": 3325,
+      "value": 212055,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "G",
+        "S"
+      ]
+    },
+    {
+      "date": "20260729",
+      "ticker": "MDT",
+      "company": "Medtronic plc",
+      "form": "4",
+      "type": "insider",
+      "owner": "Quinn Michelle",
+      "title": "EVP, GC and Secretary",
+      "action": "SELL",
+      "shares": 2069,
+      "value": 179754,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F"
+      ]
+    },
+    {
+      "date": "20260729",
+      "ticker": "GOOG",
+      "company": "Alphabet Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "Saraci Marsida",
+      "title": "VP, Chief Accounting Officer",
+      "action": "SELL",
+      "shares": 449,
+      "value": 149606,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260729",
+      "ticker": "ISRG",
+      "company": "INTUITIVE SURGICAL INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "Brosius Mark",
+      "title": "EVP & Chief Mfg and Supply Cha",
+      "action": "SELL",
+      "shares": 84,
+      "value": 29954,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
     {
       "date": "20260728",
       "ticker": "MU",
@@ -511,45 +738,11 @@
       "codes": [
         "A"
       ]
-    },
-    {
-      "date": "20260722",
-      "ticker": "META",
-      "company": "Meta Platforms, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Olivan Javier",
-      "title": "Chief Operating Officer",
-      "action": "SELL",
-      "shares": 1466,
-      "value": 946816,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "S"
-      ]
-    },
-    {
-      "date": "20260722",
-      "ticker": "BLK",
-      "company": "BlackRock, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "FINK LAURENCE",
-      "title": "Chairman and CEO",
-      "action": "SELL",
-      "shares": 7852,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "G"
-      ]
     }
   ],
   "meta": {
-    "total": 31,
-    "insider": 31,
+    "total": 42,
+    "insider": 42,
     "stake": 0,
     "companies": 97
   }
