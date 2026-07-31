@@ -1,7 +1,149 @@
 {
-  "generated": "2026-07-30T22:52:00.466780+00:00",
+  "generated": "2026-07-31T22:50:37.489459+00:00",
   "lookback_days": 5,
   "activity": [
+    {
+      "date": "20260730",
+      "ticker": "KO",
+      "company": "COCA COLA CO",
+      "form": "4",
+      "type": "insider",
+      "owner": "Quincey James",
+      "title": "Chairman",
+      "action": "BUY",
+      "shares": 0,
+      "value": 23948197,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "M",
+        "S"
+      ]
+    },
+    {
+      "date": "20260730",
+      "ticker": "SCHW",
+      "company": "SCHWAB CHARLES CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "Schwab Charles R.",
+      "title": "Co-Chairman",
+      "action": "SELL",
+      "shares": 203450,
+      "value": 15168688,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "G",
+        "S"
+      ]
+    },
+    {
+      "date": "20260730",
+      "ticker": "SCHW",
+      "company": "SCHWAB CHARLES CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "Schwab-Pomerantz Carolyn",
+      "title": "",
+      "action": "SELL",
+      "shares": 22921,
+      "value": 2394399,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "G",
+        "S"
+      ]
+    },
+    {
+      "date": "20260730",
+      "ticker": "SCHW",
+      "company": "SCHWAB CHARLES CORP",
+      "form": "4",
+      "type": "insider",
+      "owner": "Howard Dennis",
+      "title": "MD, Chief Tech, OPS & Data Off",
+      "action": "BUY",
+      "shares": 0,
+      "value": 1794799,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "M",
+        "S"
+      ]
+    },
+    {
+      "date": "20260730",
+      "ticker": "BKNG",
+      "company": "Booking Holdings Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "MYLOD ROBERT J JR",
+      "title": "",
+      "action": "SELL",
+      "shares": 5000,
+      "value": 1000000,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260730",
+      "ticker": "GOOG",
+      "company": "Alphabet Inc.",
+      "form": "4",
+      "type": "insider",
+      "owner": "ARNOLD FRANCES",
+      "title": "",
+      "action": "SELL",
+      "shares": 82,
+      "value": 27337,
+      "open_market": true,
+      "ten_pct": false,
+      "codes": [
+        "S"
+      ]
+    },
+    {
+      "date": "20260730",
+      "ticker": "HON",
+      "company": "HONEYWELL INTERNATIONAL INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "Kapur Vimal",
+      "title": "Chief Executive Officer",
+      "action": "BUY",
+      "shares": 169,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
+    {
+      "date": "20260730",
+      "ticker": "HON",
+      "company": "HONEYWELL INTERNATIONAL INC",
+      "form": "4",
+      "type": "insider",
+      "owner": "Hammoud Billal",
+      "title": "Pres/CEO Building Automation",
+      "action": "BUY",
+      "shares": 191,
+      "value": 0,
+      "open_market": false,
+      "ten_pct": false,
+      "codes": [
+        "F",
+        "M"
+      ]
+    },
     {
       "date": "20260729",
       "ticker": "SCHW",
@@ -632,117 +774,11 @@
       "codes": [
         "P"
       ]
-    },
-    {
-      "date": "20260723",
-      "ticker": "GOOG",
-      "company": "Alphabet Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Alphabet Inc.",
-      "title": "",
-      "action": "SELL",
-      "shares": 144964,
-      "value": 1389834,
-      "open_market": true,
-      "ten_pct": true,
-      "codes": [
-        "J",
-        "S"
-      ]
-    },
-    {
-      "date": "20260723",
-      "ticker": "SCHW",
-      "company": "SCHWAB CHARLES CORP",
-      "form": "4",
-      "type": "insider",
-      "owner": "Murtagh Nigel J",
-      "title": "Chief Risk Officer",
-      "action": "BUY",
-      "shares": 0,
-      "value": 189720,
-      "open_market": true,
-      "ten_pct": false,
-      "codes": [
-        "M",
-        "S"
-      ]
-    },
-    {
-      "date": "20260723",
-      "ticker": "CRM",
-      "company": "Salesforce, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Harris Parker",
-      "title": "Co-Founder and CTO, Slack",
-      "action": "BUY",
-      "shares": 900,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F",
-        "M"
-      ]
-    },
-    {
-      "date": "20260723",
-      "ticker": "CRM",
-      "company": "Salesforce, Inc.",
-      "form": "4",
-      "type": "insider",
-      "owner": "Tallapragada Srinivas",
-      "title": "Chief Eng/Cust Success Officer",
-      "action": "BUY",
-      "shares": 900,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "F",
-        "M"
-      ]
-    },
-    {
-      "date": "20260723",
-      "ticker": "VRTX",
-      "company": "VERTEX PHARMACEUTICALS INC / MA",
-      "form": "4",
-      "type": "insider",
-      "owner": "Sachdev Amit",
-      "title": "EVP Chief Patient & Ext Af Off",
-      "action": "BUY",
-      "shares": 8251,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
-    },
-    {
-      "date": "20260723",
-      "ticker": "VRTX",
-      "company": "VERTEX PHARMACEUTICALS INC / MA",
-      "form": "4",
-      "type": "insider",
-      "owner": "Tatsis Ourania",
-      "title": "EVP, Chief Reg. & Quality Off.",
-      "action": "BUY",
-      "shares": 8251,
-      "value": 0,
-      "open_market": false,
-      "ten_pct": false,
-      "codes": [
-        "A"
-      ]
     }
   ],
   "meta": {
-    "total": 42,
-    "insider": 42,
+    "total": 44,
+    "insider": 44,
     "stake": 0,
     "companies": 97
   }
