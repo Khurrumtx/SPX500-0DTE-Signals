@@ -1,0 +1,66 @@
+# SPX 0DTE self-training agent config
+# EDUCATIONAL ONLY — NOT FINANCIAL ADVICE.
+
+paths:
+  raw_dir: data/raw
+  orderflow_dir: data/orderflow
+  processed_dir: data/processed
+  models_dir: models
+  signal_out: signals/signal.json
+  dashboard_signal_out: dashboard/signals/signal.json
+
+instruments:
+  es: es.csv          # E-mini S&P futures OHLC
+  spx: spx.csv        # SPX cash / index OHLC
+  vix: vix.csv        # VIX OHLC
+  cl: cl.csv          # Crude oil futures OHLC
+  # Optional 0DTE option chain aggregates (when available):
+  spx_0dte: spx_0dte.csv
+  # Optional order-flow dumps (subscription later):
+  orderflow_glob: "*.csv"
+
+schema:
+  # Required columns for OHLC files (case-insensitive; aliases accepted)
+  ohlc_required: [timestamp, open, high, low, close]
+  ohlc_optional: [volume]
+  # Optional columns for spx_0dte.csv aggregates
+  spx_0dte_optional:
+    - atm_iv
+    - call_volume
+    - put_volume
+    - call_oi
+    - put_oi
+    - gamma_flip
+    - put_call_ratio
+  # Optional order-flow columns (filled when subscription is live)
+  orderflow_optional:
+    - bid_size
+    - ask_size
+    - delta
+    - cumulative_delta
+    - large_print_count
+    - buy_aggression
+    - sell_aggression
+
+labels:
+  # Forward return horizon in bars (daily bars → next session)
+  horizon_bars: 1
+  # Absolute SPX return thresholds for CALL / PUT / WAIT
+  call_threshold: 0.0025   # +0.25%
+  put_threshold: -0.0025   # -0.25%
+
+train:
+  lookback_months: 24
+  walk_forward_folds: 6
+  min_train_rows: 120
+  retrain_min_new_rows: 5
+  confidence_floor: 45      # below this → WAIT / no trade
+  random_state: 42
+  max_risk_usd: 1000
+
+features:
+  return_windows: [1, 3, 5, 10, 20]
+  vol_windows: [5, 10, 20]
+  rsi_period: 14
+  include_cross_asset: true   # ES↔VIX↔CL correlations
+  include_orderflow: true     # no-op until orderflow files exist

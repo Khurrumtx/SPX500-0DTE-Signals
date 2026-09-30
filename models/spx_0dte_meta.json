@@ -1,0 +1,109 @@
+{
+  "trained_at": "2026-09-30T17:05:02.522087+00:00",
+  "rows": 503,
+  "features": [
+    "atm_iv",
+    "cl_range",
+    "cl_ret_1",
+    "cl_ret_10",
+    "cl_ret_20",
+    "cl_ret_3",
+    "cl_ret_5",
+    "cl_rsi_14",
+    "cl_rvol_10",
+    "cl_rvol_20",
+    "cl_rvol_5",
+    "cl_vol_z",
+    "dist_gamma_flip",
+    "dow",
+    "es_cl_corr_10",
+    "es_range",
+    "es_ret_1",
+    "es_ret_10",
+    "es_ret_20",
+    "es_ret_3",
+    "es_ret_5",
+    "es_rsi_14",
+    "es_rvol_10",
+    "es_rvol_20",
+    "es_rvol_5",
+    "es_vix_corr_10",
+    "es_vix_corr_20",
+    "es_vol_z",
+    "iv_rv_spread",
+    "month",
+    "pcr",
+    "spx0dte_atm_iv",
+    "spx0dte_call_volume",
+    "spx0dte_gamma_flip",
+    "spx0dte_put_call_ratio",
+    "spx0dte_put_volume",
+    "spx_es_basis",
+    "spx_range",
+    "spx_ret_1",
+    "spx_ret_10",
+    "spx_ret_20",
+    "spx_ret_3",
+    "spx_ret_5",
+    "spx_rsi_14",
+    "spx_rvol_10",
+    "spx_rvol_20",
+    "spx_rvol_5",
+    "spx_vol_z",
+    "vix_range",
+    "vix_ret_1",
+    "vix_ret_10",
+    "vix_ret_20",
+    "vix_ret_3",
+    "vix_ret_5",
+    "vix_rsi_14",
+    "vix_rvol_10",
+    "vix_rvol_20",
+    "vix_rvol_5",
+    "vix_vol_z",
+    "vix_vs_rvol"
+  ],
+  "label_map": {
+    "WAIT": 0,
+    "CALL": 1,
+    "PUT": 2
+  },
+  "walk_forward_accuracy": 0.4033333333333333,
+  "folds": [
+    {
+      "fold": 0,
+      "accuracy": 0.38,
+      "test_rows": 50
+    },
+    {
+      "fold": 1,
+      "accuracy": 0.38,
+      "test_rows": 50
+    },
+    {
+      "fold": 2,
+      "accuracy": 0.38,
+      "test_rows": 50
+    },
+    {
+      "fold": 3,
+      "accuracy": 0.48,
+      "test_rows": 50
+    },
+    {
+      "fold": 4,
+      "accuracy": 0.4,
+      "test_rows": 50
+    },
+    {
+      "fold": 5,
+      "accuracy": 0.4,
+      "test_rows": 50
+    }
+  ],
+  "lookback_months": 24,
+  "data_end": "2026-09-29T00:00:00+00:00",
+  "data_start": "2024-10-25T00:00:00+00:00",
+  "model_path": "/workspace/models/spx_0dte_hgbt.joblib",
+  "disclaimer": "Educational model. 0DTE options are extremely high risk. Not financial advice."
+}
