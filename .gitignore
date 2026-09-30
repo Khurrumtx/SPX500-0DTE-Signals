@@ -1,3 +1,17 @@
 __pycache__/
 *.pyc
 .DS_Store
+data/raw/*.csv
+data/raw/*.parquet
+data/orderflow/*.csv
+data/orderflow/*.parquet
+data/processed/
+models/*.joblib
+models/retrain_state.json
+!models/spx_0dte_meta.json
+!data/raw/.gitkeep
+!data/orderflow/.gitkeep
+!data/processed/.gitkeep
+!models/.gitkeep
+!data/raw/README.md
+!data/orderflow/README.md

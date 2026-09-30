@@ -1,41 +1,43 @@
 {
   "signal": "CALL",
-  "timestamp": "2026-05-26T14:00:00+00:00",
-  "confidence": 62,
+  "timestamp": "2026-09-30T00:00:00+00:00",
+  "confidence": 79,
   "direction": "BULLISH",
-  "spx": 5300.0,
+  "spx": 5432.66,
   "pricing": "estimate",
   "instrument": "SPX",
-  "rsi": 58.0,
-  "realized_vol": 0.15,
+  "rsi": 40.56,
+  "realized_vol": 0.1087,
   "vol_regime": "normal",
+  "model": {
+    "name": "spx_0dte_hgbt",
+    "probabilities": {
+      "WAIT": 0.14541606180387717,
+      "CALL": 0.7866946936717794,
+      "PUT": 0.0678892445243434
+    },
+    "features_used": 60
+  },
   "trade": {
-    "type": "debit_spread",
-    "strategy": "Bull Call Debit Spread (0DTE)",
-    "expiry": "0DTE (2026-05-26)",
+    "type": "long_option",
+    "strategy": "Long Call (0DTE)",
+    "expiry": "0DTE",
     "legs": [
       {
         "action": "BUY",
         "right": "CALL",
-        "strike": 5300,
-        "est_price": 7.58
-      },
-      {
-        "action": "SELL",
-        "right": "CALL",
-        "strike": 5325,
-        "est_price": 0.84
+        "strike": 5435,
+        "est_price": 8.15
       }
     ],
     "contracts": 1,
-    "width": 25,
-    "est_debit": 673,
-    "max_risk": 673,
-    "max_reward": 1826,
-    "breakeven": 5306.73,
-    "rationale": "Bullish bias (RSI 58.0, conviction 62); normal vol favors a defined-risk debit spread over a naked long.",
+    "est_debit": 815,
+    "max_risk": 815,
+    "max_reward": "open",
+    "breakeven": 5443.15,
+    "rationale": "ML bullish bias (confidence 79); p_call=0.79.",
     "pricing": "estimate",
     "instrument": "SPX"
   },
-  "disclaimer": "Educational rule-based signal. 0DTE options are extremely high risk and can expire worthless. Not financial advice. Prices are Black-Scholes estimates; actual fills vary."
+  "disclaimer": "Educational ML signal trained on ES/SPX/VIX/CL. 0DTE options are extremely high risk and can expire worthless. Not financial advice. Prices are structure estimates; actual fills vary."
 }

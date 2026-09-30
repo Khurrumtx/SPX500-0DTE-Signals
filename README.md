@@ -8,7 +8,10 @@ A mobile-first **PWA** dashboard for SPX500 0DTE signals that runs on iPhone
 - `dashboard/` — the PWA (HTML/CSS/JS, service worker, manifest, icons)
 - `dashboard/signals/signal.json` — signal data the dashboard polls
 - `signals/signal.json` — source-of-truth signal file (mirror)
-- `scripts/` — signal generators (TBD)
+- `scripts/agent/` — self-training ML agent (ES / SPX / VIX / CL → 0DTE signal)
+- `data/raw/` — drop 24 months of historical CSVs here
+- `data/orderflow/` — drop options order-flow dumps here (subscription later)
+- `models/` — trained model + walk-forward metadata
 
 ## Run locally
 
@@ -91,32 +94,40 @@ Note: there is no public feed of *every* institution's trades intraday — 13F
 (quarterly) is the only comprehensive institutional source. Form 4 + 13D/13G are
 the timely, daily-updating signals of who is actually buying and selling.
 
-## 0DTE options signal
+## 0DTE options signal (self-training agent)
 
 > **EDUCATIONAL ONLY — NOT FINANCIAL ADVICE.** 0DTE options are extremely high
-> risk and can expire worthless within hours. The signal is a transparent,
-> rule-based suggestion, not a recommendation.
+> risk and can expire worthless within hours. The signal is a model suggestion,
+> not a recommendation.
 
-`scripts/signal.py` produces a **defined-risk, directional** 0DTE idea:
-- Pulls recent daily candles for a liquid proxy (default `SPY`, ×10 ≈ SPX) via
-  one Alpha Vantage call, then computes SMA(5/20), RSI(14) and realized vol.
-- Scores a bias + conviction and picks a structure (capped risk only):
-  **single long call/put** (aggressive, when conviction is high and vol low) or
-  a **bull-call / bear-put debit spread** (balanced, otherwise). Neutral/low
-  conviction → **no trade**.
-- Prices legs with a built-in Black-Scholes estimate to show est. debit, capped
-  **max risk** (sized to `MAX_RISK`, default $1,000), max reward and breakeven.
-- Writes `signals/signal.json`, rendered in the app's top card.
+The agent in `scripts/agent/` trains a walk-forward **HistGradientBoosting**
+classifier on ~24 months of **ES + SPX + VIX + CL** (optional SPX 0DTE
+aggregates and order-flow). It labels next-bar SPX direction as CALL / PUT /
+WAIT, then writes a defined-risk structure into `signals/signal.json` for the PWA.
 
-**Pricing:** with a **premium** Alpha Vantage key the engine pulls the real 0DTE
-option chain (`REALTIME_OPTIONS`) and shows **exact** strikes/debit/risk on SPY
-(1/10 of SPX, same exposure) — the card shows a green **LIVE** badge. With a free
-key it falls back to Black-Scholes **estimates** on SPX (grey **ESTIMATE** badge).
-Set `USE_LIVE_CHAIN=0` to force estimate mode.
+```bash
+pip install -r scripts/requirements-agent.txt
 
-Runs a few times per US session via `.github/workflows/signal.yml` (needs
-`ALPHAVANTAGE_API_KEY`). GitHub's scheduler isn't real-time, so this suits a few
-signals a day, not second-by-second trading.
+# 1) Drop your history into data/raw/  (see data/raw/README.md)
+#    or generate demo CSVs:
+python3 scripts/run_agent.py sample
+
+# 2) Train (walk-forward) and emit a signal
+python3 scripts/run_agent.py train
+python3 scripts/run_agent.py signal
+
+# 3) Ongoing: retrain only when new bars / order-flow arrive
+python3 scripts/run_agent.py retrain
+```
+
+**Your files:** put `es.csv`, `spx.csv`, `vix.csv`, `cl.csv` (and optional
+`spx_0dte.csv`) under `data/raw/`. Same column schema as the sample generator.
+
+**Order-flow subscription (later):** drop vendor dumps into `data/orderflow/`
+or run `python3 scripts/run_agent.py ingest-orderflow dump.csv`. Retrain picks
+up new files and adds delta / CVD / aggression features automatically.
+
+Scheduled via `.github/workflows/agent_train.yml` (weekday after cash close).
 
 ## Live IBKR option chain → Excel (local only)
 

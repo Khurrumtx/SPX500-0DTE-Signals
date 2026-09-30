@@ -1,0 +1,65 @@
+name: Self-train SPX 0DTE agent
+
+# EDUCATIONAL ONLY — NOT FINANCIAL ADVICE.
+# Trains (or retrains) the ML agent on data/raw + data/orderflow and writes signal.json.
+
+on:
+  schedule:
+    # After US cash close (≈21:00 UTC) weekdays
+    - cron: "15 21 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Force retrain even if no new rows"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: spx-0dte-agent
+  cancel-in-progress: false
+
+jobs:
+  agent:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: scripts/requirements-agent.txt
+
+      - name: Install deps
+        run: pip install -r scripts/requirements-agent.txt
+
+      - name: Ensure training data
+        run: |
+          if [ ! -f data/raw/spx.csv ]; then
+            echo "No data/raw CSVs in repo — generating sample for CI smoke test"
+            python3 scripts/run_agent.py sample
+          fi
+
+      - name: Retrain + signal
+        run: |
+          FORCE_FLAG=""
+          if [ "${{ github.event.inputs.force }}" = "true" ]; then
+            FORCE_FLAG="--force"
+          fi
+          python3 scripts/run_agent.py retrain $FORCE_FLAG
+
+      - name: Commit artifacts
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add signals/signal.json dashboard/signals/signal.json models/spx_0dte_meta.json || true
+          # Model binary can be large; commit meta + signals. Keep .joblib local/CI cache.
+          if ! git diff --quiet --cached; then
+            git commit -m "Update 0DTE ML signal"
+            git push
+          else
+            echo "No signal/meta changes"
+          fi
