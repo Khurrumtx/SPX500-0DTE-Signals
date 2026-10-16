@@ -304,6 +304,39 @@ body {
 .flow-sub { display: flex; justify-content: space-between; font-size: 12px; color: var(--muted); }
 .flows-meta { margin-top: 10px; font-size: 11px; color: var(--muted); text-align: right; }
 
+/* Quant Data option flow */
+.option-flow-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.of-stat {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 8px 10px;
+}
+.of-label { display: block; font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.4px; }
+.of-val { display: block; margin-top: 4px; font-weight: 700; font-size: 14px; }
+.of-val.buy { color: var(--green); }
+.of-val.sell { color: var(--red); }
+.quarter-label.buy { color: var(--green); }
+.quarter-label.sell { color: var(--red); }
+#optionFlowList .flow-item {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+#optionFlowList .flow-body { flex: 1; min-width: 0; }
+#optionFlowList .flow-title { font-weight: 650; font-size: 13px; }
+#optionFlowList .flow-sub { display: block; margin-top: 2px; }
+#optionFlowList .flow-pct { margin-left: 0; flex-shrink: 0; }
+
+@media (max-width: 420px) {
+  .option-flow-stats { grid-template-columns: repeat(2, 1fr); }
+}
+
 /* Macro grid */
 .macro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .macro-item {

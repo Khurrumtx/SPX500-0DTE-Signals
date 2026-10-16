@@ -1,0 +1,80 @@
+name: Capture Quant Data option flow
+
+# Near-live option flow via REST polling. Quant Data has no WebSocket stream yet
+# ("Streaming is on the way"), so this workflow snapshots consolidated order flow
+# every few minutes during the US cash session.
+#
+# Secret required: QUANTDATA_API_KEY (qd_… from https://v3.quantdata.us)
+
+on:
+  schedule:
+    # Every 5 minutes, Mon–Fri, ~13:30–20:00 UTC (US equity session)
+    - cron: "*/5 13-19 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      tickers:
+        description: "Comma-separated tickers"
+        required: false
+        default: "SPX,SPY,SPXW"
+      mode:
+        description: "consolidated | unconsolidated | both"
+        required: false
+        default: "consolidated"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: quantdata-flow
+  cancel-in-progress: false
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Capture option flow
+        env:
+          QUANTDATA_API_KEY: ${{ secrets.QUANTDATA_API_KEY }}
+          QUANTDATA_TICKERS: ${{ github.event.inputs.tickers || 'SPX,SPY,SPXW' }}
+        run: |
+          if [ -z "$QUANTDATA_API_KEY" ]; then
+            echo "QUANTDATA_API_KEY secret is not set — add it under Settings → Secrets."
+            exit 1
+          fi
+          MODE="${{ github.event.inputs.mode || 'consolidated' }}"
+          python3 scripts/capture_option_flow.py once \
+            --tickers "$QUANTDATA_TICKERS" \
+            --mode "$MODE" \
+            --size 100 \
+            --max-pages 2 \
+            --dte-max 1 \
+            --min-premium 25000
+
+      - name: Commit dashboard snapshot
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          # Raw JSONL stays local / ephemeral — only the dashboard snapshot is committed.
+          git add dashboard/option_flow.json
+          if git diff --cached --quiet; then
+            echo "No change to option_flow.json"
+          else
+            git commit -m "Update Quant Data option flow capture"
+            git push
+          fi
+
+      - name: Upload raw JSONL artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: quantdata-orderflow-${{ github.run_id }}
+          path: |
+            data/orderflow/
+          if-no-files-found: ignore
+          retention-days: 7

@@ -52,6 +52,23 @@
       <div id="signalDisclaimer" class="signal-disclaimer" hidden></div>
     </section>
 
+    <section class="card" id="optionFlowCard">
+      <div class="card-header">
+        <h2>Option Flow — Quant Data</h2>
+        <span id="optionFlowBias" class="quarter-label">—</span>
+      </div>
+      <div id="optionFlowStats" class="option-flow-stats">
+        <div class="of-stat"><span class="of-label">Call $</span><span id="ofCallPrem" class="of-val buy">—</span></div>
+        <div class="of-stat"><span class="of-label">Put $</span><span id="ofPutPrem" class="of-val sell">—</span></div>
+        <div class="of-stat"><span class="of-label">Net</span><span id="ofNetPrem" class="of-val">—</span></div>
+        <div class="of-stat"><span class="of-label">Unusual</span><span id="ofUnusual" class="of-val">—</span></div>
+      </div>
+      <ul id="optionFlowList" class="flows-list">
+        <li class="history-empty">Waiting for Quant Data capture…</li>
+      </ul>
+      <div id="optionFlowMeta" class="flows-meta"></div>
+    </section>
+
     <section class="card">
       <div class="card-header">
         <h2>Daily Activity — Top 100 S&amp;P</h2>

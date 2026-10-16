@@ -145,6 +145,33 @@ history. Add `--signal` to also run the 0DTE signal on the **live IBKR chain**
 and write `signals/signal.json` (commit + push it for the app to show broker
 prices). `--max-risk` sets the signal's risk cap (default $1,000).
 
+## Live option flow (Quant Data)
+
+Capture near-live options order flow from [quantdata.us](https://quantdata.us).
+
+Quant Data’s REST API does **not** expose a WebSocket stream yet (docs: “Streaming
+is on the way”). This repo polls the Order Flow endpoints on a short cadence and
+writes a dashboard snapshot:
+
+```bash
+export QUANTDATA_API_KEY=qd_…   # from https://v3.quantdata.us
+python3 scripts/capture_option_flow.py once --tickers SPX,SPY,SPXW --dte-max 1
+# local near-live loop:
+python3 scripts/capture_option_flow.py stream --tickers SPX,SPY,SPXW --interval 15
+```
+
+| Output | Purpose |
+| --- | --- |
+| `dashboard/option_flow.json` | Bias + recent prints (shown in the PWA; committed by CI) |
+| `data/orderflow/flow_YYYY-MM-DD.jsonl` | Append-only raw tape (local / CI artifact, gitignored) |
+
+GitHub Action: `.github/workflows/quantdata_flow.yml` runs every 5 minutes during
+the US cash session. Add repo secret **`QUANTDATA_API_KEY`**.
+
+For AI agents, point Cursor MCP at `https://api.quantdata.us/mcp` with the same
+Bearer key (see `.cursor/mcp.json.example`). Tools:
+`qd_get_order_flow_consolidated`, `qd_get_order_flow_unconsolidated`.
+
 ## Data sources & keys
 
 Two ways to get the daily insider feed:
@@ -161,6 +188,7 @@ pulled from Alpha Vantage as a working sample.
 **Settings → Secrets and variables → Actions**:
 - `FRED_API_KEY` — macro grid (optional).
 - `ALPHAVANTAGE_API_KEY` — only if you use the Alpha Vantage collector.
+- `QUANTDATA_API_KEY` — live option-flow capture (`qd_…`).
 
 SEC EDGAR needs **no key** — its APIs are free and open; the only requirement is
 a descriptive `User-Agent` with a contact email, already set in the workflows.
