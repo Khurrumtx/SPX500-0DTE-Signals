@@ -1,0 +1,19 @@
+{
+  "updatedAt": null,
+  "sessionDate": null,
+  "rowCount": 0,
+  "callPremium": 0,
+  "putPremium": 0,
+  "netPremium": 0,
+  "unusualCount": 0,
+  "sweepCount": 0,
+  "flowBias": "NEUTRAL",
+  "recent": [],
+  "lastPoll": {
+    "fetched": 0,
+    "new": 0,
+    "mode": "consolidated",
+    "tickers": ["SPX", "SPY", "SPXW"]
+  },
+  "note": "Set QUANTDATA_API_KEY and run scripts/capture_option_flow.py (or the quantdata_flow GitHub Action)."
+}

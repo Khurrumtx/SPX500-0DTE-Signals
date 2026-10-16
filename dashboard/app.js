@@ -1,6 +1,7 @@
 const SIGNAL_URL = "signals/signal.json";
 const EVENTS_URL = "events.json";
 const DAILY_URL = "daily.json";
+const OPTION_FLOW_URL = "option_flow.json";
 const STORAGE = {
   history: "spx0dte:history",
   interval: "spx0dte:interval",
@@ -40,6 +41,13 @@ const els = {
   dailyFilter: document.getElementById("dailyFilter"),
   macroCard: document.getElementById("macroCard"),
   macroGrid: document.getElementById("macroGrid"),
+  optionFlowBias: document.getElementById("optionFlowBias"),
+  ofCallPrem: document.getElementById("ofCallPrem"),
+  ofPutPrem: document.getElementById("ofPutPrem"),
+  ofNetPrem: document.getElementById("ofNetPrem"),
+  ofUnusual: document.getElementById("ofUnusual"),
+  optionFlowList: document.getElementById("optionFlowList"),
+  optionFlowMeta: document.getElementById("optionFlowMeta"),
 };
 
 const state = {
@@ -529,7 +537,10 @@ function handleSignal(data) {
 
 function startPolling() {
   if (state.timer) clearInterval(state.timer);
-  state.timer = setInterval(fetchSignal, state.intervalMs);
+  state.timer = setInterval(() => {
+    fetchSignal();
+    fetchOptionFlow();
+  }, state.intervalMs);
   els.refreshStatus.textContent =
     state.intervalMs >= 60000 ? `${state.intervalMs / 60000}m` : `${state.intervalMs / 1000}s`;
 }
@@ -625,8 +636,76 @@ function wireUI() {
   });
 
   document.addEventListener("visibilitychange", () => {
-    if (document.visibilityState === "visible") { fetchSignal(); fetchDaily(); fetchFlows(); }
+    if (document.visibilityState === "visible") {
+      fetchSignal();
+      fetchDaily();
+      fetchFlows();
+      fetchOptionFlow();
+    }
   });
+}
+
+function moneyShort(n) {
+  const v = Number(n) || 0;
+  const abs = Math.abs(v);
+  const sign = v < 0 ? "-" : "";
+  if (abs >= 1e6) return `${sign}$${(abs / 1e6).toFixed(2)}M`;
+  if (abs >= 1e3) return `${sign}$${(abs / 1e3).toFixed(1)}K`;
+  return `${sign}$${abs.toFixed(0)}`;
+}
+
+function renderOptionFlow(data) {
+  if (!els.optionFlowList) return;
+  const bias = String(data.flowBias || "NEUTRAL").toUpperCase();
+  els.optionFlowBias.textContent = bias;
+  els.optionFlowBias.classList.toggle("buy", bias === "CALL");
+  els.optionFlowBias.classList.toggle("sell", bias === "PUT");
+
+  els.ofCallPrem.textContent = moneyShort(data.callPremium);
+  els.ofPutPrem.textContent = moneyShort(data.putPremium);
+  els.ofNetPrem.textContent = moneyShort(data.netPremium);
+  els.ofNetPrem.classList.toggle("buy", (data.netPremium || 0) > 0);
+  els.ofNetPrem.classList.toggle("sell", (data.netPremium || 0) < 0);
+  els.ofUnusual.textContent = String(data.unusualCount ?? "—");
+
+  const recent = Array.isArray(data.recent) ? data.recent.slice(0, 25) : [];
+  if (!recent.length) {
+    els.optionFlowList.innerHTML = `<li class="history-empty">No prints in the latest capture.</li>`;
+  } else {
+    els.optionFlowList.innerHTML = recent.map((r) => {
+      const side = String(r.contractType || "").toUpperCase() === "PUT" ? "sell" : "buy";
+      const kind = r.tradeConsolidationType || r.tradeSideCode || "PRINT";
+      const strike = r.strikePrice != null ? Number(r.strikePrice) : "—";
+      const exp = r.expirationDate || "";
+      const unusual = r.isUnusual ? " · unusual" : "";
+      const golden = r.isGoldenSweep ? " · golden" : "";
+      return `<li class="flow-item">
+        <div class="flow-action ${side}">${r.contractType || "—"}</div>
+        <div class="flow-body">
+          <div class="flow-title">${r.ticker || "?"} ${strike} ${exp}</div>
+          <div class="flow-sub">${kind}${unusual}${golden} · ${relativeTime(r.tradeTimeIso || r.capturedAt)}</div>
+        </div>
+        <div class="flow-pct ${side}">${moneyShort(r.premium)}</div>
+      </li>`;
+    }).join("");
+  }
+
+  const poll = data.lastPoll || {};
+  els.optionFlowMeta.textContent =
+    `${data.sessionDate || ""} · ${poll.new ?? 0} new / ${poll.fetched ?? data.rowCount ?? 0} fetched · ${formatTimestamp(data.updatedAt)}`;
+}
+
+async function fetchOptionFlow() {
+  try {
+    const res = await fetch(`${OPTION_FLOW_URL}?t=${Date.now()}`, { cache: "no-store" });
+    if (!res.ok) throw new Error(String(res.status));
+    renderOptionFlow(await res.json());
+  } catch {
+    if (els.optionFlowList) {
+      els.optionFlowList.innerHTML =
+        `<li class="history-empty">Option flow unavailable — set QUANTDATA_API_KEY and run capture.</li>`;
+    }
+  }
 }
 
 async function registerSW() {
@@ -641,6 +720,7 @@ function init() {
   fetchSignal();
   fetchDaily();
   fetchFlows();
+  fetchOptionFlow();
   startPolling();
   registerSW();
 }

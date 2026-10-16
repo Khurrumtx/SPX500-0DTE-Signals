@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "quantdata": {
+      "url": "https://api.quantdata.us/mcp",
+      "headers": {
+        "Authorization": "Bearer qd_YOUR_KEY_HERE"
+      }
+    }
+  }
+}
